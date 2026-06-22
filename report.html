@@ -1,0 +1,282 @@
+<!doctype html><html><head><meta charset='utf-8'><title>LLM Benchmark</title><style>
+    :root{--bg:#0f1117;--panel:#171a22;--line:#262b36;--ink:#e7ecf3;--mut:#8b95a7;
+          --acc:#3ddc84;--acc2:#5b9dff;--null:#222730;}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);
+      font:14px/1.5 ui-monospace,'SF Mono',Menlo,monospace}
+    .wrap{max-width:1200px;margin:0 auto;padding:32px 20px 80px}
+    h1{font-size:22px;letter-spacing:.5px;margin:0 0 4px}
+    h2{font-size:15px;color:var(--acc);text-transform:uppercase;letter-spacing:1px;
+       margin:38px 0 12px;border-bottom:1px solid var(--line);padding-bottom:6px}
+    .sub{color:var(--mut);font-size:12px;margin-bottom:8px}
+    table{border-collapse:collapse;width:100%;margin:6px 0 4px;font-size:13px}
+    th,td{border:1px solid var(--line);padding:7px 10px;text-align:center}
+    th{background:var(--panel);color:var(--mut);font-weight:600;
+       text-transform:uppercase;font-size:11px;letter-spacing:.5px}
+    td.l,th.l{text-align:left}
+    .run{font-size:12px}.mut{color:var(--mut)}
+    .bar{height:6px;background:var(--acc);border-radius:3px;display:inline-block}
+    details{background:var(--panel);border:1px solid var(--line);border-radius:8px;
+            margin:8px 0;padding:0 14px}
+    summary{cursor:pointer;padding:12px 0;font-size:13px;color:var(--acc2)}
+    pre{background:#0b0d12;border:1px solid var(--line);border-radius:6px;
+        padding:10px;overflow:auto;white-space:pre-wrap;font-size:12px;color:#cdd6e4;max-height:340px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px}
+    .badge{display:inline-block;font-size:10px;padding:2px 7px;border-radius:10px;
+           background:#2a2f3a;color:var(--mut);margin-left:6px}
+    .judge{background:#3a2f12;color:#e3b341}
+    </style></head><body><div class='wrap'><h1>Local vs Cloud — Model &amp; Hardware Benchmark</h1><div class='sub'>source: scored.jsonl · 1 runs · 28 tasks · 4 categories</div><h2>Run summary — quality vs cost vs speed</h2><table><tr><th class='l'>Run (model · hardware)</th><th>Quality</th><th>Avg latency</th><th>Avg tok/s</th><th>Total $ (Claude)</th><th>VM $ (local est.)</th></tr><tr><td class='l run'>llama3.1:8b <span class='mut'>· m1</span></td><td style='background:rgb(75,183,60);color:#fff'>79%</td><td>10.81s</td><td>12.7</td><td>–</td><td>$0.0580</td></tr></table><h2>Quality by category</h2><div class='sub'>1.0 = all tasks in that category passed. AUTO-graded for coding/structured; Claude-judged for reasoning/text (judge bias possible).</div><table><tr><th class='l'>Category</th><th class='run'>llama3.1:8b<br><span class='mut'>m1</span></th></tr><tr><td class='l'>coding</td><td style='background:rgb(60,194,60);color:#fff'>86%</td></tr><tr><td class='l'>reasoning</td><td style='background:rgb(100,162,60);color:#fff'>68%</td></tr><tr><td class='l'>structured</td><td style='background:rgb(93,167,60);color:#fff'>71%</td></tr><tr><td class='l'>text</td><td style='background:rgb(45,207,60);color:#fff'>93%</td></tr></table><h2>Cross-hardware speed (tok/s)</h2><div class='sub'>Same local model on different machines — the hardware story.</div><table><tr><th class='l'>Model</th><th>m1</th></tr><tr><td class='l'>llama3.1:8b</td><td>12.7 <span class='bar' style='width:80px'></span></td></tr></table><h2>Outputs side by side</h2><details><summary>coding / 01_fizzbuzz</summary><div class='grid'><div><div class='run'>llama3.1:8b <span class='mut'>· m1</span> <span class='badge'>100%</span></div><pre>```python
+def solve(n):
+    result = []
+    for i in range(1, n+1):
+        fizz = &quot;&quot; if i % 3 else &quot;fizz&quot;
+        buzz = &quot;&quot; if i % 5 else &quot;buzz&quot;
+        bang = &quot;&quot; if i % 7 else &quot;bang&quot;
+        result.append(f&quot;{fizz}{buzz}{bang}&quot; or str(i))
+    return result
+```</pre></div></div></details><details><summary>coding / 02_palindrome</summary><div class='grid'><div><div class='run'>llama3.1:8b <span class='mut'>· m1</span> <span class='badge'>100%</span></div><pre>```python
+def is_palindrome(s):
+    s = &#x27;&#x27;.join(c for c in s if c.isalnum()).lower()
+    return s == s[::-1]
+```</pre></div></div></details><details><summary>coding / 03_bug_fix</summary><div class='grid'><div><div class='run'>llama3.1:8b <span class='mut'>· m1</span> <span class='badge'>100%</span></div><pre>```python
+def second_largest(nums):
+    unique_nums = set(nums)
+    if len(unique_nums) &lt; 2:
+        return None
+    else:
+        return max([x for x in unique_nums if x != max(unique_nums)])
+```</pre></div></div></details><details><summary>coding / 04_sql</summary><div class='grid'><div><div class='run'>llama3.1:8b <span class='mut'>· m1</span> <span class='badge'>0%</span></div><pre>```sql
+SELECT 
+    c.country,
+    COUNT(DISTINCT o.customer_id) AS num_customers,
+    SUM(o.total_cents / 100.0) AS total_revenue_euros
+FROM 
+    orders o
+JOIN 
+    customers c ON o.customer_id = c.id
+WHERE 
+    EXTRACT(YEAR FROM o.created_at) = 2025
+GROUP BY 
+    c.country
+ORDER BY 
+    total_revenue_euros DESC;
+```</pre></div></div></details><details><summary>coding / 05_lru_cache</summary><div class='grid'><div><div class='run'>llama3.1:8b <span class='mut'>· m1</span> <span class='badge'>100%</span></div><pre>```python
+from collections import OrderedDict
+
+class LRUCache:
+    def __init__(self, capacity):
+        self.capacity = capacity
+        self.cache = OrderedDict()
+
+    def get(self, key):
+        if key not in self.cache:
+            return -1
+        value = self.cache.pop(key)
+        self.cache[key] = value  # move to end to mark as recently used
+        return value
+
+    def put(self, key, value):
+        if key in self.cache:
+            self.cache.pop(key)  # remove existing item
+        elif len(self.cache) &gt;= self.capacity:
+            self.cache.popitem(last=False)  # evict least-recently-used item
+        self.cache[key] = value
+```</pre></div></div></details><details><summary>coding / 06_intervals</summary><div class='grid'><div><div class='run'>llama3.1:8b <span class='mut'>· m1</span> <span class='badge'>100%</span></div><pre>```python
+def merge(intervals):
+    if not intervals:
+        return []
+
+    intervals.sort(key=lambda x: x[0])
+    merged = [intervals[0]]
+
+    for current in intervals[1:]:
+        last = merged[-1]
+        if current[0] &lt;= last[1]:
+            merged[-1] = [last[0], max(last[1], current[1])]
+        else:
+            merged.append(current)
+
+    return merged
+```</pre></div></div></details><details><summary>coding / 07_parens</summary><div class='grid'><div><div class='run'>llama3.1:8b <span class='mut'>· m1</span> <span class='badge'>100%</span></div><pre>```python
+def generate(n):
+    def backtrack(s, left, right):
+        if len(s) == 2 * n:
+            result.append(&quot;&quot;.join(s))
+            return
+        if left &lt; n:
+            s.append(&#x27;(&#x27;)
+            backtrack(s, left + 1, right)
+            s.pop()
+        if right &lt; left:
+            s.append(&#x27;)&#x27;)
+            backtrack(s, left, right + 1)
+            s.pop()
+
+    result = []
+    backtrack([], 0, 0)
+    return result
+```</pre></div></div></details><details><summary>reasoning / 01_water_jugs</summary><div class='grid'><div><div class='run'>llama3.1:8b <span class='mut'>· m1</span> <span class='badge'>0%</span><span class='badge judge'>judge</span></div><pre>Here are the steps:
+
+1. Fill the 5-litre jug completely with water.
+
+2. Pour water from the 5-litre jug into the 3-litre jug until the 3-litre jug is full, leaving 2 litres in the 5-litre jug.
+
+3. Empty the 3-litre jug and pour the remaining 2 litres from it back into the 5-litre jug.
+
+4. Fill the now-empty 3-litre jug completely with water.
+
+5. Pour water from the 5-litre jug into the 3-litre jug until the 3-litre jug is full, but not more than that. This will leave exactly 1 litre in the 5-litre jug.
+
+6. Empty the 3-litre jug and pour the remaining 1 litre from it back into the 5-litre jug.
+
+7. Fill the now-empty 3-litre jug completely with water.
+
+8. Pour water from the 5-litre jug into the 3-litre jug until the 3-litre jug is full, but not more than that. This will leave exactly 2 litres in the 5-litre jug.
+
+9. Empty the 3-litre jug and pour the remaining 2 litres from it back into the 5-litre jug.
+
+10. Fill the now-empty 3-litre jug completely with water.
+
+11. Pour water from the 5-litre jug into the 3-litre jug until only 1 litre remains in the 5-litre jug.
+
+12. Empty the 3-litre jug and pour the remaining 1 litre from it back into the 5-litre jug.
+
+13. Fill the now-empty 3-litre jug completely with water.
+
+14. Pour water from the 5-litre jug into the 3-litre jug until exactly 4 litres are measured out in total, which will be achieved by filling the 3-litre jug and leaving 1 litre remaining in the 5-litre jug.</pre></div></div></details><details><summary>reasoning / 02_boxes</summary><div class='grid'><div><div class='run'>llama3.1:8b <span class='mut'>· m1</span> <span class='badge'>25%</span><span class='badge judge'>judge</span></div><pre>Draw from the &quot;Apples&quot; box.
+
+If it&#x27;s an apple, then:
+
+* The &quot;Oranges&quot; box must contain apples (since its label is wrong).
+* The &quot;Apples &amp; Oranges&quot; box must contain oranges (since its label is wrong and we know one of the other two boxes contains apples).
+
+If it&#x27;s not an apple, then:
+
+* The &quot;Apples &amp; Oranges&quot; box must contain apples (since its label is wrong and we know one of the other two boxes doesn&#x27;t contain apples).
+* The &quot;Oranges&quot; box must contain oranges (since its label is wrong and we know one of the other two boxes contains apples).
+
+Either way, you can deduce the contents of all three boxes.</pre></div></div></details><details><summary>reasoning / 03_pipes</summary><div class='grid'><div><div class='run'>llama3.1:8b <span class='mut'>· m1</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>Let&#x27;s analyze the situation:
+
+Pipe A fills the tank in 6 hours, so its rate of filling is 1/6 of the tank per hour.
+
+Pipe B fills the tank in 4 hours, so its rate of filling is 1/4 of the tank per hour.
+
+Pipe C empties the tank in 12 hours, so its rate of emptying is 1/12 of the tank per hour (note that this is a negative rate).
+
+When all three pipes are open, their combined rates are:
+
+(1/6 + 1/4 - 1/12) tanks/hour
+
+To add these fractions, we need to find a common denominator, which is 12. So we get:
+
+(2/12 + 3/12 - 1/12) = 4/12 = 1/3 tanks/hour
+
+This means that the tank is being filled at a rate of 1/3 of the tank per hour.
+
+To find the time it takes to fill the tank, we can divide 1 (the whole tank) by 1/3:
+
+1 / (1/3) = 3 hours
+
+So, it will take 3 hours for the tank to be full when all three pipes are open.</pre></div></div></details><details><summary>reasoning / 04_monty_hall</summary><div class='grid'><div><div class='run'>llama3.1:8b <span class='mut'>· m1</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>A classic probability puzzle!
+
+**If you stay with Door 1:** The probability of winning is still 1/3, because there was only a 1/3 chance that the car was behind Door 1 to begin with.
+
+**If you switch to Door 2:** The probability of winning is now 2/3. This might seem counterintuitive at first, but it&#x27;s because switching gives you the opportunity to take advantage of the host&#x27;s knowledge. Since the host knows what&#x27;s behind each door and will always reveal a goat, the probability that the car is behind Door 2 (which you didn&#x27;t choose initially) is now 2/3.
+
+The key insight here is that the host&#x27;s action doesn&#x27;t change the underlying probabilities; it only reveals new information to you. By switching, you&#x27;re taking advantage of this new information and increasing your chances of winning from 1/3 to 2/3.</pre></div></div></details><details><summary>reasoning / 05_bat_ball</summary><div class='grid'><div><div class='run'>llama3.1:8b <span class='mut'>· m1</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>Let&#x27;s break it down step by step:
+
+Let the cost of the ball be x euros.
+
+Since the bat costs 1.00 euro more than the ball, the cost of the bat is x + 1.00 euros.
+
+The total cost of both the bat and the ball together is 1.10 euros. So we can write an equation based on this:
+
+x + (x + 1.00) = 1.10
+
+Combine like terms:
+
+2x + 1.00 = 1.10
+
+Subtract 1.00 from both sides to isolate the term with x:
+
+2x = 0.10
+
+Divide by 2 to solve for x:
+
+x = 0.05
+
+So, the ball costs exactly 0.05 euros.</pre></div></div></details><details><summary>reasoning / 06_fermi</summary><div class='grid'><div><div class='run'>llama3.1:8b <span class='mut'>· m1</span> <span class='badge'>50%</span><span class='badge judge'>judge</span></div><pre>Here&#x27;s my attempt at estimating the number of piano tuners in Berlin:
+
+**Step 1: Population**
+Berlin has a population of approximately 6 million people (this is a rough estimate, as I&#x27;m not considering the city&#x27;s suburbs and surrounding areas).
+
+**Step 2: Pianos per person**
+Let&#x27;s assume that about 10% of households in Berlin own a piano. This might be a generous estimate, but it&#x27;s a reasonable starting point. With an average household size of 1.5 people (a rough estimate), this means there are approximately 6 million / 1.5 = 4 million households in Berlin.
+
+Assuming 10% of these households own a piano, that&#x27;s about 400,000 pianos in Berlin.
+
+**Step 3: Tuning frequency**
+Pianos typically need to be tuned every 6-12 months, depending on usage and environmental factors. Let&#x27;s assume an average tuning interval of 9 months (a rough estimate). This means each piano needs to be tuned about twice a year.
+
+With 400,000 pianos in Berlin, this translates to approximately 800,000 tunings per year.
+
+**Step 4: Tuner workload**
+A professional piano tuner can typically tune 2-5 pianos per day, depending on the complexity of the tuning and their level of experience. Let&#x27;s assume an average of 3 pianos per day (a rough estimate).
+
+With 800,000 tunings per year, this means each piano tuner would need to work about 266 days per year (800,000 / 3 pianos per day) to meet demand.
+
+**Step 5: Number of piano tuners**
+Assuming a standard full-time working schedule (about 260-270 days per year), we ca</pre></div></div></details><details><summary>reasoning / 07_false_proof</summary><div class='grid'><div><div class='run'>llama3.1:8b <span class='mut'>· m1</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>A classic example of a flawed proof!
+
+The exact step where it goes wrong is:
+
+**Step 4: Divide both sides by (a-b):     a + b = b**
+
+This step is invalid because we are dividing both sides by `(a-b)`, but we don&#x27;t know whether `(a-b)` is zero or not. If `(a-b)` is indeed zero, then we would be dividing by zero, which is undefined in mathematics.
+
+In fact, this is the key to understanding why the proof goes wrong: **we are assuming that `a` and `b` are distinct values**, but when we divide both sides by `(a-b)`, we are essentially assuming that `(a-b)` is not equal to zero. However, if `a = b`, then `(a-b)` must be equal to zero!
+
+To see why this is a problem, let&#x27;s go back to the original equation: `a^2 - b^2 = ab - b^2`. If we try to divide both sides by `(a-b)`, we are implicitly assuming that `(a-b)` is not equal to zero. But if `a = b`, then `(a-b)` must be equal to zero, and dividing by zero is undefined.
+
+Therefore, the proof goes wrong at Step 4 because it assumes that `(a-b)` is non-zero without justification, which leads to an invalid conclusion: `2 = 1`.</pre></div></div></details><details><summary>structured / 01_json_basic</summary><div class='grid'><div><div class='run'>llama3.1:8b <span class='mut'>· m1</span> <span class='badge'>100%</span></div><pre>```json
+{
+  &quot;name&quot;: &quot;Artur&quot;,
+  &quot;age&quot;: 33,
+  &quot;skills&quot;: [&quot;C#&quot;, &quot;AWS&quot;, &quot;Postgres&quot;],
+  &quot;remote&quot;: true
+}
+```</pre></div></div></details><details><summary>structured / 02_classify</summary><div class='grid'><div><div class='run'>llama3.1:8b <span class='mut'>· m1</span> <span class='badge'>100%</span></div><pre>[
+  { &quot;id&quot;: 1, &quot;label&quot;: &quot;bug&quot; },
+  { &quot;id&quot;: 2, &quot;label&quot;: &quot;feature_request&quot; },
+  { &quot;id&quot;: 3, &quot;label&quot;: &quot;question&quot; },
+  { &quot;id&quot;: 4, &quot;label&quot;: &quot;bug&quot; }
+]</pre></div></div></details><details><summary>structured / 03_csv</summary><div class='grid'><div><div class='run'>llama3.1:8b <span class='mut'>· m1</span> <span class='badge'>0%</span></div><pre>&quot;city&quot;,&quot;country&quot;,&quot;population_millions&quot;
+&quot;Tokyo&quot;,&quot;Japan&quot;,37
+&quot;Delhi&quot;,&quot;India&quot;,33
+&quot;Sao Paulo&quot;,&quot;Brazil&quot;,22</pre></div></div></details><details><summary>structured / 04_nested_json</summary><div class='grid'><div><div class='run'>llama3.1:8b <span class='mut'>· m1</span> <span class='badge'>100%</span></div><pre>{&quot;order_id&quot;: &quot;A-1007&quot;, &quot;customer&quot;: {&quot;name&quot;: &quot;Lena Roth&quot;, &quot;vip&quot;: true}, &quot;items&quot;: [{&quot;sku&quot;: &quot;KB-12&quot;, &quot;qty&quot;: 2}, {&quot;sku&quot;: &quot;MS-04&quot;, &quot;qty&quot;: 1}], &quot;total&quot;: 149.97}</pre></div></div></details><details><summary>structured / 05_dependent_total</summary><div class='grid'><div><div class='run'>llama3.1:8b <span class='mut'>· m1</span> <span class='badge'>0%</span></div><pre>{&quot;items&quot;: [{&quot;name&quot;: &quot;notebook&quot;, &quot;price&quot;: 2.5, &quot;qty&quot;: 3, &quot;line_total&quot;: 7.5}, {&quot;name&quot;: &quot;pen&quot;, &quot;price&quot;: 1.2, &quot;qty&quot;: 2, &quot;line_total&quot;: 2.4}, {&quot;name&quot;: &quot;stapler&quot;, &quot;price&quot;: 7.99, &quot;qty&quot;: 1, &quot;line_total&quot;: 7.99}], &quot;grand_total&quot;: 17.83}</pre></div></div></details><details><summary>structured / 06_yaml</summary><div class='grid'><div><div class='run'>llama3.1:8b <span class='mut'>· m1</span> <span class='badge'>100%</span></div><pre>name: auth-api
+version: 2
+port: 8080
+env:
+  LOG_LEVEL: info
+  TIMEOUT: 30
+depends_on:
+  - postgres
+  - redis</pre></div></div></details><details><summary>structured / 07_enum_schema</summary><div class='grid'><div><div class='run'>llama3.1:8b <span class='mut'>· m1</span> <span class='badge'>100%</span></div><pre>{&quot;username&quot;: &quot;samvega&quot;, &quot;role&quot;: &quot;editor&quot;, &quot;active&quot;: true, &quot;login_count&quot;: 12}</pre></div></div></details><details><summary>text / 01_summarize</summary><div class='grid'><div><div class='run'>llama3.1:8b <span class='mut'>· m1</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>Here are 3 bullet points summarizing the text:
+
+• Ollama packages model weights, config, and runtime into a single local app.
+• Models are quantized to reduce memory use on smaller machines.
+• Performance depends heavily on hardware, with GPU improving tokens-per-second significantly.</pre></div></div></details><details><summary>text / 02_extract_names</summary><div class='grid'><div><div class='run'>llama3.1:8b <span class='mut'>· m1</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>Here are the extracted person names and associated companies:
+
+Maria Schmidt - Novoferm
+Tom Becker - SIG
+NONE (for the anonymous representative)</pre></div></div></details><details><summary>text / 03_rewrite_b1</summary><div class='grid'><div><div class='run'>llama3.1:8b <span class='mut'>· m1</span> <span class='badge'>50%</span><span class='badge judge'>judge</span></div><pre>&quot;The team made a complex system simpler by moving parts of it to different computers. This helped the system work faster and reduced delays.&quot;</pre></div></div></details><details><summary>text / 04_extract_contract</summary><div class='grid'><div><div class='run'>llama3.1:8b <span class='mut'>· m1</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>Here are the key terms extracted as plain lines in the format &quot;Field: value&quot;:
+
+* Parties: Provider: Acme GmbH, Client: Nordwind AG
+* Effective date: 1 March 2025
+* Term length: 24 months
+* Notice period: 60 days
+* Monthly fee: 4,500 EUR</pre></div></div></details><details><summary>text / 05_contradiction</summary><div class='grid'><div><div class='run'>llama3.1:8b <span class='mut'>· m1</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>Statement A contradicts Statement B by asserting that no deliveries arrived on the weekend, while Statement B specifically states that the Hamburg shipment did arrive on a Saturday.</pre></div></div></details><details><summary>text / 06_no_answer</summary><div class='grid'><div><div class='run'>llama3.1:8b <span class='mut'>· m1</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>&quot;Not stated in the text.&quot;</pre></div></div></details><details><summary>text / 07_fix_facts</summary><div class='grid'><div><div class='run'>llama3.1:8b <span class='mut'>· m1</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>Here are the errors:
+
+Water boils at 100 degrees Celsius at sea level -&gt; Water boils at 100 degrees Celsius at sea level
+The human body has 206 bones -&gt; The human body has 206 bones
+Light travels faster than sound, which is why we see lightning before we hear thunder -&gt; This statement is actually correct
+The capital of Australia is Sydney -&gt; The capital of Australia is Canberra</pre></div></div></details></div></body></html>
