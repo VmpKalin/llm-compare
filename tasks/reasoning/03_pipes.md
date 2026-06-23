@@ -1,0 +1,1 @@
+A tank is filled by pipe A in 6 hours and by pipe B in 4 hours. Pipe C empties a full tank in 12 hours. If all three are open starting from empty, how long until the tank is full? Show the calculation and give the final answer as a fraction of hours and in hours+minutes.

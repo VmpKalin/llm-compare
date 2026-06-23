@@ -1,0 +1,1 @@
+In the Monty Hall problem: 3 doors, one has a car, two have goats. You pick door 1. The host, who knows what is behind the doors, opens door 3 to reveal a goat. He offers you the chance to switch to door 2. Should you switch? State the probability of winning if you switch versus if you stay, and explain why in 2-3 sentences.

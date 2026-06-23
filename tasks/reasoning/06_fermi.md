@@ -1,0 +1,1 @@
+Estimate how many piano tuners work in Berlin. Do NOT look anything up. Show your chain of estimates step by step (population, pianos per person, tuning frequency, tuner workload) and give a final rough number. The reasoning matters more than the exact figure.

@@ -1,0 +1,1 @@
+Three boxes are labeled "Apples", "Oranges", and "Apples & Oranges". Every label is wrong. You may draw ONE fruit from ONE box (without looking inside). Which box do you draw from to deduce the contents of all three boxes, and what is the full reasoning? Answer concisely.

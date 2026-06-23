@@ -1,0 +1,3 @@
+Summarize the following in exactly 3 bullet points, each under 15 words:
+
+"Ollama is a tool for running large language models locally on your own hardware. It packages model weights, configuration, and a runtime into a single application with a simple command-line interface and an HTTP API. Models are quantized to reduce memory use, which lets smaller machines run models that would otherwise require far more RAM or VRAM. Performance depends heavily on the hardware: a discrete GPU dramatically improves tokens-per-second compared to CPU-only inference, while devices like single-board computers can run only the smallest models, and slowly."
