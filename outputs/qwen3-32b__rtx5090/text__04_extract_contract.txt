@@ -1,4 +1,4 @@
-Parties: Acme GmbH (Provider) and Nordwind AG (Client)  
+Parties: Acme GmbH (Provider), Nordwind AG (Client)  
 Effective date: 1 March 2025  
 Term length: 24 months  
 Notice period: 60 days  

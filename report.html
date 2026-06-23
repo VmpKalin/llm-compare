@@ -24,7 +24,7 @@
     .badge{display:inline-block;font-size:10px;padding:2px 7px;border-radius:10px;
            background:#2a2f3a;color:var(--mut);margin-left:6px}
     .judge{background:#3a2f12;color:#e3b341}
-    </style></head><body><div class='wrap'><h1>Local vs Cloud — Model &amp; Hardware Benchmark</h1><div class='sub'>source: scored.jsonl · 5 runs · 28 tasks · 4 categories</div><h2>Run summary — quality vs cost vs speed</h2><table><tr><th class='l'>Run (model · hardware)</th><th>Quality</th><th>Avg latency</th><th>Avg tok/s</th><th>Total $ (Claude)</th><th>VM $ (local est.)</th></tr><tr><td class='l run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span></td><td style='background:rgb(37,213,60);color:#fff'>96%</td><td>1.92s</td><td>68.5</td><td>$0.0224</td><td>–</td></tr><tr><td class='l run'>claude-sonnet-4-6 <span class='mut'>· api</span></td><td style='background:rgb(30,220,60);color:#fff'>100%</td><td>3.77s</td><td>34.0</td><td>$0.0665</td><td>–</td></tr><tr><td class='l run'>deepseek-r1:32b <span class='mut'>· rtx5090</span></td><td style='background:rgb(45,207,60);color:#fff'>92%</td><td>12.36s</td><td>70.1</td><td>–</td><td>$0.0663</td></tr><tr><td class='l run'>gemma3:27b <span class='mut'>· rtx5090</span></td><td style='background:rgb(33,216,60);color:#fff'>98%</td><td>2.94s</td><td>76.7</td><td>–</td><td>$0.0158</td></tr><tr><td class='l run'>qwen3:32b <span class='mut'>· rtx5090</span></td><td style='background:rgb(81,178,60);color:#fff'>76%</td><td>16.0s</td><td>68.4</td><td>–</td><td>$0.0859</td></tr></table><h2>Quality by category</h2><div class='sub'>1.0 = all tasks in that category passed. AUTO-graded for coding/structured; Claude-judged for reasoning/text (judge bias possible).</div><table><tr><th class='l'>Category</th><th class='run'>claude-haiku-4-5-20251001<br><span class='mut'>api</span></th><th class='run'>claude-sonnet-4-6<br><span class='mut'>api</span></th><th class='run'>deepseek-r1:32b<br><span class='mut'>rtx5090</span></th><th class='run'>gemma3:27b<br><span class='mut'>rtx5090</span></th><th class='run'>qwen3:32b<br><span class='mut'>rtx5090</span></th></tr><tr><td class='l'>coding</td><td style='background:rgb(60,194,60);color:#fff'>86%</td><td style='background:rgb(30,220,60);color:#fff'>100%</td><td style='background:rgb(60,194,60);color:#fff'>86%</td><td style='background:rgb(30,220,60);color:#fff'>100%</td><td style='background:rgb(186,92,60);color:#fff'>28%</td></tr><tr><td class='l'>reasoning</td><td style='background:rgb(30,220,60);color:#fff'>100%</td><td style='background:rgb(30,220,60);color:#fff'>100%</td><td style='background:rgb(45,207,60);color:#fff'>93%</td><td style='background:rgb(30,220,60);color:#fff'>100%</td><td style='background:rgb(60,194,60);color:#fff'>86%</td></tr><tr><td class='l'>structured</td><td style='background:rgb(30,220,60);color:#fff'>100%</td><td style='background:rgb(30,220,60);color:#fff'>100%</td><td style='background:rgb(30,220,60);color:#fff'>100%</td><td style='background:rgb(30,220,60);color:#fff'>100%</td><td style='background:rgb(30,220,60);color:#fff'>100%</td></tr><tr><td class='l'>text</td><td style='background:rgb(30,220,60);color:#fff'>100%</td><td style='background:rgb(30,220,60);color:#fff'>100%</td><td style='background:rgb(45,207,60);color:#fff'>93%</td><td style='background:rgb(45,207,60);color:#fff'>93%</td><td style='background:rgb(45,207,60);color:#fff'>93%</td></tr></table><h2>Cross-hardware speed (tok/s)</h2><div class='sub'>Same local model on different machines — the hardware story.</div><table><tr><th class='l'>Model</th></tr><tr><td class='l'>deepseek-r1:32b</td></tr><tr><td class='l'>gemma3:27b</td></tr><tr><td class='l'>qwen3:32b</td></tr></table><h2>Outputs side by side</h2><details><summary>coding / 01_fizzbuzz</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span></div><pre>
+    </style></head><body><div class='wrap'><h1>Local vs Cloud — Model &amp; Hardware Benchmark</h1><div class='sub'>source: scored.jsonl · 5 runs · 28 tasks · 4 categories</div><h2>Run summary — quality vs cost vs speed</h2><table><tr><th class='l'>Run (model · hardware)</th><th>Quality</th><th>Avg latency</th><th>Avg tok/s</th><th>Total $ (Claude)</th><th>VM $ (local est.)</th></tr><tr><td class='l run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span></td><td style='background:rgb(37,213,60);color:#fff'>96%</td><td>1.92s</td><td>68.5</td><td>$0.0224</td><td>–</td></tr><tr><td class='l run'>claude-sonnet-4-6 <span class='mut'>· api</span></td><td style='background:rgb(30,220,60);color:#fff'>100%</td><td>3.77s</td><td>34.0</td><td>$0.0665</td><td>–</td></tr><tr><td class='l run'>deepseek-r1:32b <span class='mut'>· rtx5090</span></td><td style='background:rgb(45,207,60);color:#fff'>92%</td><td>12.36s</td><td>70.1</td><td>–</td><td>$0.0663</td></tr><tr><td class='l run'>gemma3:27b <span class='mut'>· rtx5090</span></td><td style='background:rgb(33,216,60);color:#fff'>98%</td><td>2.94s</td><td>76.7</td><td>–</td><td>$0.0158</td></tr><tr><td class='l run'>qwen3:32b <span class='mut'>· rtx5090</span></td><td style='background:rgb(45,207,60);color:#fff'>92%</td><td>18.19s</td><td>68.3</td><td>–</td><td>$0.0976</td></tr></table><h2>Quality by category</h2><div class='sub'>1.0 = all tasks in that category passed. AUTO-graded for coding/structured; Claude-judged for reasoning/text (judge bias possible).</div><table><tr><th class='l'>Category</th><th class='run'>claude-haiku-4-5-20251001<br><span class='mut'>api</span></th><th class='run'>claude-sonnet-4-6<br><span class='mut'>api</span></th><th class='run'>deepseek-r1:32b<br><span class='mut'>rtx5090</span></th><th class='run'>gemma3:27b<br><span class='mut'>rtx5090</span></th><th class='run'>qwen3:32b<br><span class='mut'>rtx5090</span></th></tr><tr><td class='l'>coding</td><td style='background:rgb(60,194,60);color:#fff'>86%</td><td style='background:rgb(30,220,60);color:#fff'>100%</td><td style='background:rgb(60,194,60);color:#fff'>86%</td><td style='background:rgb(30,220,60);color:#fff'>100%</td><td style='background:rgb(60,194,60);color:#fff'>86%</td></tr><tr><td class='l'>reasoning</td><td style='background:rgb(30,220,60);color:#fff'>100%</td><td style='background:rgb(30,220,60);color:#fff'>100%</td><td style='background:rgb(45,207,60);color:#fff'>93%</td><td style='background:rgb(30,220,60);color:#fff'>100%</td><td style='background:rgb(38,212,60);color:#fff'>96%</td></tr><tr><td class='l'>structured</td><td style='background:rgb(30,220,60);color:#fff'>100%</td><td style='background:rgb(30,220,60);color:#fff'>100%</td><td style='background:rgb(30,220,60);color:#fff'>100%</td><td style='background:rgb(30,220,60);color:#fff'>100%</td><td style='background:rgb(30,220,60);color:#fff'>100%</td></tr><tr><td class='l'>text</td><td style='background:rgb(30,220,60);color:#fff'>100%</td><td style='background:rgb(30,220,60);color:#fff'>100%</td><td style='background:rgb(45,207,60);color:#fff'>93%</td><td style='background:rgb(45,207,60);color:#fff'>93%</td><td style='background:rgb(54,200,60);color:#fff'>89%</td></tr></table><h2>Cross-hardware speed (tok/s)</h2><div class='sub'>Same local model on different machines — the hardware story.</div><table><tr><th class='l'>Model</th></tr><tr><td class='l'>deepseek-r1:32b</td></tr><tr><td class='l'>gemma3:27b</td></tr><tr><td class='l'>qwen3:32b</td></tr></table><h2>Outputs side by side</h2><details><summary>coding / 01_fizzbuzz</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span></div><pre>
 ```python
 def solve(n):
     result = []
@@ -104,14 +104,14 @@ def solve(n):
 ```</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span></div><pre>```python
 def solve(n):
     result = []
-    for i in range(1, n + 1):
-        s = &quot;&quot;
+    for i in range(1, n+1):
+        s = &#x27;&#x27;
         if i % 3 == 0:
-            s += &quot;fizz&quot;
+            s += &#x27;fizz&#x27;
         if i % 5 == 0:
-            s += &quot;buzz&quot;
+            s += &#x27;buzz&#x27;
         if i % 7 == 0:
-            s += &quot;bang&quot;
+            s += &#x27;bang&#x27;
         result.append(s if s else str(i))
     return result
 ```</pre></div></div></details><details><summary>coding / 02_palindrome</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span></div><pre>
@@ -155,7 +155,11 @@ def is_palindrome(s):
     &quot;&quot;&quot;
     processed_string = &#x27;&#x27;.join(char.lower() for char in s if char.isalnum())
     return processed_string == processed_string[::-1]
-```</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>0%</span></div><pre></pre></div></div></details><details><summary>coding / 03_bug_fix</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span></div><pre>```python
+```</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span></div><pre>```python
+def is_palindrome(s):
+    processed = &#x27;&#x27;.join(char.lower() for char in s if char.isalnum())
+    return processed == processed[::-1]
+```</pre></div></div></details><details><summary>coding / 03_bug_fix</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span></div><pre>```python
 def second_largest(nums):
     unique_nums = sorted(set(nums))
     if len(unique_nums) &lt; 2:
@@ -197,7 +201,14 @@ def second_largest(nums):
         return None
     unique_nums = sorted(list(set(nums)))
     return unique_nums[-2]
-```</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>0%</span></div><pre></pre></div></div></details><details><summary>coding / 04_sql</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span></div><pre>```sql
+```</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span></div><pre>```python
+def second_largest(nums):
+    unique_nums = list(set(nums))
+    if len(unique_nums) &lt; 2:
+        return None
+    unique_sorted = sorted(unique_nums)
+    return unique_sorted[-2]
+```</pre></div></div></details><details><summary>coding / 04_sql</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span></div><pre>```sql
 SELECT 
   c.country,
   COUNT(DISTINCT c.id) as num_customers,
@@ -257,7 +268,7 @@ ORDER BY
 SELECT 
     c.country,
     COUNT(DISTINCT o.customer_id) AS customer_count,
-    SUM(o.total_cents) / 100.0 AS total_revenue_euros
+    SUM(o.total_cents) / 100 AS total_revenue_euros
 FROM 
     customers c
 JOIN 
@@ -374,8 +385,9 @@ class LRUCache:
 
     def get(self, key):
         if key in self.cache:
+            value = self.cache[key]
             self.cache.move_to_end(key)
-            return self.cache[key]
+            return value
         return -1
 
     def put(self, key, value):
@@ -466,7 +478,22 @@ def merge(intervals):
             merged.append(interval)
 
     return merged
-```</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>0%</span></div><pre></pre></div></div></details><details><summary>coding / 07_parens</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span></div><pre>
+```</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span></div><pre>```python
+def merge(intervals):
+    if not intervals:
+        return []
+    intervals.sort(key=lambda x: x[0])
+    merged = [intervals[0]]
+    for current in intervals[1:]:
+        last = merged[-1]
+        if current[0] &lt;= last[1]:
+            new_start = last[0]
+            new_end = max(last[1], current[1])
+            merged[-1] = [new_start, new_end]
+        else:
+            merged.append(current)
+    return merged
+```</pre></div></div></details><details><summary>coding / 07_parens</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span></div><pre>
 ```python
 def generate(n):
     &quot;&quot;&quot;Generate all combinations of n pairs of well-formed parentheses.&quot;&quot;&quot;
@@ -550,7 +577,20 @@ def generate(n):
 
     backtrack(&quot;&quot;, 0, 0)
     return result
-```</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>0%</span></div><pre></pre></div></div></details><details><summary>reasoning / 01_water_jugs</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre># Measuring 4 Litres
+```</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span></div><pre>```python
+def generate(n):
+    result = []
+    def backtrack(current, open_count, close_count):
+        if len(current) == 2 * n:
+            result.append(current)
+            return
+        if open_count &lt; n:
+            backtrack(current + &#x27;(&#x27;, open_count + 1, close_count)
+        if close_count &lt; open_count:
+            backtrack(current + &#x27;)&#x27;, open_count, close_count + 1)
+    backtrack(&#x27;&#x27;, 0, 0)
+    return result
+```</pre></div></div></details><details><summary>reasoning / 01_water_jugs</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre># Measuring 4 Litres
 
 1. Fill the 5-litre jug completely with water.
 2. Pour water from the 5-litre jug into the 3-litre jug until the 3-litre jug is full.
@@ -591,11 +631,11 @@ At this point, the 5-litre jug contains exactly 4 litres of water.</pre></div><d
 
 
 
-</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>1. Fill the 5-litre jug completely.  
+</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>1. Fill the 5-litre jug to the top.  
 2. Pour water from the 5-litre jug into the 3-litre jug until the 3-litre jug is full.  
 3. Empty the 3-litre jug.  
 4. Pour the remaining 2 litres from the 5-litre jug into the 3-litre jug.  
-5. Fill the 5-litre jug completely again.  
+5. Fill the 5-litre jug to the top again.  
 6. Pour water from the 5-litre jug into the 3-litre jug until the 3-litre jug is full (1 litre is poured).  
 7. The 5-litre jug now contains exactly 4 litres.</pre></div></div></details><details><summary>reasoning / 02_boxes</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre># Solution
 
@@ -645,12 +685,24 @@ By drawing from the mixed label box first, you can logically deduce the contents
 
 
 
-</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>Draw from the box labeled &quot;Apples &amp; Oranges&quot;. Since all labels are incorrect, this box must contain only apples or only oranges. 
+</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>75%</span><span class='badge judge'>judge</span></div><pre>To deduce the contents of all three boxes, **draw a fruit from the box labeled &quot;Apples &amp; Oranges&quot;**. Here&#x27;s the reasoning:
 
-- **If you draw an apple**: The &quot;Apples &amp; Oranges&quot; box is actually &quot;Apples&quot;. The box labeled &quot;Apples&quot; (incorrect) cannot be apples, so it must be &quot;Oranges&quot; (since &quot;Apples &amp; Oranges&quot; is already used). The remaining box labeled &quot;Oranges&quot; must be &quot;Apples &amp; Oranges&quot;.  
-- **If you draw an orange**: The &quot;Apples &amp; Oranges&quot; box is actually &quot;Oranges&quot;. The box labeled &quot;Oranges&quot; (incorrect) cannot be oranges, so it must be &quot;Apples&quot;. The remaining box labeled &quot;Apples&quot; must be &quot;Apples &amp; Oranges&quot;.  
+1. **All labels are incorrect**. Thus:
+   - The &quot;Apples&quot; box cannot contain only apples.
+   - The &quot;Oranges&quot; box cannot contain only oranges.
+   - The &quot;Apples &amp; Oranges&quot; box cannot contain both.
 
-This single draw allows deducing all correct labels.</pre></div></div></details><details><summary>reasoning / 03_pipes</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre># Tank Filling Problem
+2. The **&quot;Apples &amp; Oranges&quot; box must contain only one type of fruit** (apples or oranges), since it cannot contain both.
+
+3. **Draw one fruit from this box**:
+   - If you draw an **apple**, the box must contain **only apples**.
+     - The &quot;Oranges&quot; box (incorrectly labeled) cannot be oranges, so it must be the **mix** (since the &quot;Apples&quot; box cannot be apples or mix).
+     - The &quot;Apples&quot; box (incorrectly labeled) cannot be apples or mix, so it must be **oranges**.
+   - If you draw an **orange**, the box must contain **only oranges**.
+     - The &quot;Apples&quot; box (incorrectly labeled) cannot be apples or mix, so it must be **oranges**.
+     - The &quot;Oranges&quot; box (incorrectly labeled) cannot be oranges or mix, so it must be **apples**.
+
+Thus, **drawing from the &quot;Apples &amp; Oranges&quot; box** allows you to deduce the correct contents of all three boxes.</pre></div></div></details><details><summary>reasoning / 03_pipes</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre># Tank Filling Problem
 
 ## Step 1: Find the rate for each pipe
 
@@ -772,7 +824,52 @@ Since the combined rate is 1/3 of the tank per hour, it will take 3 hours to fil
 **Answer:**
 
 *   **Fraction of hours:** 3 hours
-*   **Hours and minutes:** 3 hours + 0 minutes</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>0%</span><span class='badge judge'>judge</span></div><pre></pre></div></div></details><details><summary>reasoning / 04_monty_hall</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre># Monty Hall Problem Analysis
+*   **Hours and minutes:** 3 hours + 0 minutes</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>To determine how long it takes to fill the tank when all three pipes are open, we analyze the **rates** at which each pipe contributes to or removes from the tank.
+
+---
+
+### Step 1: Determine the individual rates
+
+- **Pipe A** fills the tank in 6 hours → rate = $ \frac{1}{6} $ tank/hour  
+- **Pipe B** fills the tank in 4 hours → rate = $ \frac{1}{4} $ tank/hour  
+- **Pipe C** empties the tank in 12 hours → rate = $ -\frac{1}{12} $ tank/hour  
+
+---
+
+### Step 2: Combine the rates
+
+When all three pipes are open, the **net rate** at which the tank is being filled is the sum of their individual rates:
+
+$$
+\text{Net rate} = \frac{1}{6} + \frac{1}{4} - \frac{1}{12}
+$$
+
+To add these, we find a common denominator (LCM of 6, 4, and 12 is 12):
+
+$$
+\frac{1}{6} = \frac{2}{12}, \quad \frac{1}{4} = \frac{3}{12}, \quad \frac{1}{12} = \frac{1}{12}
+$$
+
+$$
+\text{Net rate} = \frac{2}{12} + \frac{3}{12} - \frac{1}{12} = \frac{4}{12} = \frac{1}{3} \text{ tank/hour}
+$$
+
+---
+
+### Step 3: Calculate the time to fill the tank
+
+If the tank is being filled at a rate of $ \frac{1}{3} $ tank per hour, then the time $ t $ to fill **1 full tank** is:
+
+$$
+t = \frac{1}{\frac{1}{3}} = 3 \text{ hours}
+$$
+
+---
+
+### Final Answer
+
+- **As a fraction of hours**: $ \boxed{3} $
+- **In hours and minutes**: 3 hours and 0 minutes</pre></div></div></details><details><summary>reasoning / 04_monty_hall</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre># Monty Hall Problem Analysis
 
 **You should switch.**
 
@@ -800,7 +897,7 @@ When you initially picked door 1, you had a 1/3 chance of being right and a 2/3 
 
 
 
-</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>In the Monty Hall problem, you should switch doors. If you stay with your initial choice (door 1), you have a **1/3** chance of winning the car, as your initial selection had a 1/3 probability of being correct. If you switch to door 2, your probability of winning increases to **2/3**. This is because the host’s action of revealing a goat (door 3) provides additional information: if the car was initially behind door 2 or 3 (which happens 2/3 of the time), the host effectively eliminates the wrong door, leaving the car behind the unchosen door. Switching capitalizes on the higher likelihood that your initial guess was wrong.</pre></div></div></details><details><summary>reasoning / 05_bat_ball</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre># Solution
+</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>In the Monty Hall problem, you should switch doors. If you stay with your initial choice (door 1), you have a **1/3 chance of winning** the car, as your initial selection had a 1/3 probability of being correct. However, if you switch to door 2, your probability of winning increases to **2/3**. This is because the host’s action of revealing a goat (door 3) provides additional information: if the car was initially behind door 2 (which occurs 2/3 of the time), the host is forced to open the other goat door, making switching the optimal strategy. Thus, switching leverages the higher likelihood that your initial choice was wrong.</pre></div></div></details><details><summary>reasoning / 05_bat_ball</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre># Solution
 
 Let me define variables:
 - Let **b** = cost of the ball (in euros)
@@ -933,57 +1030,44 @@ x + (x + 1.00) = 1.10
 **Reasoning:**
 
 The key is to recognize that the difference in price between the bat and ball is a fixed amount (€1.00). By setting up an algebraic equation, we can account for this difference and solve for the cost of the ball.
-</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>To solve the problem, we begin by defining the unknowns clearly.
+</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>To solve the problem, let&#x27;s define the cost of the **ball** as $ x $ euros. According to the problem, the **bat** costs **1 euro more than the ball**, so the cost of the bat is $ x + 1 $ euros.
 
-Let the cost of the **ball** be $ x $ euros.  
-Since the **bat costs 1 euro more than the ball**, the cost of the bat is $ x + 1 $ euros.  
-The total cost of the bat and the ball together is given as **1.10 euros**.
-
----
-
-### Step 1: Set up the equation
+The total cost of the bat and the ball together is given as **1.10 euros**. Therefore, we can write the equation:
 
 $$
 x + (x + 1) = 1.10
 $$
 
-Simplify the left-hand side:
+Simplifying the left-hand side:
 
 $$
 2x + 1 = 1.10
 $$
 
----
-
-### Step 2: Solve for $ x $
-
-Subtract 1 from both sides:
+Now, subtract 1 from both sides:
 
 $$
-2x = 1.10 - 1 = 0.10
+2x = 0.10
 $$
 
-Now divide both sides by 2:
+Divide both sides by 2:
 
 $$
-x = \frac{0.10}{2} = 0.05
+x = 0.05
 $$
-
----
-
-### Step 3: Interpret the result
-
-- The **ball costs** $ x = 0.05 $ euros (i.e., **5 cents**).
-- The **bat costs** $ x + 1 = 0.05 + 1 = 1.05 $ euros.
-- Total cost: $ 0.05 + 1.05 = 1.10 $ euros, which matches the given total.
 
 ---
 
 ### Final Answer:
+The **ball costs 0.05 euros**, or **5 cents**.
 
-$$
-\boxed{0.05}
-$$</pre></div></div></details><details><summary>reasoning / 06_fermi</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre># Estimating Piano Tuners in Berlin
+To verify:
+- Ball = 0.05 euros  
+- Bat = 0.05 + 1.00 = 1.05 euros  
+- Total = 0.05 + 1.05 = **1.10 euros** ✅  
+- Difference between bat and ball = 1.05 - 0.05 = **1.00 euro** ✅
+
+Thus, the answer is consistent with all the conditions in the problem.</pre></div></div></details><details><summary>reasoning / 06_fermi</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre># Estimating Piano Tuners in Berlin
 
 Let me work through this systematically.
 
@@ -1091,42 +1175,42 @@ Not every household has a piano — it&#x27;s a relatively specialized instrumen
 
 *   A piano tuner can probably tune around **4 pianos per day**, realistically. It’s skilled work, and travel time between locations needs to be factored in.
 *   Assuming they work about **250 days a year** (allowing for holidays, sick days, etc.).
-*   Total pianos a single tuner can handle: 4 pianos/day * 250 days/year = </pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>To estimate the number of piano tuners in Berlin, we can break the problem into logical steps:
+*   Total pianos a single tuner can handle: 4 pianos/day * 250 days/year = </pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>To estimate the number of piano tuners in Berlin, we follow a step-by-step reasoning process based on logical assumptions and rough approximations:
 
 ---
 
 ### **1. Population of Berlin**  
-Berlin is a major European city. Assuming a population of **3.8 million** (a reasonable estimate based on general knowledge of large cities in Europe).
+Berlin is a major European city. Assuming a population of **3.7 million** (a reasonable estimate for a large city like Berlin).
 
 ---
 
-### **2. Number of Pianos in Berlin**  
-- **Household size**: ~2.5 people per household → **1.52 million households** (3.8 million ÷ 2.5).  
-- **Pianos per household**: Conservatively, 1 piano per **50 households** (since pianos are not common in every home).  
-  → **30,400 pianos** (1.52 million ÷ 50).  
-
-*Adjustment*: If we assume slightly more pianos (e.g., 1 per 40 households due to music schools, institutions, or higher ownership in a culturally vibrant city), this could rise to **38,000 pianos**.
-
----
-
-### **3. Annual Tuning Demand**  
-- **Tuning frequency**: Most pianos are tuned **once per year** (some may require more frequent tuning, but this is the average).  
-  → **30,000–38,000 annual tunings**.
+### **2. Number of Households**  
+Assume an average household size of **2.5 people**.  
+$$
+\text{Households} = \frac{3.7 \text{ million}}{2.5} \approx 1.48 \text{ million households}
+$$
 
 ---
 
-### **4. Workload per Piano Tuner**  
-- **Working days**: 50 weeks/year × 5 days/week = **250 workdays**.  
-- **Time per tuning**: ~2 hours.  
-- **Daily tunings**: Assuming 8-hour workdays, a tuner could complete **4 tunings/day** (8 ÷ 2).  
-  → **1,000 tunings/year** (4 × 250).  
-
-*Realistic adjustment*: Accounting for travel, administrative tasks, or downtime, a tuner might realistically complete **750 tunings/year**.
+### **3. Pianos per Household**  
+Pianos are relatively rare due to cost and space constraints. Assume **1% of households** own a piano:  
+$$
+\text{Pianos} = 1.48 \text{ million} \times 1\% = 14,800 \text{ pianos}
+$$  
+*Alternative assumption: 2% of households → 29,600 pianos. This range (14,800–29,600) reflects uncertainty in ownership rates.*
 
 ---
 
-### **5. Total Tuners Needed**  
-- **Low estimate**: </pre></div></div></details><details><summary>reasoning / 07_false_proof</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre># The Error
+### **4. Annual Tuning Demand**  
+Most pianos are tuned **once per year**. Some may require more frequent tuning (e.g., for professional use), but assume an average of **1.2 tunings per piano per year** to account for occasional extra demand:  
+$$
+\text{Tunings per year} = 14,800 \times 1.2 = 17,760 \text{ tunings}
+$$
+
+---
+
+### **5. Workload per Piano Tuner**  
+A full-time piano tuner might work **5 days/week, 50 weeks/year** (250 workdays). If each tuning takes **2 hours** and a tuner works **8 hours/day**, they could theoretically handle **4 tunings/day**. However, travel time and complexity reduce this to **1–2 tunings/day</pre></div></div></details><details><summary>reasoning / 07_false_proof</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre># The Error
 
 The error occurs in this step:
 
@@ -1216,29 +1300,65 @@ We started with the assumption that `a = b`.  This means that `a - b = 0`.  Divi
 The step `(a+b)(a-b) = b(a-b)` implies dividing by `(a-b)`, but since `a=b`, we are effectively dividing by 0.  This invalidates the entire subsequent argument and allows us to &quot;prove&quot; false statements like 2=1.
 
 In short, you can&#x27;t divide by zero! It breaks the rules of algebra.
-</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>The proof that claims 2 = 1 is a classic example of a mathematical fallacy. The error occurs in **Step 4**, where both sides of the equation are divided by **(a - b)**. Here&#x27;s the breakdown:
+</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>The given &quot;proof&quot; attempts to show that $ 2 = 1 $, but it contains a critical logical flaw. Let&#x27;s analyze the steps and identify the exact point where the reasoning breaks down.
 
-1. **Initial Setup**:  
-   Let $ a = b $.  
-   Multiply both sides by $ a $: $ a^2 = ab $.  
-   Subtract $ b^2 $: $ a^2 - b^2 = ab - b^2 $.  
-   Factor both sides: $ (a + b)(a - b) = b(a - b) $.  
+---
 
-2. **Critical Error**:  
-   The next step divides both sides by $ (a - b) $:  
+### Step-by-step Breakdown:
+
+1. **Let $ a = b $:**  
+   This is a valid assumption for the sake of the argument.
+
+2. **Multiply both sides by $ a $:**  
    $$
-   \frac{(a + b)(a - b)}{a - b} = \frac{b(a - b)}{a - b}.
+   a^2 = ab
    $$  
-   However, since $ a = b $, $ (a - b) = 0 $. **Division by zero is undefined** in mathematics, making this step invalid.  
+   This is algebraically valid.
 
-3. **Consequences**:  
-   The rest of the proof relies on this invalid operation. Simplifying the equation gives $ a + b = b $, which leads to $ 2b = b $ and $ 2 = 1 $. These conclusions are nonsensical because they depend on the earlier division by zero.  
+3. **Subtract $ b^2 $ from both sides:**  
+   $$
+   a^2 - b^2 = ab - b^2
+   $$  
+   Still valid.
 
-**Why This Is Invalid**:  
-Division by zero is undefined because it violates the fundamental properties of arithmetic. Specifically, if $ x = 0 $, there is no number $ y $ such that $ 0 \cdot y = x $ (unless $ x = 0 $, but even then, $ y $ is not uniquely defined). By dividing by $ (a - b) = 0 $, the proof introduces an undefined operation, rendering all subsequent steps meaningless.  
+4. **Factor both sides:**  
+   $$
+   (a + b)(a - b) = b(a - b)
+   $$  
+   This is a correct factorization.
 
-**Conclusion**:  
-The proof is flawed because it divides by $ (a - b) $, which equals zero. This invalid step allows the derivation of a false conclusion (2 = 1). The key takeaway is to</pre></div></div></details><details><summary>structured / 01_json_basic</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span></div><pre>```json
+5. **Divide both sides by $ (a - b) $:**  
+   $$
+   a + b = b
+   $$  
+   **This is the critical error.**  
+   Since we assumed $ a = b $, it follows that $ a - b = 0 $.  
+   **Division by zero is undefined in mathematics**, and this step is therefore invalid.  
+   This invalid operation leads to a false conclusion.
+
+6. **Substitute $ a = b $ into the result:**  
+   $$
+   a + a = a \Rightarrow 2a = a
+   $$  
+   This step is based on the invalid result from the previous step.
+
+7. **Divide both sides by $ a $:**  
+   $$
+   2 = 1
+   $$  
+   Again, this is a consequence of the earlier invalid step.
+
+---
+
+### Conclusion:
+
+The proof is invalid because it divides both sides of the equation by $ (a - b) $, which is zero due to the initial assumption $ a = b $. Division by zero is undefined and cannot be used in valid mathematical reasoning.
+
+---
+
+### Final Answer:
+
+The proof goes wrong in the s</pre></div></div></details><details><summary>structured / 01_json_basic</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span></div><pre>```json
 {
   &quot;name&quot;: &quot;Artur&quot;,
   &quot;age&quot;: 33,
@@ -1317,26 +1437,7 @@ Sao Paulo,Brazil,22</pre></div></div></details><details><summary>structured / 04
 {&quot;order_id&quot;: &quot;A-1007&quot;, &quot;customer&quot;: {&quot;name&quot;: &quot;Lena Roth&quot;, &quot;vip&quot;: true}, &quot;items&quot;: [{&quot;sku&quot;: &quot;KB-12&quot;, &quot;qty&quot;: 2}, {&quot;sku&quot;: &quot;MS-04&quot;, &quot;qty&quot;: 1}], &quot;total&quot;: 149.97}
 ```</pre></div><div><div class='run'>deepseek-r1:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span></div><pre>{&quot;order_id&quot;: &quot;A-1007&quot;, &quot;customer&quot;: {&quot;name&quot;: &quot;Lena Roth&quot;, &quot;vip&quot;: true}, &quot;items&quot;: [{&quot;sku&quot;: &quot;KB-12&quot;, &quot;qty&quot;: 2}, {&quot;sku&quot;: &quot;MS-04&quot;, &quot;qty&quot;: 1}], &quot;total&quot;: 149.97}</pre></div><div><div class='run'>gemma3:27b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span></div><pre>```json
 {&quot;order_id&quot;: &quot;A-1007&quot;, &quot;customer&quot;: {&quot;name&quot;: &quot;Lena Roth&quot;, &quot;vip&quot;: true}, &quot;items&quot;: [{&quot;sku&quot;: &quot;KB-12&quot;, &quot;qty&quot;: 2}, {&quot;sku&quot;: &quot;MS-04&quot;, &quot;qty&quot;: 1}], &quot;total&quot;: 149.97}
-```</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span></div><pre>```json
-{
-  &quot;order_id&quot;: &quot;A-1007&quot;,
-  &quot;customer&quot;: {
-    &quot;name&quot;: &quot;Lena Roth&quot;,
-    &quot;vip&quot;: true
-  },
-  &quot;items&quot;: [
-    {
-      &quot;sku&quot;: &quot;KB-12&quot;,
-      &quot;qty&quot;: 2
-    },
-    {
-      &quot;sku&quot;: &quot;MS-04&quot;,
-      &quot;qty&quot;: 1
-    }
-  ],
-  &quot;total&quot;: 149.97
-}
-```</pre></div></div></details><details><summary>structured / 05_dependent_total</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span></div><pre>```json
+```</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span></div><pre>{&quot;order_id&quot;: &quot;A-1007&quot;, &quot;customer&quot;: {&quot;name&quot;: &quot;Lena Roth&quot;, &quot;vip&quot;: true}, &quot;items&quot;: [{&quot;sku&quot;: &quot;KB-12&quot;, &quot;qty&quot;: 2}, {&quot;sku&quot;: &quot;MS-04&quot;, &quot;qty&quot;: 1}], &quot;total&quot;: 149.97}</pre></div></div></details><details><summary>structured / 05_dependent_total</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span></div><pre>```json
 {
   &quot;items&quot;: [
     {
@@ -1423,7 +1524,7 @@ depends_on:
 version: 2
 port: 8080
 env:
-  LOG_LEVEL: info
+  LOG_LEVEL: &quot;info&quot;
   TIMEOUT: 30
 depends_on:
   - postgres
@@ -1450,14 +1551,7 @@ depends_on:
   &quot;active&quot;: true,
   &quot;login_count&quot;: 12
 }
-```</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span></div><pre>```json
-{
-  &quot;username&quot;: &quot;samvega&quot;,
-  &quot;role&quot;: &quot;editor&quot;,
-  &quot;active&quot;: true,
-  &quot;login_count&quot;: 12
-}
-```</pre></div></div></details><details><summary>text / 01_summarize</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>• Ollama runs large language models locally on personal hardware with CLI and HTTP API.
+```</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span></div><pre>{&quot;username&quot;: &quot;samvega&quot;, &quot;role&quot;: &quot;editor&quot;, &quot;active&quot;: true, &quot;login_count&quot;: 12}</pre></div></div></details><details><summary>text / 01_summarize</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>• Ollama runs large language models locally on personal hardware with CLI and HTTP API.
 
 • Quantized models reduce memory requirements, enabling smaller machines to run larger models efficiently.
 
@@ -1473,9 +1567,9 @@ depends_on:
 
 
 
-</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>- Ollama runs large language models locally, combining weights, config, and runtime into a single app with CLI and HTTP API.  
-- Quantization reduces memory use, enabling smaller machines to run models requiring more RAM/VRAM.  
-- Performance varies by hardware: GPUs boost speed, while single-board computers handle only small models slowly.</pre></div></div></details><details><summary>text / 02_extract_names</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>Maria Schmidt - Novoferm
+</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>- Ollama runs LLMs locally, combining models, config, and runtime into a CLI/API app.  
+- Quantization reduces memory use, enabling smaller machines to run models with less RAM/VRAM.  
+- Performance varies by hardware: GPUs boost speed, while low-end devices handle only small models slowly.</pre></div></div></details><details><summary>text / 02_extract_names</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>Maria Schmidt - Novoferm
 Tom Becker - SIG</pre></div><div><div class='run'>claude-sonnet-4-6 <span class='mut'>· api</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>Maria Schmidt - Novoferm
 Tom Becker - SIG</pre></div><div><div class='run'>deepseek-r1:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>Maria Schmidt - Novoferm  
 Tom Becker - SIG</pre></div><div><div class='run'>gemma3:27b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>Maria Schmidt - Novoferm
@@ -1486,7 +1580,7 @@ Tom Becker - SIG</pre></div></div></details><details><summary>text / 03_rewrite_
 
 
 
-</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>50%</span><span class='badge judge'>judge</span></div><pre>Despite the complex architecture of distributed microservice systems, the engineering team carried out a smooth migration. This reduced latency issues and increased overall throughput.</pre></div></div></details><details><summary>text / 04_extract_contract</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre># Contract Key Terms
+</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>25%</span><span class='badge judge'>judge</span></div><pre>Despite the complex architecture of distributed microservices, the engineering team successfully completed a smooth migration. This reduced latency problems and significantly increased overall throughput.</pre></div></div></details><details><summary>text / 04_extract_contract</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre># Contract Key Terms
 
 Field: Parties
 Value: Acme GmbH (Provider) and Nordwind AG (Client)
@@ -1518,7 +1612,7 @@ Effective date: 1 March 2025
 Term length: 24 months
 Notice period: 60 days
 Monthly fee: 4,500 EUR
-</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>Parties: Acme GmbH (Provider) and Nordwind AG (Client)  
+</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>Parties: Acme GmbH (Provider), Nordwind AG (Client)  
 Effective date: 1 March 2025  
 Term length: 24 months  
 Notice period: 60 days  
@@ -1528,7 +1622,7 @@ Statement A claims no deliveries arrived on the weekend, while Statement B state
 
 
 
-</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>The contradiction lies in Statement A claiming no weekend deliveries occurred in the report, while Statement B explicitly states a shipment was delivered on Saturday, directly violating both the &quot;none arriving on the weekend&quot; assertion and the implication that all deliveries were completed before the Friday deadline.</pre></div></div></details><details><summary>text / 06_no_answer</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>Not stated in the text.</pre></div><div><div class='run'>claude-sonnet-4-6 <span class='mut'>· api</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>Not stated in the text.</pre></div><div><div class='run'>deepseek-r1:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>Not stated in the text.</pre></div><div><div class='run'>gemma3:27b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>Not stated in the text.
+</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>The contradiction lies in Statement A claiming no deliveries arrived on the weekend, while Statement B explicitly states a shipment was signed for on Saturday (a weekend day), directly refuting this assertion.</pre></div></div></details><details><summary>text / 06_no_answer</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>Not stated in the text.</pre></div><div><div class='run'>claude-sonnet-4-6 <span class='mut'>· api</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>Not stated in the text.</pre></div><div><div class='run'>deepseek-r1:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>Not stated in the text.</pre></div><div><div class='run'>gemma3:27b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>Not stated in the text.
 
 
 
@@ -1547,6 +1641,6 @@ The capital of Australia is Sydney. -&gt; The capital of Australia is Canberra.<
 106 bones -&gt; 206 bones
 Sydney -&gt; Canberra
 </pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>Error -&gt; Correction  
-Water boils at 90 degrees Celsius at sea level -&gt; Water boils at 100 degrees Celsius at sea level  
-The human body has 106 bones -&gt; The human body has 206 bones  
-The capital of Australia is Sydney -&gt; The capital of Australia is Canberra</pre></div></div></details></div></body></html>
+&quot;Water boils at 90 degrees Celsius at sea level.&quot; -&gt; &quot;Water boils at 100 degrees Celsius at sea level.&quot;  
+&quot;The human body has 106 bones.&quot; -&gt; &quot;The human body has 206 bones.&quot;  
+&quot;The capital of Australia is Sydney.&quot; -&gt; &quot;The capital of Australia is Canberra.&quot;</pre></div></div></details></div></body></html>

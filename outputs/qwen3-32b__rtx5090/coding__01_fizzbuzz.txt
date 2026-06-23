@@ -1,14 +1,14 @@
 ```python
 def solve(n):
     result = []
-    for i in range(1, n + 1):
-        s = ""
+    for i in range(1, n+1):
+        s = ''
         if i % 3 == 0:
-            s += "fizz"
+            s += 'fizz'
         if i % 5 == 0:
-            s += "buzz"
+            s += 'buzz'
         if i % 7 == 0:
-            s += "bang"
+            s += 'bang'
         result.append(s if s else str(i))
     return result
 ```

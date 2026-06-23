@@ -1,3 +1,3 @@
-- Ollama runs large language models locally, combining weights, config, and runtime into a single app with CLI and HTTP API.  
-- Quantization reduces memory use, enabling smaller machines to run models requiring more RAM/VRAM.  
-- Performance varies by hardware: GPUs boost speed, while single-board computers handle only small models slowly.
+- Ollama runs LLMs locally, combining models, config, and runtime into a CLI/API app.  
+- Quantization reduces memory use, enabling smaller machines to run models with less RAM/VRAM.  
+- Performance varies by hardware: GPUs boost speed, while low-end devices handle only small models slowly.

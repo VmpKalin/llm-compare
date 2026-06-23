@@ -2,7 +2,7 @@
 SELECT 
     c.country,
     COUNT(DISTINCT o.customer_id) AS customer_count,
-    SUM(o.total_cents) / 100.0 AS total_revenue_euros
+    SUM(o.total_cents) / 100 AS total_revenue_euros
 FROM 
     customers c
 JOIN 
