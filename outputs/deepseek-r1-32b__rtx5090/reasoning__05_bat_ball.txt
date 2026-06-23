@@ -1,0 +1,41 @@
+Let's solve the problem step by step.
+
+**Given:**
+- Total cost of a bat and a ball: **1.10 euros**
+- The bat costs **1.00 euro more** than the ball.
+
+**Let’s define:**
+- Let \( x \) be the cost of the **ball** in euros.
+- Then, the cost of the **bat** would be \( x + 1.00 \) euros.
+
+**Set up the equation based on the total cost:**
+\[
+\text{Cost of ball} + \text{Cost of bat} = 1.10
+\]
+\[
+x + (x + 1.00) = 1.10
+\]
+
+**Simplify and solve for \( x \):**
+\[
+2x + 1.00 = 1.10
+\]
+\[
+2x = 1.10 - 1.00
+\]
+\[
+2x = 0.10
+\]
+\[
+x = \frac{0.10}{2}
+\]
+\[
+x = 0.05
+\]
+
+**Conclusion:**
+The ball costs **0.05 euros**.
+
+\[
+\boxed{0.05\,\text{euros}}
+\]

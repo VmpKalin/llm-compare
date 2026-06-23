@@ -1,0 +1,18 @@
+The proof contains a critical error in the step where both sides are divided by **(a - b)**. Here's the breakdown:
+
+1. **Starting with a = b**, the proof proceeds correctly until the step:
+   $$
+   (a + b)(a - b) = b(a - b)
+   $$
+   At this point, both sides are multiplied by **(a - b)**.
+
+2. **The invalid step** is dividing both sides by **(a - b)** to obtain:
+   $$
+   a + b = b
+   $$
+   Since **a = b**, this implies **(a - b) = 0**. Dividing by zero is **undefined** in mathematics, making this step invalid. 
+
+3. **Why this invalidates the proof**: Division by zero is not allowed because it leads to contradictions and nonsensical results. The rest of the proof (e.g., concluding $2 = 1$) relies on this invalid operation and is therefore meaningless.
+
+**Answer:**  
+The proof fails at the step where both sides are divided by **(a - b)**. Since **a = b**, this division involves dividing by zero, which is undefined and invalid.

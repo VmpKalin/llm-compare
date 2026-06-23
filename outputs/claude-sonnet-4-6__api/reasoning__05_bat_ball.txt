@@ -1,0 +1,37 @@
+## Setting Up the Problem
+
+Let me define variables:
+- Let **b** = cost of the ball (in euros)
+- Let **B** = cost of the bat (in euros)
+
+## The Two Equations
+
+**Equation 1** (total cost):
+$$B + b = 1.10$$
+
+**Equation 2** (the bat costs €1.00 more than the ball):
+$$B = b + 1.00$$
+
+## Solving
+
+Substitute Equation 2 into Equation 1:
+
+$$(b + 1.00) + b = 1.10$$
+
+$$2b + 1.00 = 1.10$$
+
+$$2b = 0.10$$
+
+$$b = 0.05$$
+
+## Answer
+
+**The ball costs €0.05 (5 cents).**
+
+The bat therefore costs €1.05, and indeed:
+- €1.05 + €0.05 = **€1.10** ✓
+- €1.05 − €0.05 = **€1.00** ✓
+
+---
+
+> **Why this is tricky:** The intuitive answer is €0.10, but that's wrong — if the ball cost €0.10, the bat would cost €1.10, totaling €1.20, not €1.10. The correct answer is **€0.05**.

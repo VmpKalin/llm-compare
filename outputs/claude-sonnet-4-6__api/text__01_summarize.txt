@@ -1,0 +1,3 @@
+• Ollama runs large language models locally, combining weights, config, and runtime simply.
+• Models are quantized to reduce memory, enabling smaller machines to run them.
+• Performance varies greatly; GPUs accelerate output, while weak hardware struggles significantly.

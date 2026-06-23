@@ -1,0 +1,13 @@
+```sql
+SELECT
+    c.country,
+    COUNT(DISTINCT c.id)        AS customer_count,
+    SUM(o.total_cents) / 100.0  AS total_revenue_euros
+FROM customers c
+JOIN orders o
+    ON o.customer_id = c.id
+WHERE o.created_at >= '2025-01-01'
+  AND o.created_at <  '2026-01-01'
+GROUP BY c.country
+ORDER BY total_revenue_euros DESC;
+```

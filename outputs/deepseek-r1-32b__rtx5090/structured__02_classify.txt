@@ -1,0 +1,6 @@
+[
+  {"id": 1, "label": "bug"},
+  {"id": 2, "label": "feature_request"},
+  {"id": 3, "label": "question"},
+  {"id": 4, "label": "bug"}
+]

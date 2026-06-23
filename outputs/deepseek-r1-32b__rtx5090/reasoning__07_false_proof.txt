@@ -1,0 +1,9 @@
+Let's go through each step of the proof to identify where it goes wrong.
+
+1. Start with \( a = b \). This is valid.
+2. Multiply both sides by \( a \): \( a^2 = ab \). This is valid.
+3. Subtract \( b^2 \) from both sides: \( a^2 - b^2 = ab - b^2 \). This is valid.
+4. Factor both sides: \( (a + b)(a - b) = b(a - b) \). This is valid.
+5. Divide both sides by \( (a - b) \): \( a + b = b \). This step is invalid because if \( a = b \), then \( (a - b) = 0 \), and division by zero is undefined.
+
+The proof goes wrong at the step where it divides both sides by \( (a - b) \). This is invalid because \( a = b \) implies \( (a - b) = 0 \), and division by zero is undefined. The exact step is \boxed{4}.

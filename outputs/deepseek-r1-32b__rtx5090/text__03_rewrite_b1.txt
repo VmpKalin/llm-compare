@@ -1,0 +1,1 @@
+Despite the complex structure of distributed microservices, the engineering team managed to move everything smoothly. This reduced delays and improved performance a lot.

@@ -1,0 +1,65 @@
+To determine how long it will take to fill the tank when all three pipes are open, we can follow these steps:
+
+### **Step 1: Determine the Filling Rates**
+
+- **Pipe A** fills the tank in **6 hours**, so its rate is:
+  
+  \[
+  \text{Rate of Pipe A} = \frac{1}{6} \text{ tank per hour}
+  \]
+
+- **Pipe B** fills the tank in **4 hours**, so its rate is:
+  
+  \[
+  \text{Rate of Pipe B} = \frac{1}{4} \text{ tank per hour}
+  \]
+
+- **Pipe C** empties the tank in **12 hours**, so its rate is:
+  
+  \[
+  \text{Rate of Pipe C} = -\frac{1}{12} \text{ tank per hour}
+  \]
+  
+  *(Note: The negative sign indicates that Pipe C is emptying the tank.)*
+
+### **Step 2: Combine the Rates**
+
+When all three pipes are open, their rates add up:
+
+\[
+\text{Combined Rate} = \frac{1}{6} + \frac{1}{4} - \frac{1}{12}
+\]
+
+To combine these fractions, find a common denominator. The least common multiple of 6, 4, and 12 is **12**.
+
+\[
+\text{Combined Rate} = \frac{2}{12} + \frac{3}{12} - \frac{1}{12} = \frac{4}{12} = \frac{1}{3}
+\]
+
+So, the combined rate is:
+
+\[
+\frac{1}{3} \text{ tank per hour}
+\]
+
+### **Step 3: Calculate the Time to Fill the Tank**
+
+The time \( T \) it takes to fill the tank can be found using the formula:
+
+\[
+T = \frac{\text{Total Volume}}{\text{Combined Rate}}
+\]
+
+Since we're filling **1 tank** at a rate of \( \frac{1}{3} \) per hour:
+
+\[
+T = \frac{1}{\frac{1}{3}} = 3 \text{ hours}
+\]
+
+### **Final Answer**
+
+The tank will be full in:
+
+\[
+\boxed{3 \text{ hours}}
+\]

@@ -1,0 +1,61 @@
+To estimate the number of piano tuners in Berlin, we can follow a structured approach based on logical assumptions:
+
+---
+
+### **1. Population of Berlin**  
+Assume Berlin has a population of **4 million** people.
+
+---
+
+### **2. Number of Households**  
+Assume an average household size of **2.5 people**.  
+$$
+\text{Households} = \frac{4,000,000}{2.5} = 1.6 \, \text{million households}.
+$$
+
+---
+
+### **3. Number of Pianos**  
+Estimate that **1 in 100 households** owns a piano (a conservative assumption, considering pianos are relatively rare).  
+$$
+\text{Pianos in households} = 1.6 \, \text{million} \times 0.01 = 16,000 \, \text{pianos}.
+$$  
+Add **10% for institutional pianos** (e.g., schools, churches, music studios):  
+$$
+\text{Total pianos} = 16,000 + 1,600 = 17,600 \, \text{pianos}.
+$$
+
+---
+
+### **4. Annual Tuning Demand**  
+Assume each piano is tuned **once per year** on average:  
+$$
+\text{Tunings per year} = 17,600 \, \text{tunings}.
+$$
+
+---
+
+### **5. Workload per Piano Tuner**  
+Assume a tuner works **5 days/week, 50 weeks/year** (250 workdays).  
+- Each tuning takes **2 hours**.  
+- A tuner works **8 hours/day**, allowing for **4 tunings/day** (accounting for travel and setup).  
+$$
+\text{Tunings per tuner per year} = 4 \, \text{tunings/day} \times 250 \, \text{days} = 1,000 \, \text{tunings}.
+$$
+
+---
+
+### **6. Total Number of Tuners**  
+$$
+\text{Piano tuners} = \frac{17,600 \, \text{tunings}}{1,000 \, \text{tunings/tuner}} = 17.6 \, \text{tuners}.
+$$
+
+---
+
+### **Final Estimate**  
+Rounding up, there are approximately **18–20 piano tuners** in Berlin.  
+**Sensitivity Check**:  
+- If tuners handle **3 tunings/day** (750/year), the number increases to **~24 tuners**.  
+- If pianos are tuned **twice/year**, demand doubles to **~35 tuners**.  
+
+Thus, a **reasonable rough estimate is 15–25 piano tuners**, with **20 as a central value**.

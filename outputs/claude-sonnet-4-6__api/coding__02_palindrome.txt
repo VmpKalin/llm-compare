@@ -1,0 +1,6 @@
+```python
+def is_palindrome(s):
+    import re
+    cleaned = re.sub(r'[^a-zA-Z0-9]', '', s).lower()
+    return cleaned == cleaned[::-1]
+```

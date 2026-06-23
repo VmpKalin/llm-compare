@@ -1,0 +1,35 @@
+# Solution
+
+Let me define variables:
+- Let **b** = cost of the ball (in euros)
+- Let **t** = cost of the bat (in euros)
+
+## Setting up equations
+
+From the problem, I have two pieces of information:
+
+1) **Total cost:** t + b = 1.10
+2) **Price difference:** t = b + 1.00
+
+## Solving
+
+Substituting equation 2 into equation 1:
+
+(b + 1.00) + b = 1.10
+
+2b + 1.00 = 1.10
+
+2b = 0.10
+
+**b = 0.05 euros**
+
+## Verification
+
+- Ball costs: €0.05
+- Bat costs: €0.05 + €1.00 = €1.05
+- Total: €0.05 + €1.05 = €1.10 ✓
+- Difference: €1.05 - €0.05 = €1.00 ✓
+
+## Answer
+
+**The ball costs exactly 0.05 euros (or 5 cents).**

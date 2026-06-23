@@ -1,0 +1,9 @@
+name: auth-api
+version: 2
+port: 8080
+env:
+  LOG_LEVEL: info
+  TIMEOUT: 30
+depends_on:
+  - postgres
+  - redis

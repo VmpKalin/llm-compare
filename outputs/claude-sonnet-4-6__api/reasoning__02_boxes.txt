@@ -1,0 +1,14 @@
+## Draw from the "Apples & Oranges" box.
+
+**Reasoning:**
+
+Since **every label is wrong**, the "Apples & Oranges" box cannot contain a mix — it must contain *either* apples only *or* oranges only.
+
+- Say you draw an **apple** → that box is **Apples only**.
+- Now the remaining boxes ("Apples" and "Oranges") are both mislabeled:
+  - The box labeled "Apples" can't be apples (taken) and can't be correct → it must be **Oranges only**.
+  - The box labeled "Oranges" must then be **Apples & Oranges**.
+
+The same logic applies symmetrically if you draw an orange.
+
+**One draw from the mislabeled "Apples & Oranges" box lets you deduce all three contents with certainty** — because it's the only box whose label rules out a mixed result, giving you a definitive single-fruit answer to anchor the rest.

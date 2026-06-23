@@ -1,0 +1,8 @@
+```json
+{
+  "name": "Artur",
+  "age": 33,
+  "skills": ["C#", "AWS", "Postgres"],
+  "remote": true
+}
+```

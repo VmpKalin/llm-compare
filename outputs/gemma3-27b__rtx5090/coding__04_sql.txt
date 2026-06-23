@@ -1,0 +1,15 @@
+```sql
+SELECT
+  c.country,
+  COUNT(DISTINCT c.id) AS num_customers,
+  SUM(o.total_cents / 100.0) AS total_revenue_euros
+FROM customers AS c
+JOIN orders AS o
+  ON c.id = o.customer_id
+WHERE
+  EXTRACT(YEAR FROM o.created_at) = 2025
+GROUP BY
+  c.country
+ORDER BY
+  total_revenue_euros DESC;
+```

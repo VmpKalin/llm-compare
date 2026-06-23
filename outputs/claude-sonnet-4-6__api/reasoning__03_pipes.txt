@@ -1,0 +1,35 @@
+# Tank Filling Problem
+
+## Setting Up the Rates
+
+Find each pipe's rate as a **fraction of the tank per hour**:
+
+| Pipe | Action | Rate (tank/hour) |
+|------|--------|-----------------|
+| A | Fills | +1/6 |
+| B | Fills | +1/4 |
+| C | Empties | −1/12 |
+
+---
+
+## Combined Rate
+
+$$\text{Net Rate} = \frac{1}{6} + \frac{1}{4} - \frac{1}{12}$$
+
+Find a common denominator (LCD = 12):
+
+$$= \frac{2}{12} + \frac{3}{12} - \frac{1}{12} = \frac{4}{12} = \frac{1}{3} \text{ tank/hour}$$
+
+---
+
+## Time to Fill the Tank
+
+$$\text{Time} = \frac{1 \text{ tank}}{\frac{1}{3} \text{ tank/hour}} = \boxed{3 \text{ hours}}$$
+
+---
+
+## Final Answer
+
+> **3 hours exactly** (3 hours, 0 minutes)
+
+The draining effect of pipe C is exactly offset by the extra capacity of pipes A and B together, resulting in a clean fill time of **3 hours**.

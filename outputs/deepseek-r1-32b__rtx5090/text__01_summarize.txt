@@ -1,0 +1,3 @@
+- Runs large language models locally on personal hardware.
+- Packages model weights, config, runtime into a single app with CLI/API.
+- Quantizes models for lower memory use; performance varies with hardware (GPU > CPU).

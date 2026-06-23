@@ -1,0 +1,23 @@
+To solve this problem, we need to determine the second largest unique value in a given list of numbers. If such a value does not exist (i.e., there are fewer than two unique values), the function should return `None`.
+
+### Approach
+1. **Remove Duplicates**: Convert the input list into a set to eliminate any duplicate values, ensuring we only consider unique elements.
+2. **Check for Sufficient Unique Values**: If the number of unique elements is less than 2, return `None` since there can't be a second largest value in such cases.
+3. **Sort and Find Second Largest**: Sort the list of unique elements in descending order. The second element in this sorted list will be the second largest unique value.
+
+### Solution Code
+```python
+def second_largest(nums):
+    unique = list(set(nums))
+    if len(unique) < 2:
+        return None
+    unique_sorted = sorted(unique, reverse=True)
+    return unique_sorted[1]
+```
+
+### Explanation
+- **Removing Duplicates**: By converting the input list to a set, we ensure that each value is considered only once.
+- **Checking for Sufficient Unique Values**: If there are fewer than two unique values, it's impossible to have a second largest value, so we return `None`.
+- **Sorting and Finding Second Largest**: Sorting the unique values in descending order allows us to easily access the second element, which is the second largest unique value.
+
+This approach efficiently handles all edge cases, including lists with duplicates and lists with fewer than two unique elements.

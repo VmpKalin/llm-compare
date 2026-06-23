@@ -1,0 +1,66 @@
+# Estimating Piano Tuners in Berlin
+
+Let me work through this systematically.
+
+## Step 1: Berlin's Population
+Berlin has roughly **3.5-4 million people**. I'll use **3.7 million**.
+
+## Step 2: How Many Pianos in Berlin?
+
+Pianos are luxury/specialized instruments. I need to estimate what fraction of households have one.
+
+- **Household size**: ~2.2 people per household = ~1.7 million households
+- **Piano ownership rate**: This is the tricky part. Pianos are expensive and require space. In a modern city:
+  - Maybe 2-3% of households have pianos? (includes upright and grand pianos)
+  - This seems reasonable for a wealthy European city with cultural institutions
+  - 1.7M × 0.025 = **~42,500 household pianos**
+
+- **Institutional pianos** (concert halls, music schools, churches, studios):
+  - Berlin has a strong music culture (orchestras, conservatories, etc.)
+  - Maybe 500-1000 institutional pianos?
+  - I'll add **~1,000 institutional pianos**
+
+**Total pianos: ~43,500**
+
+## Step 3: Tuning Frequency
+
+How often does a piano need tuning?
+
+- **Household pianos** (casual use): 1-2 times per year, let's say **1.5 times/year**
+- **Institutional pianos** (heavy use): 4-12 times per year, let's say **6 times/year**
+
+**Total tunings per year:**
+- Household: 42,500 × 1.5 = 63,750
+- Institutional: 1,000 × 6 = 6,000
+- **Total: ~70,000 tunings/year**
+
+## Step 4: Piano Tuner Workload
+
+How many pianos can one tuner service per year?
+
+- **Time per tuning**: 1-2 hours, plus travel time. Let's say **2.5 hours total** per piano
+- **Working hours per year**: 
+  - ~250 working days/year
+  - ~6-7 hours of billable work per day (accounting for admin, travel gaps)
+  - ~1,500 billable hours/year
+
+**Pianos per tuner per year:**
+- 1,500 hours ÷ 2.5 hours per piano = **~600 pianos/year**
+
+## Step 5: Calculate Number of Tuners
+
+70,000 tunings ÷ 600 tunings per tuner = **~117 piano tuners**
+
+---
+
+## Final Estimate
+
+**Roughly 100-120 piano tuners in Berlin**
+
+This feels reasonable because:
+- It's a major cultural city with above-average piano ownership
+- But pianos are still niche instruments
+- The number scales with population and wealth
+- For comparison, a city of 3.7M might have ~3,700 plumbers; piano tuners should be much rarer (maybe 1-2% as common)
+
+**My best guess: ~110 piano tuners**

@@ -1,0 +1,5 @@
+In the Monty Hall problem, after you initially choose a door (1/3 chance of being correct), the host reveals a goat behind another door. This action provides additional information, shifting the probabilities. The remaining unopened door now has a 2/3 chance of hiding the car, while your original choice remains at 1/3. Therefore, switching increases your probability of winning from 1/3 to 2/3.
+
+**Answer:**
+
+Switching doors gives you a **2/3 probability** of winning, whereas staying with your initial choice leaves you with a **1/3 probability**. This is because the host's action of revealing a goat provides information that increases the likelihood the car is behind the other unopened door.

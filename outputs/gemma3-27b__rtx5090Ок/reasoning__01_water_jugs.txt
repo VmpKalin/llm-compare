@@ -1,0 +1,10 @@
+1. Fill the 5-litre jug completely.
+2. Pour water from the 5-litre jug into the 3-litre jug until the 3-litre jug is full.
+3. Empty the 3-litre jug.
+4. Pour the remaining 2 litres from the 5-litre jug into the 3-litre jug.
+5. Fill the 5-litre jug completely.
+6. Carefully pour water from the 5-litre jug into the 3-litre jug (which already contains 2 litres) until the 3-litre jug is full.
+7. The 5-litre jug will now contain exactly 4 litres.
+
+
+

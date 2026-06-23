@@ -1,0 +1,8 @@
+Here's a 3-bullet point summary of the text, each under 15 words:
+
+*   Ollama runs large language models directly on your computer.
+*   It simplifies setup with packaged models & easy API access.
+*   Performance varies greatly based on available hardware (GPU best).
+
+
+

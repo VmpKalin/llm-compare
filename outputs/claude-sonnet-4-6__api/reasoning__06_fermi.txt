@@ -1,0 +1,57 @@
+# Estimating Piano Tuners in Berlin
+
+## Step 1: Population of Berlin
+
+Berlin is Germany's capital and largest city. I'll estimate roughly **3.5 million people**.
+
+---
+
+## Step 2: Number of Pianos in Berlin
+
+Not every household has a piano — it's a relatively specialized instrument. Let me think about household composition and ownership rates.
+
+- Average household size in a dense European city: ~**2 people per household**
+- That gives roughly **1.75 million households**
+- Piano ownership is more common in Germany than many countries (strong musical culture), but still a minority pursuit
+- I'd estimate maybe **1 in 30 households** owns a piano (schools, churches, bars, music schools add institutional pianos on top)
+- Household pianos: 1,750,000 / 30 ≈ **~58,000 pianos**
+- Add institutional pianos (schools, conservatories, churches, hotels, studios): maybe **+20% → ~70,000 pianos total**
+
+---
+
+## Step 3: How Often Are Pianos Tuned?
+
+- A well-maintained piano *should* be tuned **2× per year**
+- But realistically, many household pianos are neglected — maybe tuned once every 2 years on average
+- Blending these: call it roughly **once per year** on average across all pianos
+- Institutional pianos are tuned more often, but they're a minority
+- **Total tunings per year: ~70,000**
+
+---
+
+## Step 4: How Many Tunings Can One Tuner Do?
+
+- A tuner travels to clients, so time includes transit
+- Tuning itself: ~1–1.5 hours per piano
+- With travel, scheduling, admin: realistically **4 tunings per working day**
+- Working days per year: 5 days/week × 48 weeks (allowing holidays/sick days) = **~240 days**
+- Tunings per tuner per year: 4 × 240 = **~960 tunings/year**
+
+---
+
+## Step 5: Number of Tuners Needed
+
+$$\text{Tuners} = \frac{70{,}000 \text{ tunings/year}}{960 \text{ tunings/tuner/year}} \approx \mathbf{73}$$
+
+---
+
+## Final Estimate
+
+**Roughly 70–80 professional piano tuners** work in Berlin.
+
+---
+
+### Sanity Check
+Berlin ≈ 3.5× the size of a city of 1 million. A mid-sized city of 1 million might have ~20 tuners, so 3.5× gives ~70. ✓ That feels consistent.
+
+The answer is plausible — it's a specialized trade, not a common profession, but Berlin's size and cultural richness support a meaningful community of them.

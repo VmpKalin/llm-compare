@@ -1,0 +1,35 @@
+Okay, let's estimate the number of piano tuners in Berlin without looking anything up! Here’s my chain of thought:
+
+**1. Population of Berlin:**
+
+*   I vaguely recall Berlin being a large European capital city. Let's guess around **3.7 million people**. (This is likely within a reasonable range, even if not perfectly accurate).
+
+**2. Pianos per Person:**
+
+*   Pianos aren’t *super* common in homes these days. It's not like everyone has one. But Berlin seems culturally inclined towards music and arts.
+*   Let's estimate that roughly **1 in 50 people** owns or has access to a piano (this includes private pianos, schools, community centers, bars with live music, etc.). This feels like a reasonable balance between not being too high and acknowledging the city’s musical vibe.
+*   Total number of pianos: 3,700,000 / 50 = **74,000 pianos**
+
+**3. Tuning Frequency:**
+
+*   Pianos need tuning! They go out of tune with use and changes in humidity/temperature.
+*   Let's assume an average piano is tuned **twice a year**. Some might be tuned more often (performance pianos), some less (rarely used ones). Twice a year seems like a good middle ground.
+
+**4. Tuner Workload:**
+
+*   A piano tuner can probably tune around **4 pianos per day**, realistically. It’s skilled work, and travel time between locations needs to be factored in.
+*   Assuming they work about **250 days a year** (allowing for holidays, sick days, etc.).
+*   Total pianos a single tuner can handle: 4 pianos/day * 250 days/year = **1000 pianos per year**.
+
+**5. Number of Tuners:**
+
+*   Total pianos needing tuning per year: 74,000 pianos * 2 tunings/year = **148,000 tunings per year.**
+*   Number of tuners needed: 148,000 tunings / 1000 tunings/tuner = **148 tuners**
+
+**Final Estimate:**
+
+Based on these estimates, I'd guess there are around **150 piano tuners** working in Berlin.
+
+
+
+**Important Note:** This is a *very* rough estimate! Any of the initial assumptions could be significantly off. But the process demonstrates how you can arrive at an order-of-magnitude estimate using reasonable guesses and logical steps.

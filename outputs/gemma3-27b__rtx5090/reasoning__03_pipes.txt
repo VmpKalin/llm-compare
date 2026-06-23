@@ -1,0 +1,22 @@
+Here's how to solve this problem:
+
+**1. Find the individual rates:**
+
+*   Pipe A fills 1/6 of the tank per hour.
+*   Pipe B fills 1/4 of the tank per hour.
+*   Pipe C empties 1/12 of the tank per hour.
+
+**2. Calculate the combined rate:**
+
+When all three pipes are open, the net filling rate is:
+
+(1/6) + (1/4) - (1/12) = (2/12) + (3/12) - (1/12) = 4/12 = 1/3 of the tank per hour.
+
+**3. Determine the time to fill the tank:**
+
+Since the combined rate is 1/3 of the tank per hour, it will take 3 hours to fill the entire tank.
+
+**Answer:**
+
+*   **Fraction of hours:** 3 hours
+*   **Hours and minutes:** 3 hours + 0 minutes

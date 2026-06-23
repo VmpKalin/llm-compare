@@ -1,0 +1,10 @@
+## Should You Switch? **Yes.**
+
+| Strategy | Probability of Winning |
+|----------|----------------------|
+| **Stay** with door 1 | **1/3** |
+| **Switch** to door 2 | **2/3** |
+
+## Why?
+
+When you initially picked door 1, you had a 1/3 chance of being right and a 2/3 chance the car was behind one of the other two doors. The host's action of deliberately revealing a goat **doesn't change your initial odds** — it simply concentrates that entire 2/3 probability onto door 2, since the host will always open a losing door. In other words, switching lets you essentially "bet" that your first pick was wrong, which is true 2/3 of the time.

@@ -1,0 +1,9 @@
+The error occurs in the step where we **divide both sides by (a - b)**.
+
+Here's why it's invalid:
+
+We started with the assumption that `a = b`. This means that `a - b = 0`.  Division by zero is undefined and illegal in mathematics. Dividing both sides of an equation by a quantity that is equal to zero leads to a nonsensical result, as demonstrated here.
+
+The step `(a+b)(a-b) = b(a-b)` implies dividing both sides by (a-b). Since we know a=b, then (a-b)=0.  Therefore you are dividing by 0 which is not allowed and invalidates the rest of the "proof".
+
+Essentially, this is an algebraic trick that exploits a forbidden operation to arrive at a false conclusion.

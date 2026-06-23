@@ -1,0 +1,1 @@
+{"items": [{"name": "notebook", "price": 2.50, "qty": 3, "line_total": 7.50}, {"name": "pen", "price": 1.20, "qty": 2, "line_total": 2.40}, {"name": "stapler", "price": 7.99, "qty": 1, "line_total": 7.99}], "grand_total": 17.89}
