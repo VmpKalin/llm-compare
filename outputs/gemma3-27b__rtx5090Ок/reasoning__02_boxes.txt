@@ -1,6 +1,0 @@
-Draw from the **"Apples & Oranges"** box.
-
-**Reasoning:** This box *cannot* contain both apples and oranges (label is wrong). If you pull an apple, you know this box contains only apples. The "Oranges" box must then contain mixed fruit, leaving the "Apples" box to hold only oranges.  The logic reverses if you draw an orange. 
-
-
-

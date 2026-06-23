@@ -121,7 +121,7 @@ def run_ollama(model, prompt, host):
         "model": model,
         "prompt": prompt,
         "stream": False,
-        "options": {"temperature": 0.2, "num_predict": 2048},
+        "options": {"temperature": 0.2, "num_predict": 8192},
     }
     t0 = time.time()
     r = requests.post(url, json=payload, timeout=1800)
@@ -139,8 +139,14 @@ def run_ollama(model, prompt, host):
     if eval_count and eval_dur_ns:
         tps = round(eval_count / (eval_dur_ns / 1e9), 2)
 
+    # Reasoning models (qwen3, deepseek-r1) put their <think> block in a
+    # separate "thinking" field; "response" holds only the post-think answer.
+    # If the model exhausted num_predict while still thinking, "response" is
+    # empty — fall back to "thinking" so we don't lose the output entirely.
+    output = data.get("response", "") or data.get("thinking", "")
+
     return {
-        "output": data.get("response", ""),
+        "output": output,
         "latency_total_s": round(t1 - t0, 3),
         "time_to_first_token_s": round(first_ns / 1e9, 3) if first_ns else None,
         "tokens_in": prompt_eval,
