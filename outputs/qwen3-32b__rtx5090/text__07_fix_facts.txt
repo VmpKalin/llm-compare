@@ -1,4 +1,4 @@
 Error -> Correction  
-Water boils at 90 degrees Celsius at sea level -> Water boils at 100 degrees Celsius at sea level.  
-The human body has 106 bones -> The human body has 206 bones.  
-The capital of Australia is Sydney -> The capital of Australia is Canberra.
+Water boils at 90 degrees Celsius at sea level -> Water boils at 100 degrees Celsius at sea level  
+The human body has 106 bones -> The human body has 206 bones  
+The capital of Australia is Sydney -> The capital of Australia is Canberra

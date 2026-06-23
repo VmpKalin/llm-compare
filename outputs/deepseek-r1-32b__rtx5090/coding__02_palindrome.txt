@@ -1,22 +1,22 @@
-To solve this problem, we need to determine if a given string is a palindrome while ignoring case, spaces, and punctuation. A palindrome reads the same forwards and backwards when non-alphanumeric characters are removed and the remaining characters are converted to lowercase.
+To solve this problem, we need to determine if a given string is a palindrome while ignoring case, spaces, and punctuation. A palindrome reads the same forwards and backwards, so our task involves preprocessing the input string to remove non-alphanumeric characters and then checking if the resulting string is a palindrome.
 
 ### Approach
-1. **Normalize the String**: Convert all characters in the string to lowercase and remove any non-alphanumeric characters.
-2. **Check for Palindrome**: Compare the normalized string with its reverse to determine if it is a palindrome.
+1. **Preprocess the Input String**: 
+   - Convert all characters to lowercase to ensure case insensitivity.
+   - Remove all non-alphanumeric characters (such as punctuation and spaces) from the string. This can be efficiently done using list comprehensions and the `isalnum()` method, which checks if a character is alphanumeric.
 
-The steps involve processing each character of the input string, filtering out non-alphanumeric characters, converting the remaining characters to lowercase, and then checking if the resulting string reads the same forwards and backwards.
+2. **Check for Palindrome**:
+   - After preprocessing, check if the cleaned string reads the same forwards and backwards. This can be achieved by comparing the cleaned string with its reverse.
 
 ### Solution Code
 ```python
 def is_palindrome(s):
-    processed = [char.lower() for char in s if char.isalnum()]
-    cleaned = ''.join(processed)
+    cleaned = ''.join([c.lower() for c in s if c.isalnum()])
     return cleaned == cleaned[::-1]
 ```
 
 ### Explanation
-- **Normalization**: The code processes each character of the input string `s`. It checks if each character is alphanumeric using `isalnum()` and converts it to lowercase. This results in a list of processed characters.
-- **String Construction**: The processed characters are joined into a single string, which contains only lowercase alphanumeric characters from the original string.
-- **Palindrome Check**: The cleaned string is compared with its reverse (using slicing `[::-1]`). If they are equal, the function returns `True`, indicating the input string is a palindrome; otherwise, it returns `False`.
+- **Preprocessing**: The code uses a list comprehension to iterate over each character in the input string `s`. For each character, it checks if the character is alphanumeric using `isalnum()`. If it is, the character is converted to lowercase and included in the new list. This list is then joined into a single string called `cleaned`.
+- **Palindrome Check**: The cleaned string is compared with its reverse (using slicing `[::-1]`). If they are equal, the function returns `True`, indicating that the input string is a palindrome; otherwise, it returns `False`.
 
-This approach efficiently handles all edge cases, including empty strings and strings with mixed cases and punctuation.
+This approach efficiently handles all edge cases, including empty strings and strings composed entirely of non-alphanumeric characters, ensuring correct results for all valid inputs.

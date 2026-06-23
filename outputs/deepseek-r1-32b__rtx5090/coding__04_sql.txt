@@ -1,16 +1,27 @@
+To solve this problem, we need to write a PostgreSQL query that returns the number of customers from each country who placed at least one order in the year 2025 and their corresponding total revenue in euros. The result should be ordered by the total revenue in descending order.
+
+### Approach
+1. **Join Tables**: We will join the `customers` table with the `orders` table using the `customer_id` to link each customer with their orders.
+2. **Filter Orders by Year**: We will filter the orders to include only those placed in the year 2025 using the `created_at` column.
+3. **Group by Country**: After filtering, we will group the results by the country of the customers.
+4. **Count Customers and Calculate Revenue**: For each country, we will count the distinct customers who have placed orders and calculate the total revenue in euros by summing up the `total_cents` from their orders and converting it to euros (by dividing by 100).
+5. **Order by Revenue**: Finally, we will order the results by the total revenue in descending order.
+
+### Solution Code
 ```sql
-SELECT 
-    c.country,
-    COUNT(DISTINCT o.customer_id) AS customer_count,
-    SUM(o.total_cents) / 100.0 AS total_revenue_euros
-FROM 
-    orders o
-JOIN 
-    customers c ON o.customer_id = c.id
-WHERE 
-    EXTRACT(YEAR FROM o.created_at) = 2025
-GROUP BY 
-    c.country
-ORDER BY 
-    total_revenue_euros DESC;
+SELECT c.country, COUNT(DISTINCT o.customer_id) AS customer_count, SUM(o.total_cents)/100 AS total_revenue_euros
+FROM customers c
+JOIN orders o ON c.id = o.customer_id
+WHERE EXTRACT(YEAR FROM o.created_at) = 2025
+GROUP BY c.country
+ORDER BY total_revenue_euros DESC;
 ```
+
+### Explanation
+- **Joining Tables**: The `JOIN` operation combines the `customers` and `orders` tables based on the `customer_id`, allowing us to access both customer details and their orders.
+- **Filtering by Year**: Using `EXTRACT(YEAR FROM o.created_at) = 2025`, we ensure that only orders placed in the year 2025 are considered.
+- **Grouping by Country**: The `GROUP BY c.country` clause groups the results so that we can perform aggregate functions (like count and sum) on a per-country basis.
+- **Counting Customers and Calculating Revenue**: `COUNT(DISTINCT o.customer_id)` counts each customer only once, even if they placed multiple orders. `SUM(o.total_cents)/100` calculates the total revenue in euros by converting cents to euros.
+- **Ordering by Revenue**: The results are ordered by `total_revenue_euros` in descending order using `ORDER BY total_revenue_euros DESC`.
+
+This approach efficiently combines and processes the necessary data from both tables, providing a clear and concise result as required.

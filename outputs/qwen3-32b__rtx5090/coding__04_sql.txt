@@ -2,13 +2,13 @@
 SELECT 
     c.country,
     COUNT(DISTINCT o.customer_id) AS customer_count,
-    SUM(o.total_cents) / 100 AS total_revenue_euros
+    SUM(o.total_cents) / 100.0 AS total_revenue_euros
 FROM 
     customers c
 JOIN 
     orders o ON c.id = o.customer_id
 WHERE 
-    EXTRACT(YEAR FROM o.created_at) = 2025
+    o.created_at >= '2025-01-01' AND o.created_at < '2026-01-01'
 GROUP BY 
     c.country
 ORDER BY 

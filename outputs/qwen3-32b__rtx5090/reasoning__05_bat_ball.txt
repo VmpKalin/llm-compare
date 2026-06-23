@@ -1,17 +1,12 @@
-The problem states that a bat and a ball together cost **1.10 euros**, and the bat costs **1.00 euro more than the ball**. We are asked to determine the cost of the ball.
-
----
-
-### Step 1: Define Variables
+To solve the problem, we begin by defining the unknowns clearly.
 
 Let the cost of the **ball** be $ x $ euros.  
-Then, the cost of the **bat** is $ x + 1 $ euros, since it is 1 euro more than the ball.
+Since the **bat costs 1 euro more than the ball**, the cost of the bat is $ x + 1 $ euros.  
+The total cost of the bat and the ball together is given as **1.10 euros**.
 
 ---
 
-### Step 2: Set Up the Equation
-
-The total cost of the bat and the ball is given as 1.10 euros. So:
+### Step 1: Set up the equation
 
 $$
 x + (x + 1) = 1.10
@@ -25,30 +20,32 @@ $$
 
 ---
 
-### Step 3: Solve for $ x $
+### Step 2: Solve for $ x $
 
 Subtract 1 from both sides:
 
 $$
-2x = 0.10
+2x = 1.10 - 1 = 0.10
 $$
 
-Divide both sides by 2:
+Now divide both sides by 2:
 
 $$
-x = 0.05
+x = \frac{0.10}{2} = 0.05
 $$
 
 ---
 
-### Step 4: Interpret the Result
+### Step 3: Interpret the result
 
-The **ball costs 0.05 euros**, or **5 cents**.  
-Then the **bat costs** $ 0.05 + 1.00 = 1.05 $ euros.  
-Adding the two together:  
+- The **ball costs** $ x = 0.05 $ euros (i.e., **5 cents**).
+- The **bat costs** $ x + 1 = 0.05 + 1 = 1.05 $ euros.
+- Total cost: $ 0.05 + 1.05 = 1.10 $ euros, which matches the given total.
+
+---
+
+### Final Answer:
+
 $$
-0.05 + 1.05 = 1.10
+\boxed{0.05}
 $$
-
-This satisfies the condition that the bat costs 1 euro more than the ball and that the total cost is 1.10 euros.
-

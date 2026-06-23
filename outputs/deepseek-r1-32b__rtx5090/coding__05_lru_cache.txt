@@ -1,15 +1,11 @@
-To solve this problem, we need to implement an LRUCache class in Python with a fixed capacity. The class should support two main operations: `get(key)` and `put(key, value)`, both of which must run in O(1) average time complexity. 
+To solve this problem, we need to implement an LRUCache class in Python with a fixed capacity. The methods `get` and `put` must both run in O(1) average time complexity. We will use the `OrderedDict` from the `collections` module to efficiently manage the least recently used items.
 
 ### Approach
-The approach leverages the `collections.OrderedDict` data structure, which maintains insertion order and allows efficient access to the least recently used items. Here's a detailed breakdown:
+The approach leverages the properties of `OrderedDict`, which maintains insertion order by default. When an item is accessed or added, it can be moved to the end using the `move_to_end` method, marking it as the most recently used. The beginning of the ordered dictionary will always contain the least recently used items.
 
-1. **Initialization**: The constructor initializes an `OrderedDict` to store cache entries and sets the capacity.
-2. **Get Operation**: 
-   - If the key is not present in the cache, return -1.
-   - If the key exists, update its position to mark it as recently used by moving it to the end of the ordered dictionary and return its value.
-3. **Put Operation**:
-   - If the key already exists, update its value and move it to the end to mark it as recently used.
-   - If the key does not exist, add it to the cache. If adding this new entry exceeds the capacity, remove the least recently used item (the first item in the ordered dictionary).
+1. **Constructor**: Initializes the cache with a given capacity and sets up an empty `OrderedDict`.
+2. **Get Method**: Checks if the key exists in the cache. If it does, the key is moved to the end (marking it as most recently used), and its value is returned. If not, returns -1.
+3. **Put Method**: Updates or adds a key-value pair. If the key already exists, its value is updated, and the key is moved to the end. If the cache exceeds its capacity, the least recently used item (at the beginning) is removed before adding the new item.
 
 ### Solution Code
 ```python
@@ -21,30 +17,25 @@ class LRUCache:
         self.cache = OrderedDict()
 
     def get(self, key):
-        if key not in self.cache:
+        if key in self.cache:
+            self.cache.move_to_end(key)
+            return self.cache[key]
+        else:
             return -1
-        # Move the accessed key to the end (most recently used)
-        self.cache.move_to_end(key)
-        return self.cache[key]
 
     def put(self, key, value):
         if key in self.cache:
-            # Update the value and move it to the end
             self.cache[key] = value
             self.cache.move_to_end(key)
         else:
-            # Add new entry
+            if len(self.cache) >= self.capacity:
+                self.cache.popitem(last=False)
             self.cache[key] = value
-            # Check if we need to evict the least recently used item
-            if len(self.cache) > self.capacity:
-                # Remove the first key (oldest)
-                oldest_key = next(iter(self.cache))
-                del self.cache[oldest_key]
 ```
 
 ### Explanation
-- **Initialization**: The constructor sets up an `OrderedDict` and stores the capacity.
-- **Get Method**: Checks if the key exists. If it does, the method moves the key to the end of the dictionary (marking it as recently used) and returns its value. If not found, it returns -1.
-- **Put Method**: Updates or adds a new entry. If adding a new entry exceeds the capacity, the least recently used item (the first item in the ordered dictionary) is removed.
+- **Initialization**: The constructor initializes the cache with a specified capacity and an empty `OrderedDict`.
+- **Get Operation**: When retrieving a key, it checks for existence. If found, it moves the key to the end of the dictionary (marking it as recently used) and returns its value. If not found, it returns -1.
+- **Put Operation**: When adding or updating a key-value pair, if the key exists, it updates the value and moves the key to the end. If the cache is full, the least recently used item (first in the dictionary) is removed before adding the new item.
 
-This approach ensures that both `get` and `put` operations run efficiently in O(1) average time complexity, leveraging the properties of `OrderedDict` to maintain insertion order and manage cache eviction effectively.
+This approach ensures that both `get` and `put` operations are efficient, operating in O(1) average time complexity due to the properties of `OrderedDict`.

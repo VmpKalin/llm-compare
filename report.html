@@ -24,7 +24,7 @@
     .badge{display:inline-block;font-size:10px;padding:2px 7px;border-radius:10px;
            background:#2a2f3a;color:var(--mut);margin-left:6px}
     .judge{background:#3a2f12;color:#e3b341}
-    </style></head><body><div class='wrap'><h1>Local vs Cloud — Model &amp; Hardware Benchmark</h1><div class='sub'>source: scored.jsonl · 5 runs · 28 tasks · 4 categories</div><h2>Run summary — quality vs cost vs speed</h2><table><tr><th class='l'>Run (model · hardware)</th><th>Quality</th><th>Avg latency</th><th>Avg tok/s</th><th>Total $ (Claude)</th><th>VM $ (local est.)</th></tr><tr><td class='l run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span></td><td style='background:rgb(37,213,60);color:#fff'>96%</td><td>1.92s</td><td>68.5</td><td>$0.0224</td><td>–</td></tr><tr><td class='l run'>claude-sonnet-4-6 <span class='mut'>· api</span></td><td style='background:rgb(30,220,60);color:#fff'>100%</td><td>3.77s</td><td>34.0</td><td>$0.0665</td><td>–</td></tr><tr><td class='l run'>deepseek-r1:32b <span class='mut'>· rtx5090</span></td><td style='background:rgb(61,194,60);color:#fff'>85%</td><td>13.17s</td><td>69.5</td><td>–</td><td>$0.0707</td></tr><tr><td class='l run'>gemma3:27b <span class='mut'>· rtx5090</span></td><td style='background:rgb(33,216,60);color:#fff'>98%</td><td>2.94s</td><td>76.7</td><td>–</td><td>$0.0158</td></tr><tr><td class='l run'>qwen3:32b <span class='mut'>· rtx5090</span></td><td style='background:rgb(73,184,60);color:#fff'>80%</td><td>15.78s</td><td>68.1</td><td>–</td><td>$0.0847</td></tr></table><h2>Quality by category</h2><div class='sub'>1.0 = all tasks in that category passed. AUTO-graded for coding/structured; Claude-judged for reasoning/text (judge bias possible).</div><table><tr><th class='l'>Category</th><th class='run'>claude-haiku-4-5-20251001<br><span class='mut'>api</span></th><th class='run'>claude-sonnet-4-6<br><span class='mut'>api</span></th><th class='run'>deepseek-r1:32b<br><span class='mut'>rtx5090</span></th><th class='run'>gemma3:27b<br><span class='mut'>rtx5090</span></th><th class='run'>qwen3:32b<br><span class='mut'>rtx5090</span></th></tr><tr><td class='l'>coding</td><td style='background:rgb(60,194,60);color:#fff'>86%</td><td style='background:rgb(30,220,60);color:#fff'>100%</td><td style='background:rgb(93,167,60);color:#fff'>71%</td><td style='background:rgb(30,220,60);color:#fff'>100%</td><td style='background:rgb(155,117,60);color:#fff'>43%</td></tr><tr><td class='l'>reasoning</td><td style='background:rgb(30,220,60);color:#fff'>100%</td><td style='background:rgb(30,220,60);color:#fff'>100%</td><td style='background:rgb(76,182,60);color:#fff'>79%</td><td style='background:rgb(30,220,60);color:#fff'>100%</td><td style='background:rgb(60,194,60);color:#fff'>86%</td></tr><tr><td class='l'>structured</td><td style='background:rgb(30,220,60);color:#fff'>100%</td><td style='background:rgb(30,220,60);color:#fff'>100%</td><td style='background:rgb(30,220,60);color:#fff'>100%</td><td style='background:rgb(30,220,60);color:#fff'>100%</td><td style='background:rgb(30,220,60);color:#fff'>100%</td></tr><tr><td class='l'>text</td><td style='background:rgb(30,220,60);color:#fff'>100%</td><td style='background:rgb(30,220,60);color:#fff'>100%</td><td style='background:rgb(45,207,60);color:#fff'>93%</td><td style='background:rgb(45,207,60);color:#fff'>93%</td><td style='background:rgb(45,207,60);color:#fff'>93%</td></tr></table><h2>Cross-hardware speed (tok/s)</h2><div class='sub'>Same local model on different machines — the hardware story.</div><table><tr><th class='l'>Model</th></tr><tr><td class='l'>deepseek-r1:32b</td></tr><tr><td class='l'>gemma3:27b</td></tr><tr><td class='l'>qwen3:32b</td></tr></table><h2>Outputs side by side</h2><details><summary>coding / 01_fizzbuzz</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span></div><pre>
+    </style></head><body><div class='wrap'><h1>Local vs Cloud — Model &amp; Hardware Benchmark</h1><div class='sub'>source: scored.jsonl · 5 runs · 28 tasks · 4 categories</div><h2>Run summary — quality vs cost vs speed</h2><table><tr><th class='l'>Run (model · hardware)</th><th>Quality</th><th>Avg latency</th><th>Avg tok/s</th><th>Total $ (Claude)</th><th>VM $ (local est.)</th></tr><tr><td class='l run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span></td><td style='background:rgb(37,213,60);color:#fff'>96%</td><td>1.92s</td><td>68.5</td><td>$0.0224</td><td>–</td></tr><tr><td class='l run'>claude-sonnet-4-6 <span class='mut'>· api</span></td><td style='background:rgb(30,220,60);color:#fff'>100%</td><td>3.77s</td><td>34.0</td><td>$0.0665</td><td>–</td></tr><tr><td class='l run'>deepseek-r1:32b <span class='mut'>· rtx5090</span></td><td style='background:rgb(45,207,60);color:#fff'>92%</td><td>12.36s</td><td>70.1</td><td>–</td><td>$0.0663</td></tr><tr><td class='l run'>gemma3:27b <span class='mut'>· rtx5090</span></td><td style='background:rgb(33,216,60);color:#fff'>98%</td><td>2.94s</td><td>76.7</td><td>–</td><td>$0.0158</td></tr><tr><td class='l run'>qwen3:32b <span class='mut'>· rtx5090</span></td><td style='background:rgb(81,178,60);color:#fff'>76%</td><td>16.0s</td><td>68.4</td><td>–</td><td>$0.0859</td></tr></table><h2>Quality by category</h2><div class='sub'>1.0 = all tasks in that category passed. AUTO-graded for coding/structured; Claude-judged for reasoning/text (judge bias possible).</div><table><tr><th class='l'>Category</th><th class='run'>claude-haiku-4-5-20251001<br><span class='mut'>api</span></th><th class='run'>claude-sonnet-4-6<br><span class='mut'>api</span></th><th class='run'>deepseek-r1:32b<br><span class='mut'>rtx5090</span></th><th class='run'>gemma3:27b<br><span class='mut'>rtx5090</span></th><th class='run'>qwen3:32b<br><span class='mut'>rtx5090</span></th></tr><tr><td class='l'>coding</td><td style='background:rgb(60,194,60);color:#fff'>86%</td><td style='background:rgb(30,220,60);color:#fff'>100%</td><td style='background:rgb(60,194,60);color:#fff'>86%</td><td style='background:rgb(30,220,60);color:#fff'>100%</td><td style='background:rgb(186,92,60);color:#fff'>28%</td></tr><tr><td class='l'>reasoning</td><td style='background:rgb(30,220,60);color:#fff'>100%</td><td style='background:rgb(30,220,60);color:#fff'>100%</td><td style='background:rgb(45,207,60);color:#fff'>93%</td><td style='background:rgb(30,220,60);color:#fff'>100%</td><td style='background:rgb(60,194,60);color:#fff'>86%</td></tr><tr><td class='l'>structured</td><td style='background:rgb(30,220,60);color:#fff'>100%</td><td style='background:rgb(30,220,60);color:#fff'>100%</td><td style='background:rgb(30,220,60);color:#fff'>100%</td><td style='background:rgb(30,220,60);color:#fff'>100%</td><td style='background:rgb(30,220,60);color:#fff'>100%</td></tr><tr><td class='l'>text</td><td style='background:rgb(30,220,60);color:#fff'>100%</td><td style='background:rgb(30,220,60);color:#fff'>100%</td><td style='background:rgb(45,207,60);color:#fff'>93%</td><td style='background:rgb(45,207,60);color:#fff'>93%</td><td style='background:rgb(45,207,60);color:#fff'>93%</td></tr></table><h2>Cross-hardware speed (tok/s)</h2><div class='sub'>Same local model on different machines — the hardware story.</div><table><tr><th class='l'>Model</th></tr><tr><td class='l'>deepseek-r1:32b</td></tr><tr><td class='l'>gemma3:27b</td></tr><tr><td class='l'>qwen3:32b</td></tr></table><h2>Outputs side by side</h2><details><summary>coding / 01_fizzbuzz</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span></div><pre>
 ```python
 def solve(n):
     result = []
@@ -53,17 +53,15 @@ def solve(n):
             s += &quot;bang&quot;
         result.append(s if s else str(i))
     return result
-```</pre></div><div><div class='run'>deepseek-r1:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span></div><pre>To solve this problem, we need to write a Python function `solve(n)` that generates a list of strings for numbers from 1 to n. The rules are as follows:
-- Multiples of 3 should be replaced with &quot;fizz&quot;.
-- Multiples of 5 should be replaced with &quot;buzz&quot;.
-- Multiples of 7 should be replaced with &quot;bang&quot;.
-- If a number is a multiple of more than one of these, the corresponding strings should be concatenated in the order &quot;fizz&quot;, &quot;buzz&quot;, and then &quot;bang&quot;.
+```</pre></div><div><div class='run'>deepseek-r1:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span></div><pre>To solve this problem, we need to write a Python function `solve(n)` that generates a list of strings for numbers from 1 to n. Each number in the list is transformed based on specific rules related to its divisibility by 3, 5, and 7.
 
 ### Approach
-1. **Loop through each number**: Iterate from 1 to n (inclusive).
-2. **Check divisibility**: For each number, check if it is a multiple of 3, 5, or 7 in that specific order.
-3. **Build the result string**: If a number is a multiple of any of these numbers, append the corresponding string (&quot;fizz&quot;, &quot;buzz&quot;, or &quot;bang&quot;) to the result string for that number.
-4. **Handle non-multiples**: If none of the divisibility conditions are met, convert the number to a string and add it to the result list.
+The approach involves iterating through each number from 1 to n and checking its divisibility by 3, 5, and 7 in that order. For each number:
+1. If the number is divisible by 3, append &quot;fizz&quot; to a string.
+2. If the number is divisible by 5, append &quot;buzz&quot; to the same string.
+3. If the number is divisible by 7, append &quot;bang&quot; to the string.
+
+If none of these conditions are met, the number itself is converted to a string and added to the result list. Otherwise, the concatenated string from the checks is added.
 
 ### Solution Code
 ```python
@@ -82,8 +80,13 @@ def solve(n):
 ```
 
 ### Explanation
-- **Loop through each number**: The loop runs from 1 to n, ensuring we process each number in the range.
-- **Check divisibility**: For each number, we check if it is divisible by 3, then by 5, and finally by 7. This </pre></div><div><div class='run'>gemma3:27b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span></div><pre>```python
+- **Initialization**: We start by initializing an empty list `result` to store the transformed strings.
+- **Loop through numbers**: For each number from 1 to n, we initialize an empty string `s`.
+- **Check divisibility**:
+  - If the number is divisible by 3, &quot;fizz&quot; is appended to `s`.
+  - If the number is divisible by 5, &quot;buzz&quot; is appended to `s`.
+  - If the number is divisible by 7, &quot;bang&quot; is appended to `s`.
+-</pre></div><div><div class='run'>gemma3:27b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span></div><pre>```python
 def solve(n):
     result = []
     for i in range(1, n + 1):
@@ -101,7 +104,7 @@ def solve(n):
 ```</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span></div><pre>```python
 def solve(n):
     result = []
-    for i in range(1, n+1):
+    for i in range(1, n + 1):
         s = &quot;&quot;
         if i % 3 == 0:
             s += &quot;fizz&quot;
@@ -109,9 +112,7 @@ def solve(n):
             s += &quot;buzz&quot;
         if i % 7 == 0:
             s += &quot;bang&quot;
-        if not s:
-            s = str(i)
-        result.append(s)
+        result.append(s if s else str(i))
     return result
 ```</pre></div></div></details><details><summary>coding / 02_palindrome</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span></div><pre>
 ```python
@@ -126,26 +127,26 @@ def is_palindrome(s):
     import re
     cleaned = re.sub(r&#x27;[^a-zA-Z0-9]&#x27;, &#x27;&#x27;, s).lower()
     return cleaned == cleaned[::-1]
-```</pre></div><div><div class='run'>deepseek-r1:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span></div><pre>To solve this problem, we need to determine if a given string is a palindrome while ignoring case, spaces, and punctuation. A palindrome reads the same forwards and backwards when non-alphanumeric characters are removed and the remaining characters are converted to lowercase.
+```</pre></div><div><div class='run'>deepseek-r1:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span></div><pre>To solve this problem, we need to determine if a given string is a palindrome while ignoring case, spaces, and punctuation. A palindrome reads the same forwards and backwards, so our task involves preprocessing the input string to remove non-alphanumeric characters and then checking if the resulting string is a palindrome.
 
 ### Approach
-1. **Normalize the String**: Convert all characters in the string to lowercase and remove any non-alphanumeric characters.
-2. **Check for Palindrome**: Compare the normalized string with its reverse to determine if it is a palindrome.
+1. **Preprocess the Input String**: 
+   - Convert all characters to lowercase to ensure case insensitivity.
+   - Remove all non-alphanumeric characters (such as punctuation and spaces) from the string. This can be efficiently done using list comprehensions and the `isalnum()` method, which checks if a character is alphanumeric.
 
-The steps involve processing each character of the input string, filtering out non-alphanumeric characters, converting the remaining characters to lowercase, and then checking if the resulting string reads the same forwards and backwards.
+2. **Check for Palindrome**:
+   - After preprocessing, check if the cleaned string reads the same forwards and backwards. This can be achieved by comparing the cleaned string with its reverse.
 
 ### Solution Code
 ```python
 def is_palindrome(s):
-    processed = [char.lower() for char in s if char.isalnum()]
-    cleaned = &#x27;&#x27;.join(processed)
+    cleaned = &#x27;&#x27;.join([c.lower() for c in s if c.isalnum()])
     return cleaned == cleaned[::-1]
 ```
 
 ### Explanation
-- **Normalization**: The code processes each character of the input string `s`. It checks if each character is alphanumeric using `isalnum()` and converts it to lowercase. This results in a list of processed characters.
-- **String Construction**: The processed characters are joined into a single string, which contains only lowercase alphanumeric characters from the original string.
-- **Palindrome Check**: The cleaned string is compared with its reverse (using slicing `[::-1]`). If they are equal, the function returns `True`,</pre></div><div><div class='run'>gemma3:27b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span></div><pre>```python
+- **Preprocessing**: The code uses a list comprehension to iterate over each character in the input string `s`. For each character, it checks if the character is alphanumeric using `isalnum()`. If it is, the character is converted to lowercase and included in the new list. This list is then joined into a single string called `cleaned`.
+- **Palindrome Check**: The cleaned string is compared with its reverse (using slicing `[::-1]`). If they are equal, the function </pre></div><div><div class='run'>gemma3:27b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span></div><pre>```python
 def is_palindrome(s):
     &quot;&quot;&quot;
     Returns True if the string is a palindrome, ignoring case, spaces, and punctuation.
@@ -167,12 +168,13 @@ def second_largest(nums):
         return None
     unique_nums = sorted(unique_nums)
     return unique_nums[-2]
-```</pre></div><div><div class='run'>deepseek-r1:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span></div><pre>To solve this problem, we need to determine the second largest unique value in a given list of numbers. If such a value does not exist (i.e., there are fewer than two unique values), the function should return `None`.
+```</pre></div><div><div class='run'>deepseek-r1:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span></div><pre>To solve this problem, we need to determine the second largest unique value in a given list of numbers. If there are fewer than two unique values, the function should return `None`.
 
 ### Approach
-1. **Remove Duplicates**: Convert the input list into a set to eliminate any duplicate values, ensuring we only consider unique elements.
-2. **Check for Sufficient Unique Values**: If the number of unique elements is less than 2, return `None` since there can&#x27;t be a second largest value in such cases.
-3. **Sort and Find Second Largest**: Sort the list of unique elements in descending order. The second element in this sorted list will be the second largest unique value.
+The approach involves the following steps:
+1. **Remove Duplicates**: Convert the input list into a set to eliminate any duplicate values.
+2. **Check for Sufficient Unique Values**: If the resulting set has fewer than two elements, return `None` since we cannot determine a second largest value in such cases.
+3. **Sort and Find Second Largest**: Sort the unique values in ascending order and then return the second last element from this sorted list, which will be the second largest unique value.
 
 ### Solution Code
 ```python
@@ -180,16 +182,16 @@ def second_largest(nums):
     unique = list(set(nums))
     if len(unique) &lt; 2:
         return None
-    unique_sorted = sorted(unique, reverse=True)
-    return unique_sorted[1]
+    unique_sorted = sorted(unique)
+    return unique_sorted[-2]
 ```
 
 ### Explanation
-- **Removing Duplicates**: By converting the input list to a set, we ensure that each value is considered only once.
-- **Checking for Sufficient Unique Values**: If there are fewer than two unique values, it&#x27;s impossible to have a second largest value, so we return `None`.
-- **Sorting and Finding Second Largest**: Sorting the unique values in descending order allows us to easily access the second element, which is the second largest unique value.
+1. **Removing Duplicates**: By converting the input list to a set, we ensure that all duplicate values are removed, leaving only unique elements.
+2. **Checking for Sufficient Unique Values**: If there are fewer than two unique values, it is impossible to determine a second largest value, so we return `None`.
+3. **Sorting and Finding Second Largest**: After sorting the unique values in ascending order, the second last element (at index `-2`) will be the second largest unique value in the original list.
 
-This approach efficiently handles all edge cases, including lists with duplicates and lists with fewer than two uniq</pre></div><div><div class='run'>gemma3:27b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span></div><pre>```python
+This approach efficiently handles duplicates and ensures that we correctly identify t</pre></div><div><div class='run'>gemma3:27b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span></div><pre>```python
 def second_largest(nums):
     if not nums or len(set(nums)) &lt; 2:
         return None
@@ -217,22 +219,27 @@ WHERE o.created_at &gt;= &#x27;2025-01-01&#x27;
   AND o.created_at &lt;  &#x27;2026-01-01&#x27;
 GROUP BY c.country
 ORDER BY total_revenue_euros DESC;
-```</pre></div><div><div class='run'>deepseek-r1:32b <span class='mut'>· rtx5090</span> <span class='badge'>0%</span></div><pre>```sql
-SELECT 
-    c.country,
-    COUNT(DISTINCT o.customer_id) AS customer_count,
-    SUM(o.total_cents) / 100.0 AS total_revenue_euros
-FROM 
-    orders o
-JOIN 
-    customers c ON o.customer_id = c.id
-WHERE 
-    EXTRACT(YEAR FROM o.created_at) = 2025
-GROUP BY 
-    c.country
-ORDER BY 
-    total_revenue_euros DESC;
-```</pre></div><div><div class='run'>gemma3:27b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span></div><pre>```sql
+```</pre></div><div><div class='run'>deepseek-r1:32b <span class='mut'>· rtx5090</span> <span class='badge'>0%</span></div><pre>To solve this problem, we need to write a PostgreSQL query that returns the number of customers from each country who placed at least one order in the year 2025 and their corresponding total revenue in euros. The result should be ordered by the total revenue in descending order.
+
+### Approach
+1. **Join Tables**: We will join the `customers` table with the `orders` table using the `customer_id` to link each customer with their orders.
+2. **Filter Orders by Year**: We will filter the orders to include only those placed in the year 2025 using the `created_at` column.
+3. **Group by Country**: After filtering, we will group the results by the country of the customers.
+4. **Count Customers and Calculate Revenue**: For each country, we will count the distinct customers who have placed orders and calculate the total revenue in euros by summing up the `total_cents` from their orders and converting it to euros (by dividing by 100).
+5. **Order by Revenue**: Finally, we will order the results by the total revenue in descending order.
+
+### Solution Code
+```sql
+SELECT c.country, COUNT(DISTINCT o.customer_id) AS customer_count, SUM(o.total_cents)/100 AS total_revenue_euros
+FROM customers c
+JOIN orders o ON c.id = o.customer_id
+WHERE EXTRACT(YEAR FROM o.created_at) = 2025
+GROUP BY c.country
+ORDER BY total_revenue_euros DESC;
+```
+
+### Explanation
+- **Joining Tables**: The `JOIN` operation combines the `customers` and `orders` tables based on the `customer_id`, allowing us to access both custo</pre></div><div><div class='run'>gemma3:27b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span></div><pre>```sql
 SELECT
   c.country,
   COUNT(DISTINCT c.id) AS num_customers,
@@ -246,7 +253,22 @@ GROUP BY
   c.country
 ORDER BY
   total_revenue_euros DESC;
-```</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>0%</span></div><pre></pre></div></div></details><details><summary>coding / 05_lru_cache</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span></div><pre>
+```</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>0%</span></div><pre>```sql
+SELECT 
+    c.country,
+    COUNT(DISTINCT o.customer_id) AS customer_count,
+    SUM(o.total_cents) / 100.0 AS total_revenue_euros
+FROM 
+    customers c
+JOIN 
+    orders o ON c.id = o.customer_id
+WHERE 
+    o.created_at &gt;= &#x27;2025-01-01&#x27; AND o.created_at &lt; &#x27;2026-01-01&#x27;
+GROUP BY 
+    c.country
+ORDER BY 
+    total_revenue_euros DESC;
+```</pre></div></div></details><details><summary>coding / 05_lru_cache</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span></div><pre>
 ```python
 from collections import OrderedDict
 
@@ -295,18 +317,14 @@ class LRUCache:
             if len(self.cache) &gt;= self.capacity:
                 self.cache.popitem(last=False)
             self.cache[key] = value
-```</pre></div><div><div class='run'>deepseek-r1:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span></div><pre>To solve this problem, we need to implement an LRUCache class in Python with a fixed capacity. The class should support two main operations: `get(key)` and `put(key, value)`, both of which must run in O(1) average time complexity. 
+```</pre></div><div><div class='run'>deepseek-r1:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span></div><pre>To solve this problem, we need to implement an LRUCache class in Python with a fixed capacity. The methods `get` and `put` must both run in O(1) average time complexity. We will use the `OrderedDict` from the `collections` module to efficiently manage the least recently used items.
 
 ### Approach
-The approach leverages the `collections.OrderedDict` data structure, which maintains insertion order and allows efficient access to the least recently used items. Here&#x27;s a detailed breakdown:
+The approach leverages the properties of `OrderedDict`, which maintains insertion order by default. When an item is accessed or added, it can be moved to the end using the `move_to_end` method, marking it as the most recently used. The beginning of the ordered dictionary will always contain the least recently used items.
 
-1. **Initialization**: The constructor initializes an `OrderedDict` to store cache entries and sets the capacity.
-2. **Get Operation**: 
-   - If the key is not present in the cache, return -1.
-   - If the key exists, update its position to mark it as recently used by moving it to the end of the ordered dictionary and return its value.
-3. **Put Operation**:
-   - If the key already exists, update its value and move it to the end to mark it as recently used.
-   - If the key does not exist, add it to the cache. If adding this new entry exceeds the capacity, remove the least recently used item (the first item in the ordered dictionary).
+1. **Constructor**: Initializes the cache with a given capacity and sets up an empty `OrderedDict`.
+2. **Get Method**: Checks if the key exists in the cache. If it does, the key is moved to the end (marking it as most recently used), and its value is returned. If not, returns -1.
+3. **Put Method**: Updates or adds a key-value pair. If the key already exists, its value is updated, and the key is moved to the end. If the cache exceeds its capacity, the least recently used item (at the beginning) is removed before adding the new item.
 
 ### Solution Code
 ```python
@@ -318,13 +336,11 @@ class LRUCache:
         self.cache = OrderedDict()
 
     def get(self, key):
-        if key not in self.cache:
-            return -1
-        # Move the accessed key to the end (most recently used)
-        self.cache.move_to_end(key)
-        return self.cache[key]
-
-    def put(self, key, v</pre></div><div><div class='run'>gemma3:27b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span></div><pre>```python
+        if key in self.cache:
+            self.cache.move_to_end(key)
+            return self.cache[key]
+        else:
+            r</pre></div><div><div class='run'>gemma3:27b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span></div><pre>```python
 from collections import OrderedDict
 
 class LRUCache:
@@ -365,9 +381,9 @@ class LRUCache:
     def put(self, key, value):
         if key in self.cache:
             self.cache.move_to_end(key)
-        elif len(self.cache) &gt;= self.capacity:
-            self.cache.popitem(last=False)
         self.cache[key] = value
+        if len(self.cache) &gt; self.capacity:
+            self.cache.popitem(last=False)
 ```</pre></div></div></details><details><summary>coding / 06_intervals</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>0%</span></div><pre>
 ```python
 def merge(intervals):
@@ -407,26 +423,35 @@ def merge(intervals):
             merged.append([start, end])
     
     return merged
-```</pre></div><div><div class='run'>deepseek-r1:32b <span class='mut'>· rtx5090</span> <span class='badge'>0%</span></div><pre>To solve this problem, we need to merge overlapping or touching intervals from a given list of intervals and return the merged intervals sorted by their start times. 
+```</pre></div><div><div class='run'>deepseek-r1:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span></div><pre>To solve this problem, we need to merge overlapping or touching intervals from a given list of intervals. The goal is to return a list of non-overlapping intervals sorted by their start times.
 
 ### Approach
-The approach involves the following steps:
-1. **Sort Intervals**: First, sort the intervals based on their start times. This helps in processing each interval sequentially and efficiently.
-2. **Initialize Merging Process**: Start with the first interval as the current interval to be merged.
-3. **Iterate Through Intervals**: For each subsequent interval, check if it overlaps or touches the current interval:
-   - If it does overlap or touch, merge them by updating the end of the current interval to the maximum end of both intervals.
-   - If it does not overlap, add the current interval to the result list and update the current interval to this new interval.
-4. **Finalize Merging**: After processing all intervals, ensure the last merged interval is added to the result list.
+1. **Sort Intervals**: First, we sort the intervals based on their start times. This helps in easily identifying and merging overlapping intervals as they will be adjacent after sorting.
+2. **Initialize Merged List**: We initialize a list with the first interval from the sorted list.
+3. **Iterate Through Intervals**: For each subsequent interval, we compare it with the last interval in our merged list:
+   - If the current interval starts before or at the end of the last merged interval, they overlap or touch, so we merge them by updating the end time to be the maximum of both intervals&#x27; end times.
+   - If the current interval does not overlap with the last merged interval, we add it as a new entry in our merged list.
 
-This approach ensures that we efficiently merge all overlapping or touching intervals in a single pass through the sorted list.
+This approach ensures that all overlapping and touching intervals are efficiently merged into non-overlapping intervals.
 
 ### Solution Code
 ```python
 def merge(intervals):
     if not intervals:
         return []
-    # Sort intervals based on the start time
-    intervals.sort</pre></div><div><div class='run'>gemma3:27b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span></div><pre>```python
+    sorted_intervals = sorted(intervals, key=lambda x: x[0])
+    merged = [sorted_intervals[0]]
+    for current in sorted_intervals[1:]:
+        last = merged[-1]
+        if current[0] &lt;= last[1]:
+            last[1] = max(last[1], current[1])
+        else:
+            merged.append(current)
+    return merged
+```
+
+### Explanation
+- **Sorting**: The in</pre></div><div><div class='run'>gemma3:27b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span></div><pre>```python
 def merge(intervals):
     if not intervals:
         return []
@@ -478,19 +503,28 @@ def generate(n):
     
     backtrack(&#x27;&#x27;, 0, 0)
     return result
-```</pre></div><div><div class='run'>deepseek-r1:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span></div><pre>To solve this problem, we need to generate all possible combinations of n pairs of well-formed parentheses. A well-formed parenthesis string is one where every opening parenthesis &#x27;(&#x27; has a corresponding closing parenthesis &#x27;)&#x27;, and at no point does the number of closing parentheses exceed the number of opening ones.
+```</pre></div><div><div class='run'>deepseek-r1:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span></div><pre>To solve this problem, we need to generate all valid combinations of `n` pairs of well-formed parentheses. A valid combination ensures that every opening parenthesis &#x27;(&#x27; has a corresponding closing parenthesis &#x27;)&#x27;, and at no point does the number of closing parentheses exceed the number of opening ones.
 
 ### Approach
-The approach to solve this problem involves using recursion with backtracking. The idea is to build each valid combination step by step, ensuring that we never have more closing parentheses than opening ones at any point in the string. Here&#x27;s a detailed breakdown:
+The approach to solve this problem involves using backtracking, which is a systematic way of trying out different sequences of decisions until we find all possible solutions. Here&#x27;s a step-by-step breakdown:
 
-1. **Initialization**: Start with an empty result list to store all valid combinations.
-2. **Recursive Helper Function**: Define a helper function that takes three parameters: the current string being built, the count of opening parentheses used so far, and the count of closing parentheses used so far.
-3. **Base Case**: If both the counts of opening and closing parentheses reach n, add the current string to the result list as it is a valid combination.
-4. **Recursive Steps**:
-   - If the number of opening parentheses is less than n, recursively call the helper function with an additional opening parenthesis.
-   - If the number of closing parentheses is less than the number of opening ones, recursively call the helper function with an additional closing parenthesis.
+1. **Initialization**: Start with an empty string and initialize counters for the number of opening and closing parentheses used so far.
+2. **Recursive Backtracking**:
+   - If the current string length reaches `2n` (meaning we&#x27;ve used all `n` pairs), add this string to the result list.
+   - If we haven&#x27;t used all `n` opening parentheses yet, recursively add an opening parenthesis and increment the count of opening parentheses.
+   - If the number of closing parentheses is less than the number of opening ones, recursively add a closing parenthesis and increment the count of closing parentheses.
+3. **Termination**: The recursion terminates when both counts reach `n`, ensuring all valid combinations are generated.
 
-This approach ensures that we explore all possible valid combinations by building them step by step and backtracking when ne</pre></div><div><div class='run'>gemma3:27b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span></div><pre>```python
+### Solution Code
+```python
+def generate(n):
+    result = []
+    def backtrack(current, open_count, close_count):
+        if len(current) == 2 * n:
+            result.append(current)
+            return
+        if open_count &lt; n:
+            backtrack(</pre></div><div><div class='run'>gemma3:27b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span></div><pre>```python
 def generate(n):
     &quot;&quot;&quot;
     Generates all combinations of n pairs of well-formed parentheses.
@@ -516,20 +550,7 @@ def generate(n):
 
     backtrack(&quot;&quot;, 0, 0)
     return result
-```</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span></div><pre>```python
-def generate(n):
-    result = []
-    def backtrack(current, open_count, close_count):
-        if len(current) == 2 * n:
-            result.append(current)
-            return
-        if open_count &lt; n:
-            backtrack(current + &#x27;(&#x27;, open_count + 1, close_count)
-        if close_count &lt; open_count:
-            backtrack(current + &#x27;)&#x27;, open_count, close_count + 1)
-    backtrack(&quot;&quot;, 0, 0)
-    return result
-```</pre></div></div></details><details><summary>reasoning / 01_water_jugs</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre># Measuring 4 Litres
+```</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>0%</span></div><pre></pre></div></div></details><details><summary>reasoning / 01_water_jugs</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre># Measuring 4 Litres
 
 1. Fill the 5-litre jug completely with water.
 2. Pour water from the 5-litre jug into the 3-litre jug until the 3-litre jug is full.
@@ -548,19 +569,19 @@ def generate(n):
 
 You now have exactly 4 litres in the 5-litre jug.</pre></div><div><div class='run'>deepseek-r1:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>To measure exactly 4 litres using a 3-litre jug and a 5-litre jug, follow these steps:
 
-1. Fill the 5-litre jug completely.
+1. **Fill the 5-litre jug completely** with water.
 
-2. Pour water from the 5-litre jug into the 3-litre jug until the 3-litre jug is full. This leaves 2 litres in the 5-litre jug.
+2. **Pour water from the 5-litre jug into the 3-litre jug** until the 3-litre jug is full. This leaves exactly 2 litres in the 5-litre jug (since 5 - 3 = 2).
 
-3. Empty the 3-litre jug.
+3. **Empty the 3-litre jug** back into the unlimited water source or discard its contents.
 
-4. Transfer the remaining 2 litres from the 5-litre jug into the now-empty 3-litre jug.
+4. **Transfer the remaining 2 litres from the 5-litre jug** into the now-empty 3-litre jug. The 3-litre jug now contains 2 litres, and the 5-litre jug is empty.
 
-5. Refill the 5-litre jug completely.
+5. **Fill the 5-litre jug completely** again with water.
 
-6. Pour water from the 5-litre jug into the 3-litre jug until the 3-litre jug is full. Since the 3-litre jug already contains 2 litres, only 1 litre will be poured from the 5-litre jug, leaving exactly 4 litres in the 5-litre jug.
+6. **Pour water from the 5-litre jug into the 3-litre jug** until the 3-litre jug is full. Since the 3-litre jug already contains 2 litres, it can only take an additional 1 litre to reach its capacity. This leaves exactly 4 litres in the 5-litre jug (since 5 - 1 = 4).
 
-Now, the 5-litre jug contains exactly 4 litres of water.</pre></div><div><div class='run'>gemma3:27b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>1. Fill the 5-litre jug completely.
+At this point, the 5-litre jug contains exactly 4 litres of water.</pre></div><div><div class='run'>gemma3:27b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>1. Fill the 5-litre jug completely.
 2. Pour water from the 5-litre jug into the 3-litre jug until the 3-litre jug is full.
 3. Empty the 3-litre jug.
 4. Pour the remaining 2 litres from the 5-litre jug into the 3-litre jug.
@@ -570,11 +591,11 @@ Now, the 5-litre jug contains exactly 4 litres of water.</pre></div><div><div cl
 
 
 
-</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>1. Fill the 5-litre jug to the top.  
+</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>1. Fill the 5-litre jug completely.  
 2. Pour water from the 5-litre jug into the 3-litre jug until the 3-litre jug is full.  
 3. Empty the 3-litre jug.  
 4. Pour the remaining 2 litres from the 5-litre jug into the 3-litre jug.  
-5. Fill the 5-litre jug to the top again.  
+5. Fill the 5-litre jug completely again.  
 6. Pour water from the 5-litre jug into the 3-litre jug until the 3-litre jug is full (1 litre is poured).  
 7. The 5-litre jug now contains exactly 4 litres.</pre></div></div></details><details><summary>reasoning / 02_boxes</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre># Solution
 
@@ -607,7 +628,15 @@ Since **every label is wrong**, the &quot;Apples &amp; Oranges&quot; box cannot 
 
 The same logic applies symmetrically if you draw an orange.
 
-**One draw from the mislabeled &quot;Apples &amp; Oranges&quot; box lets you deduce all three contents with certainty** — because it&#x27;s the only box whose label rules out a mixed result, giving you a definitive single-fruit answer to anchor the rest.</pre></div><div><div class='run'>deepseek-r1:32b <span class='mut'>· rtx5090</span> <span class='badge'>0%</span><span class='badge judge'>judge</span></div><pre></pre></div><div><div class='run'>gemma3:27b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>Draw from the **&quot;Apples &amp; Oranges&quot;** box.
+**One draw from the mislabeled &quot;Apples &amp; Oranges&quot; box lets you deduce all three contents with certainty** — because it&#x27;s the only box whose label rules out a mixed result, giving you a definitive single-fruit answer to anchor the rest.</pre></div><div><div class='run'>deepseek-r1:32b <span class='mut'>· rtx5090</span> <span class='badge'>75%</span><span class='badge judge'>judge</span></div><pre>To solve the puzzle, draw from the box labeled &quot;Apples &amp; Oranges&quot;. Since all labels are incorrect, this box must contain only apples or only oranges.
+
+- **If you draw an apple**, the box contains only apples. The box labeled &quot;Oranges&quot; cannot have oranges (as it&#x27;s mislabeled) and can&#x27;t have apples either (since we&#x27;ve already identified the apples), so it must contain both apples and oranges. Finally, the box labeled &quot;Apples&quot; must contain only oranges.
+
+- **If you draw an orange**, the box contains only oranges. The box labeled &quot;Apples&quot; cannot have apples or oranges (as it&#x27;s mislabeled) and thus must contain both. Consequently, the box labeled &quot;Oranges&quot; must contain only apples.
+
+By drawing from the mixed label box first, you can logically deduce the contents of all three boxes with just one fruit drawn.
+
+**Answer:** Draw from the &quot;Apples &amp; Oranges&quot; box. If you draw an apple, it contains only apples; then the &quot;Oranges&quot; box has both, and the &quot;Apples&quot; box has oranges. If you draw an orange, it contains only oranges; then the &quot;Apples&quot; box has both, and the &quot;Oranges&quot; box has apples.</pre></div><div><div class='run'>gemma3:27b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>Draw from the **&quot;Apples &amp; Oranges&quot;** box.
 
 **Reasoning:** Since all labels are wrong, this box *cannot* contain both apples and oranges. 
 
@@ -618,10 +647,10 @@ The same logic applies symmetrically if you draw an orange.
 
 </pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>Draw from the box labeled &quot;Apples &amp; Oranges&quot;. Since all labels are incorrect, this box must contain only apples or only oranges. 
 
-- **If you draw an apple**: The &quot;Apples &amp; Oranges&quot; box is actually apples. The box labeled &quot;Oranges&quot; (incorrect) cannot be oranges or apples (since apples are already identified), so it must be the mix. The remaining &quot;Apples&quot; box (incorrect) must be oranges.  
-- **If you draw an orange**: The &quot;Apples &amp; Oranges&quot; box is actually oranges. The box labeled &quot;Apples&quot; (incorrect) cannot be apples or oranges, so it must be the mix. The remaining &quot;Oranges&quot; box (incorrect) must be apples.  
+- **If you draw an apple**: The &quot;Apples &amp; Oranges&quot; box is actually &quot;Apples&quot;. The box labeled &quot;Apples&quot; (incorrect) cannot be apples, so it must be &quot;Oranges&quot; (since &quot;Apples &amp; Oranges&quot; is already used). The remaining box labeled &quot;Oranges&quot; must be &quot;Apples &amp; Oranges&quot;.  
+- **If you draw an orange**: The &quot;Apples &amp; Oranges&quot; box is actually &quot;Oranges&quot;. The box labeled &quot;Oranges&quot; (incorrect) cannot be oranges, so it must be &quot;Apples&quot;. The remaining box labeled &quot;Apples&quot; must be &quot;Apples &amp; Oranges&quot;.  
 
-This deduction works because the &quot;Apples &amp; Oranges&quot; box’s mislabeling guarantees a definitive single-fruit result, enabling logical elimination for the others.</pre></div></div></details><details><summary>reasoning / 03_pipes</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre># Tank Filling Problem
+This single draw allows deducing all correct labels.</pre></div></div></details><details><summary>reasoning / 03_pipes</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre># Tank Filling Problem
 
 ## Step 1: Find the rate for each pipe
 
@@ -685,68 +714,41 @@ $$\text{Time} = \frac{1 \text{ tank}}{\frac{1}{3} \text{ tank/hour}} = \boxed{3 
 
 &gt; **3 hours exactly** (3 hours, 0 minutes)
 
-The draining effect of pipe C is exactly offset by the extra capacity of pipes A and B together, resulting in a clean fill time of **3 hours**.</pre></div><div><div class='run'>deepseek-r1:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>To determine how long it will take to fill the tank when all three pipes are open, we can follow these steps:
+The draining effect of pipe C is exactly offset by the extra capacity of pipes A and B together, resulting in a clean fill time of **3 hours**.</pre></div><div><div class='run'>deepseek-r1:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>To determine how long it will take to fill the tank with all three pipes open, let&#x27;s analyze their rates:
 
-### **Step 1: Determine the Filling Rates**
+1. **Pipe A** fills the tank in **6 hours**, so its rate is:
+   \[
+   \text{Rate of Pipe A} = \frac{1}{6} \text{ tanks per hour}
+   \]
 
-- **Pipe A** fills the tank in **6 hours**, so its rate is:
-  
-  \[
-  \text{Rate of Pipe A} = \frac{1}{6} \text{ tank per hour}
-  \]
+2. **Pipe B** fills the tank in **4 hours**, so its rate is:
+   \[
+   \text{Rate of Pipe B} = \frac{1}{4} \text{ tanks per hour}
+   \]
 
-- **Pipe B** fills the tank in **4 hours**, so its rate is:
-  
-  \[
-  \text{Rate of Pipe B} = \frac{1}{4} \text{ tank per hour}
-  \]
+3. **Pipe C** empties the tank in **12 hours**, so its rate is:
+   \[
+   \text{Rate of Pipe C} = -\frac{1}{12} \text{ tanks per hour}
+   \]
+   *(Note: The negative sign indicates emptying)*
 
-- **Pipe C** empties the tank in **12 hours**, so its rate is:
-  
-  \[
-  \text{Rate of Pipe C} = -\frac{1}{12} \text{ tank per hour}
-  \]
-  
-  *(Note: The negative sign indicates that Pipe C is emptying the tank.)*
+4. **Combined Rate** when all three pipes are open:
+   \[
+   \text{Total Rate} = \frac{1}{6} + \frac{1}{4} - \frac{1}{12}
+   \]
 
-### **Step 2: Combine the Rates**
+5. **Simplify the Combined Rate**:
+   \[
+   \text{Total Rate} = \frac{2}{12} + \frac{3}{12} - \frac{1}{12} = \frac{4}{12} = \frac{1}{3} \text{ tanks per hour}
+   \]
 
-When all three pipes are open, their rates add up:
+6. **Time to Fill the Tank**:
+   Since the combined rate is \( \frac{1}{3} \) tanks per hour, the time (\( T \)) required to fill 1 tank is:
+   \[
+   T = \frac{1}{\text{Total Rate}} = \frac{1}{\frac{1}{3}} = 3 \text{ hours}
+   \]
 
-\[
-\text{Combined Rate} = \frac{1}{6} + \frac{1}{4} - \frac{1}{12}
-\]
-
-To combine these fractions, find a common denominator. The least common multiple of 6, 4, and 12 is **12**.
-
-\[
-\text{Combined Rate} = \frac{2}{12} + \frac{3}{12} - \frac{1}{12} = \frac{4}{12} = \frac{1}{3}
-\]
-
-So, the combined rate is:
-
-\[
-\frac{1}{3} \text{ tank per hour}
-\]
-
-### **Step 3: Calculate the Time to Fill the Tank**
-
-The time \( T \) it takes to fill the tank can be found using the formula:
-
-\[
-T = \frac{\text{Total Volume}}{\text{Combined Rate}}
-\]
-
-Since we&#x27;re filling **1 tank** at a rate of \( \frac{1}{3} \) per hour:
-
-\[
-T = \frac{1}{\frac{1}{3}} = 3 \text{ hours}
-\]
-
-### **Final Answer**
-
-The tank will be full in:
-
+**Final Answer:**
 \[
 \boxed{3 \text{ hours}}
 \]</pre></div><div><div class='run'>gemma3:27b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>Here&#x27;s how to solve this problem:
@@ -770,15 +772,7 @@ Since the combined rate is 1/3 of the tank per hour, it will take 3 hours to fil
 **Answer:**
 
 *   **Fraction of hours:** 3 hours
-*   **Hours and minutes:** 3 hours + 0 minutes</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>To determine how long it takes to fill the tank when all three pipes are open, we analyze the **rates** at which each pipe contributes to or removes from the tank&#x27;s volume.
-
----
-
-### Step 1: Determine Individual Rates
-
-- **Pipe A** fills the tank in 6 hours → rate = $ \frac{1}{6} $ tanks/hour  
-- **Pipe B** fills the tank in 4 hours → rate = $ \frac{1}{4} $ tanks/hour  
-- **Pipe C** empties the tank in 12 hours</pre></div></div></details><details><summary>reasoning / 04_monty_hall</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre># Monty Hall Problem Analysis
+*   **Hours and minutes:** 3 hours + 0 minutes</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>0%</span><span class='badge judge'>judge</span></div><pre></pre></div></div></details><details><summary>reasoning / 04_monty_hall</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre># Monty Hall Problem Analysis
 
 **You should switch.**
 
@@ -794,15 +788,19 @@ Since the combined rate is 1/3 of the tank per hour, it will take 3 hours to fil
 
 ## Why?
 
-When you initially picked door 1, you had a 1/3 chance of being right and a 2/3 chance the car was behind one of the other two doors. The host&#x27;s action of deliberately revealing a goat **doesn&#x27;t change your initial odds** — it simply concentrates that entire 2/3 probability onto door 2, since the host will always open a losing door. In other words, switching lets you essentially &quot;bet&quot; that your first pick was wrong, which is true 2/3 of the time.</pre></div><div><div class='run'>deepseek-r1:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>In the Monty Hall problem, after you initially choose a door (1/3 chance of being correct), the host reveals a goat behind another door. This action provides additional information, shifting the probabilities. The remaining unopened door now has a 2/3 chance of hiding the car, while your original choice remains at 1/3. Therefore, switching increases your probability of winning from 1/3 to 2/3.
+When you initially picked door 1, you had a 1/3 chance of being right and a 2/3 chance the car was behind one of the other two doors. The host&#x27;s action of deliberately revealing a goat **doesn&#x27;t change your initial odds** — it simply concentrates that entire 2/3 probability onto door 2, since the host will always open a losing door. In other words, switching lets you essentially &quot;bet&quot; that your first pick was wrong, which is true 2/3 of the time.</pre></div><div><div class='run'>deepseek-r1:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>In the Monty Hall problem, you should switch doors. Here&#x27;s why:
 
-**Answer:**
+- **Initial Probabilities**: When you first choose a door (e.g., door 1), there is a 1/3 chance it has the car and a 2/3 chance that one of the other two doors does.
 
-Switching doors gives you a **2/3 probability** of winning, whereas staying with your initial choice leaves you with a **1/3 probability**. This is because the host&#x27;s action of revealing a goat provides information that increases the likelihood the car is behind the other unopened door.</pre></div><div><div class='run'>gemma3:27b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>Yes, you should absolutely switch! If you switch, your probability of winning is 2/3, while staying with your original choice leaves you with only a 1/3 chance of winning. Initially, your chosen door had a 1/3 chance of hiding the car; switching leverages the host&#x27;s knowledge to concentrate the remaining 2/3 probability onto the unopened door, as the host *always* reveals a goat behind one of the doors you didn’t pick.
+- **Host&#x27;s Action**: The host, who knows what&#x27;s behind each door, opens another door (e.g., door 3) to reveal a goat. This action doesn&#x27;t change the initial probabilities but provides information.
+
+- **Updated Probabilities**: Since the host always reveals a goat, the 2/3 probability that the car was behind one of the other two doors now shifts entirely to the remaining unopened door (door 2). Thus, switching gives you a 2/3 chance of winning, while staying with your original choice keeps it at 1/3.
+
+**Conclusion**: Switching doubles your chances of winning from 1/3 to 2/3 because the host&#x27;s action reveals information that changes the probability distribution.</pre></div><div><div class='run'>gemma3:27b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>Yes, you should absolutely switch! If you switch, your probability of winning is 2/3, while staying with your original choice leaves you with only a 1/3 chance of winning. Initially, your chosen door had a 1/3 chance of hiding the car; switching leverages the host&#x27;s knowledge to concentrate the remaining 2/3 probability onto the unopened door, as the host *always* reveals a goat behind one of the doors you didn’t pick.
 
 
 
-</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>In the Monty Hall problem, you should switch doors. If you **stay** with your initial choice (door 1), you have a **1/3 chance of winning** the car, as your initial selection had a 1/3 probability of being correct. If you **switch** to the remaining unopened door (door 2), your probability of winning increases to **2/3**. This is because the host’s action of revealing a goat (door 3) provides additional information: if you initially picked a goat (which happens 2/3 of the time), the host forces the remaining unopened door to contain the car. Switching capitalizes on this higher likelihood of having initially chosen a goat. The host’s non-random elimination of a door preserves the initial 2/3 probability of the car being in the unchosen group, now concentrated in the single remaining door.</pre></div></div></details><details><summary>reasoning / 05_bat_ball</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre># Solution
+</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>In the Monty Hall problem, you should switch doors. If you stay with your initial choice (door 1), you have a **1/3** chance of winning the car, as your initial selection had a 1/3 probability of being correct. If you switch to door 2, your probability of winning increases to **2/3**. This is because the host’s action of revealing a goat (door 3) provides additional information: if the car was initially behind door 2 or 3 (which happens 2/3 of the time), the host effectively eliminates the wrong door, leaving the car behind the unchosen door. Switching capitalizes on the higher likelihood that your initial guess was wrong.</pre></div></div></details><details><summary>reasoning / 05_bat_ball</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre># Solution
 
 Let me define variables:
 - Let **b** = cost of the ball (in euros)
@@ -908,7 +906,7 @@ x = 0.05
 \]
 
 **Conclusion:**
-The ball costs **0.05 euros**.
+The ball costs **€0.05**.
 
 \[
 \boxed{0.05\,\text{euros}}
@@ -935,43 +933,57 @@ x + (x + 1.00) = 1.10
 **Reasoning:**
 
 The key is to recognize that the difference in price between the bat and ball is a fixed amount (€1.00). By setting up an algebraic equation, we can account for this difference and solve for the cost of the ball.
-</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>**Answer:** The ball costs **0.05 euros** (5 cents).
+</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>To solve the problem, we begin by defining the unknowns clearly.
 
-**Reasoning:**
+Let the cost of the **ball** be $ x $ euros.  
+Since the **bat costs 1 euro more than the ball**, the cost of the bat is $ x + 1 $ euros.  
+The total cost of the bat and the ball together is given as **1.10 euros**.
 
-Let the cost of the ball be $ x $ euros.  
-Since the bat costs **1.00 euro more than the ball**, the bat&#x27;s cost is $ x + 1.00 $.  
-The total cost of the bat and ball is **1.10 euros**, so:
+---
 
-$$
-x + (x + 1.00) = 1.10
-$$
-
-Simplify the equation:
+### Step 1: Set up the equation
 
 $$
-2x + 1.00 = 1.10
+x + (x + 1) = 1.10
 $$
 
-Subtract 1.00 from both sides:
+Simplify the left-hand side:
 
 $$
-2x = 0.10
+2x + 1 = 1.10
 $$
 
-Divide by 2:
+---
+
+### Step 2: Solve for $ x $
+
+Subtract 1 from both sides:
 
 $$
-x = 0.05
+2x = 1.10 - 1 = 0.10
 $$
 
-**Verification:**  
-- Ball: $ 0.05 $ euros  
-- Bat: $ 0.05 + 1.00 = 1.05 $ euros  
-- Total: $ 0.05 + 1.05 = 1.10 $ euros ✅  
+Now divide both sides by 2:
 
-**Common Misconception:**  
-Some might assume the bat is exactly 1.00 euros, leading to the ball costing 0.10 euros. However, this would make the bat only **0.90 euros more** than the ball ($ 1.00 - 0.10 = 0.90 $), violating the problem&#x27;s condition. The correct interpretation requires the bat to be **1.00 euro more than the ball**, not just 1.00 euros in total.</pre></div></div></details><details><summary>reasoning / 06_fermi</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre># Estimating Piano Tuners in Berlin
+$$
+x = \frac{0.10}{2} = 0.05
+$$
+
+---
+
+### Step 3: Interpret the result
+
+- The **ball costs** $ x = 0.05 $ euros (i.e., **5 cents**).
+- The **bat costs** $ x + 1 = 0.05 + 1 = 1.05 $ euros.
+- Total cost: $ 0.05 + 1.05 = 1.10 $ euros, which matches the given total.
+
+---
+
+### Final Answer:
+
+$$
+\boxed{0.05}
+$$</pre></div></div></details><details><summary>reasoning / 06_fermi</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre># Estimating Piano Tuners in Berlin
 
 Let me work through this systematically.
 
@@ -1046,21 +1058,19 @@ Not every household has a piano — it&#x27;s a relatively specialized instrumen
 
 - A tuner travels to clients, so time includes transit
 - Tuning itself: ~1–1.5 hours per piano
-- With travel, scheduling, admin: realistically **4 tunings </pre></div><div><div class='run'>deepseek-r1:32b <span class='mut'>· rtx5090</span> <span class='badge'>75%</span><span class='badge judge'>judge</span></div><pre>To estimate the number of piano tuners in Berlin, we can follow these steps:
+- With travel, scheduling, admin: realistically **4 tunings </pre></div><div><div class='run'>deepseek-r1:32b <span class='mut'>· rtx5090</span> <span class='badge'>75%</span><span class='badge judge'>judge</span></div><pre>To estimate the number of piano tuners in Berlin, we can follow this structured approach:
 
-1. **Population**: Berlin has approximately 3 million people.
-   
-2. **Pianos per person**: Assuming one piano for every 200 people, there are about 15,000 pianos in Berlin (3,000,000 / 200).
+1. **Population Estimate**: Berlin has approximately 3 million residents.
 
-3. **Tuning frequency**: Each piano is tuned approximately twice a year.
+2. **Piano Ownership Rate**: Assuming one piano per 100 people, there are about 30,000 pianos in Berlin (3,000,000 / 100).
 
-4. **Total tunings needed annually**: 15,000 pianos * 2 tunings/year = 30,000 tunings per year.
+3. **Tuning Frequency**: Each piano is tuned once a year on average.
 
-5. **Workload of a piano tuner**: A tuner can handle about 400 tunings per year (working 200 days at 2 tunings/day).
+4. **Tuner Workload**: A tuner can handle approximately 200 tunings per year (considering working days and time per tuning).
 
-6. **Number of tuners needed**: 30,000 tunings / 400 tunings/tuner ≈ 75 piano tuners.
+5. **Calculation**: Dividing the total number of annual tunings by the workload per tuner gives us 30,000 / 200 = 150 piano tuners.
 
-**Final Estimate**: There are approximately 75 piano tuners in Berlin.</pre></div><div><div class='run'>gemma3:27b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>Okay, let&#x27;s estimate the number of piano tuners in Berlin without looking anything up! Here’s my chain of thought:
+**Final Estimate**: There are approximately 150 piano tuners in Berlin.</pre></div><div><div class='run'>gemma3:27b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>Okay, let&#x27;s estimate the number of piano tuners in Berlin without looking anything up! Here’s my chain of thought:
 
 **1. Population of Berlin:**
 
@@ -1081,7 +1091,42 @@ Not every household has a piano — it&#x27;s a relatively specialized instrumen
 
 *   A piano tuner can probably tune around **4 pianos per day**, realistically. It’s skilled work, and travel time between locations needs to be factored in.
 *   Assuming they work about **250 days a year** (allowing for holidays, sick days, etc.).
-*   Total pianos a single tuner can handle: 4 pianos/day * 250 days/year = </pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>0%</span><span class='badge judge'>judge</span></div><pre></pre></div></div></details><details><summary>reasoning / 07_false_proof</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre># The Error
+*   Total pianos a single tuner can handle: 4 pianos/day * 250 days/year = </pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>To estimate the number of piano tuners in Berlin, we can break the problem into logical steps:
+
+---
+
+### **1. Population of Berlin**  
+Berlin is a major European city. Assuming a population of **3.8 million** (a reasonable estimate based on general knowledge of large cities in Europe).
+
+---
+
+### **2. Number of Pianos in Berlin**  
+- **Household size**: ~2.5 people per household → **1.52 million households** (3.8 million ÷ 2.5).  
+- **Pianos per household**: Conservatively, 1 piano per **50 households** (since pianos are not common in every home).  
+  → **30,400 pianos** (1.52 million ÷ 50).  
+
+*Adjustment*: If we assume slightly more pianos (e.g., 1 per 40 households due to music schools, institutions, or higher ownership in a culturally vibrant city), this could rise to **38,000 pianos**.
+
+---
+
+### **3. Annual Tuning Demand**  
+- **Tuning frequency**: Most pianos are tuned **once per year** (some may require more frequent tuning, but this is the average).  
+  → **30,000–38,000 annual tunings**.
+
+---
+
+### **4. Workload per Piano Tuner**  
+- **Working days**: 50 weeks/year × 5 days/week = **250 workdays**.  
+- **Time per tuning**: ~2 hours.  
+- **Daily tunings**: Assuming 8-hour workdays, a tuner could complete **4 tunings/day** (8 ÷ 2).  
+  → **1,000 tunings/year** (4 × 250).  
+
+*Realistic adjustment*: Accounting for travel, administrative tasks, or downtime, a tuner might realistically complete **750 tunings/year**.
+
+---
+
+### **5. Total Tuners Needed**  
+- **Low estimate**: </pre></div></div></details><details><summary>reasoning / 07_false_proof</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre># The Error
 
 The error occurs in this step:
 
@@ -1134,15 +1179,35 @@ which is the operation $\dfrac{0}{0}$, an **indeterminate form**. This step is n
 | (a+b)(a−b) = b(a−b) | ✓ | Correct factoring |
 | **Divide by (a−b)** | **✗** | **(a−b) = 0; division by zero** |
 
-Every step after that point is built on an invalid operation, making the conclusion $2 = 1$ meaningless.</pre></div><div><div class='run'>deepseek-r1:32b <span class='mut'>· rtx5090</span> <span class='badge'>75%</span><span class='badge judge'>judge</span></div><pre>Let&#x27;s go through each step of the proof to identify where it goes wrong.
+Every step after that point is built on an invalid operation, making the conclusion $2 = 1$ meaningless.</pre></div><div><div class='run'>deepseek-r1:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>The error occurs when both sides are divided by \( (a - b) \). Since \( a = b \), \( (a - b) = 0 \), and division by zero is undefined. This invalid step leads to the incorrect conclusion that \( 2 = 1 \).
 
-1. Start with \( a = b \). This is valid.
-2. Multiply both sides by \( a \): \( a^2 = ab \). This is valid.
-3. Subtract \( b^2 \) from both sides: \( a^2 - b^2 = ab - b^2 \). This is valid.
-4. Factor both sides: \( (a + b)(a - b) = b(a - b) \). This is valid.
-5. Divide both sides by \( (a - b) \): \( a + b = b \). This step is invalid because if \( a = b \), then \( (a - b) = 0 \), and division by zero is undefined.
+**Step-by-Step Explanation:**
 
-The proof goes wrong at the step where it divides both sides by \( (a - b) \). This is invalid because \( a = b \) implies \( (a - b) = 0 \), and division by zero is undefined. The exact step is \boxed{4}.</pre></div><div><div class='run'>gemma3:27b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>The error occurs in the step where we **divide both sides by (a - b)**.
+1. **Start with \( a = b \):**
+   - Let \( a \) and \( b \) be equal.
+
+2. **Multiply both sides by \( a \):**
+   - \( a^2 = ab \)
+
+3. **Subtract \( b^2 \) from both sides:**
+   - \( a^2 - b^2 = ab - b^2 \)
+
+4. **Factor both sides:**
+   - Left side: \( (a + b)(a - b) \)
+   - Right side: \( b(a - b) \)
+   - Resulting in: \( (a + b)(a - b) = b(a - b) \)
+
+5. **Divide both sides by \( (a - b) \):**
+   - Here, since \( a = b \), \( (a - b) = 0 \). Dividing by zero is undefined in mathematics.
+
+6. **Incorrectly arriving at:**
+   - \( a + b = b \)
+   - Substituting \( a = b \) gives \( 2b = b \), leading to \( 2 = 1 \).
+
+**Conclusion:**
+The proof fails at the division step because it divides by zero, which is not permissible. This invalid operation undermines the entire argument, showing that such algebraic manipulations must avoid division by expressions that could be zero.
+
+**Answer:** The error occurs when dividing both sides by \( (a - b) \), as this term equals zero, making the division undefined and invalid.</pre></div><div><div class='run'>gemma3:27b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>The error occurs in the step where we **divide both sides by (a - b)**.
 
 Here&#x27;s why it&#x27;s invalid:
 
@@ -1151,21 +1216,29 @@ We started with the assumption that `a = b`.  This means that `a - b = 0`.  Divi
 The step `(a+b)(a-b) = b(a-b)` implies dividing by `(a-b)`, but since `a=b`, we are effectively dividing by 0.  This invalidates the entire subsequent argument and allows us to &quot;prove&quot; false statements like 2=1.
 
 In short, you can&#x27;t divide by zero! It breaks the rules of algebra.
-</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>The error in the proof occurs at the step where both sides of the equation are divided by **(a - b)**. Here&#x27;s the breakdown:
+</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>The proof that claims 2 = 1 is a classic example of a mathematical fallacy. The error occurs in **Step 4**, where both sides of the equation are divided by **(a - b)**. Here&#x27;s the breakdown:
 
-1. **Starting with a = b**, the proof proceeds correctly through the steps:
-   - Multiplying both sides by **a** gives **a² = ab**.
-   - Subtracting **b²** from both sides yields **a² - b² = ab - b²**.
-   - Factoring both sides results in **(a + b)(a - b) = b(a - b)**.
+1. **Initial Setup**:  
+   Let $ a = b $.  
+   Multiply both sides by $ a $: $ a^2 = ab $.  
+   Subtract $ b^2 $: $ a^2 - b^2 = ab - b^2 $.  
+   Factor both sides: $ (a + b)(a - b) = b(a - b) $.  
 
-2. **The critical mistake** is in the next step: **dividing both sides by (a - b)**.  
-   Since **a = b**, this means **(a - b) = 0**. Division by zero is undefined in mathematics, and this invalid operation leads to the false conclusion. Specifically:
-   - Dividing both sides by zero is not allowed, as it violates the field axioms of real numbers.
-   - The step **(a + b)(a - b) = b(a - b)** simplifies to **a + b = b** *only if* **(a - b) ≠ 0**. However, since **(a - b) = 0**, this step is invalid.
+2. **Critical Error**:  
+   The next step divides both sides by $ (a - b) $:  
+   $$
+   \frac{(a + b)(a - b)}{a - b} = \frac{b(a - b)}{a - b}.
+   $$  
+   However, since $ a = b $, $ (a - b) = 0 $. **Division by zero is undefined** in mathematics, making this step invalid.  
 
-3. The subsequent steps (**2b = b** and **2 = 1**) are based on this invalid division and are therefore meaningless.
+3. **Consequences**:  
+   The rest of the proof relies on this invalid operation. Simplifying the equation gives $ a + b = b $, which leads to $ 2b = b $ and $ 2 = 1 $. These conclusions are nonsensical because they depend on the earlier division by zero.  
 
-**Conclusion**: The proof is flawed because it divides both sides of the equation by **(a - b)**, which is zero (since **a = b**). Division by zero is undefined, making the step invalid and the conclusion false.</pre></div></div></details><details><summary>structured / 01_json_basic</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span></div><pre>```json
+**Why This Is Invalid**:  
+Division by zero is undefined because it violates the fundamental properties of arithmetic. Specifically, if $ x = 0 $, there is no number $ y $ such that $ 0 \cdot y = x $ (unless $ x = 0 $, but even then, $ y $ is not uniquely defined). By dividing by $ (a - b) = 0 $, the proof introduces an undefined operation, rendering all subsequent steps meaningless.  
+
+**Conclusion**:  
+The proof is flawed because it divides by $ (a - b) $, which equals zero. This invalid step allows the derivation of a false conclusion (2 = 1). The key takeaway is to</pre></div></div></details><details><summary>structured / 01_json_basic</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span></div><pre>```json
 {
   &quot;name&quot;: &quot;Artur&quot;,
   &quot;age&quot;: 33,
@@ -1244,7 +1317,26 @@ Sao Paulo,Brazil,22</pre></div></div></details><details><summary>structured / 04
 {&quot;order_id&quot;: &quot;A-1007&quot;, &quot;customer&quot;: {&quot;name&quot;: &quot;Lena Roth&quot;, &quot;vip&quot;: true}, &quot;items&quot;: [{&quot;sku&quot;: &quot;KB-12&quot;, &quot;qty&quot;: 2}, {&quot;sku&quot;: &quot;MS-04&quot;, &quot;qty&quot;: 1}], &quot;total&quot;: 149.97}
 ```</pre></div><div><div class='run'>deepseek-r1:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span></div><pre>{&quot;order_id&quot;: &quot;A-1007&quot;, &quot;customer&quot;: {&quot;name&quot;: &quot;Lena Roth&quot;, &quot;vip&quot;: true}, &quot;items&quot;: [{&quot;sku&quot;: &quot;KB-12&quot;, &quot;qty&quot;: 2}, {&quot;sku&quot;: &quot;MS-04&quot;, &quot;qty&quot;: 1}], &quot;total&quot;: 149.97}</pre></div><div><div class='run'>gemma3:27b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span></div><pre>```json
 {&quot;order_id&quot;: &quot;A-1007&quot;, &quot;customer&quot;: {&quot;name&quot;: &quot;Lena Roth&quot;, &quot;vip&quot;: true}, &quot;items&quot;: [{&quot;sku&quot;: &quot;KB-12&quot;, &quot;qty&quot;: 2}, {&quot;sku&quot;: &quot;MS-04&quot;, &quot;qty&quot;: 1}], &quot;total&quot;: 149.97}
-```</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span></div><pre>{&quot;order_id&quot;: &quot;A-1007&quot;, &quot;customer&quot;: {&quot;name&quot;: &quot;Lena Roth&quot;, &quot;vip&quot;: true}, &quot;items&quot;: [{&quot;sku&quot;: &quot;KB-12&quot;, &quot;qty&quot;: 2}, {&quot;sku&quot;: &quot;MS-04&quot;, &quot;qty&quot;: 1}], &quot;total&quot;: 149.97}</pre></div></div></details><details><summary>structured / 05_dependent_total</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span></div><pre>```json
+```</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span></div><pre>```json
+{
+  &quot;order_id&quot;: &quot;A-1007&quot;,
+  &quot;customer&quot;: {
+    &quot;name&quot;: &quot;Lena Roth&quot;,
+    &quot;vip&quot;: true
+  },
+  &quot;items&quot;: [
+    {
+      &quot;sku&quot;: &quot;KB-12&quot;,
+      &quot;qty&quot;: 2
+    },
+    {
+      &quot;sku&quot;: &quot;MS-04&quot;,
+      &quot;qty&quot;: 1
+    }
+  ],
+  &quot;total&quot;: 149.97
+}
+```</pre></div></div></details><details><summary>structured / 05_dependent_total</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span></div><pre>```json
 {
   &quot;items&quot;: [
     {
@@ -1270,7 +1362,7 @@ Sao Paulo,Brazil,22</pre></div></div></details><details><summary>structured / 04
 }
 ```</pre></div><div><div class='run'>claude-sonnet-4-6 <span class='mut'>· api</span> <span class='badge'>100%</span></div><pre>```json
 {&quot;items&quot;: [{&quot;name&quot;: &quot;notebooks&quot;, &quot;price&quot;: 2.50, &quot;qty&quot;: 3, &quot;line_total&quot;: 7.50}, {&quot;name&quot;: &quot;pens&quot;, &quot;price&quot;: 1.20, &quot;qty&quot;: 2, &quot;line_total&quot;: 2.40}, {&quot;name&quot;: &quot;stapler&quot;, &quot;price&quot;: 7.99, &quot;qty&quot;: 1, &quot;line_total&quot;: 7.99}], &quot;grand_total&quot;: 17.89}
-```</pre></div><div><div class='run'>deepseek-r1:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span></div><pre>{&quot;items&quot;: [{&quot;name&quot;: &quot;notebook&quot;, &quot;price&quot;: 2.50, &quot;qty&quot;: 3, &quot;line_total&quot;: 7.50}, {&quot;name&quot;: &quot;pen&quot;, &quot;price&quot;: 1.20, &quot;qty&quot;: 2, &quot;line_total&quot;: 2.40}, {&quot;name&quot;: &quot;stapler&quot;, &quot;price&quot;: 7.99, &quot;qty&quot;: 1, &quot;line_total&quot;: 7.99}], &quot;grand_total&quot;: 17.89}</pre></div><div><div class='run'>gemma3:27b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span></div><pre>```json
+```</pre></div><div><div class='run'>deepseek-r1:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span></div><pre>{&quot;items&quot;: [{&quot;name&quot;: &quot;notebook&quot;, &quot;price&quot;: 2.5, &quot;qty&quot;: 3, &quot;line_total&quot;: 7.5}, {&quot;name&quot;: &quot;pen&quot;, &quot;price&quot;: 1.2, &quot;qty&quot;: 2, &quot;line_total&quot;: 2.4}, {&quot;name&quot;: &quot;stapler&quot;, &quot;price&quot;: 7.99, &quot;qty&quot;: 1, &quot;line_total&quot;: 7.99}], &quot;grand_total&quot;: 17.89}</pre></div><div><div class='run'>gemma3:27b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span></div><pre>```json
 {
   &quot;items&quot;: [
     {
@@ -1344,22 +1436,36 @@ depends_on:
 }
 ```</pre></div><div><div class='run'>claude-sonnet-4-6 <span class='mut'>· api</span> <span class='badge'>100%</span></div><pre>```json
 {&quot;username&quot;: &quot;samvega&quot;, &quot;role&quot;: &quot;editor&quot;, &quot;active&quot;: true, &quot;login_count&quot;: 12}
-```</pre></div><div><div class='run'>deepseek-r1:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span></div><pre>{&quot;username&quot;: &quot;samvega&quot;, &quot;role&quot;: &quot;editor&quot;, &quot;active&quot;: true, &quot;login_count&quot;: 12}</pre></div><div><div class='run'>gemma3:27b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span></div><pre>```json
+```</pre></div><div><div class='run'>deepseek-r1:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span></div><pre>```json
 {
   &quot;username&quot;: &quot;samvega&quot;,
   &quot;role&quot;: &quot;editor&quot;,
   &quot;active&quot;: true,
   &quot;login_count&quot;: 12
 }
-```</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span></div><pre>{&quot;username&quot;: &quot;samvega&quot;, &quot;role&quot;: &quot;editor&quot;, &quot;active&quot;: true, &quot;login_count&quot;: 12}</pre></div></div></details><details><summary>text / 01_summarize</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>• Ollama runs large language models locally on personal hardware with CLI and HTTP API.
+```</pre></div><div><div class='run'>gemma3:27b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span></div><pre>```json
+{
+  &quot;username&quot;: &quot;samvega&quot;,
+  &quot;role&quot;: &quot;editor&quot;,
+  &quot;active&quot;: true,
+  &quot;login_count&quot;: 12
+}
+```</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span></div><pre>```json
+{
+  &quot;username&quot;: &quot;samvega&quot;,
+  &quot;role&quot;: &quot;editor&quot;,
+  &quot;active&quot;: true,
+  &quot;login_count&quot;: 12
+}
+```</pre></div></div></details><details><summary>text / 01_summarize</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>• Ollama runs large language models locally on personal hardware with CLI and HTTP API.
 
 • Quantized models reduce memory requirements, enabling smaller machines to run larger models efficiently.
 
 • Performance varies by hardware; GPUs significantly faster than CPU-only, small devices run models slowly.</pre></div><div><div class='run'>claude-sonnet-4-6 <span class='mut'>· api</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>• Ollama runs large language models locally, combining weights, config, and runtime simply.
 • Models are quantized to reduce memory, enabling smaller machines to run them.
-• Performance varies greatly; GPUs accelerate output, while weak hardware struggles significantly.</pre></div><div><div class='run'>deepseek-r1:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>- Runs large language models locally on personal hardware.
-- Packages model weights, config, runtime into a single app with CLI/API.
-- Quantizes models for lower memory use; performance varies with hardware (GPU &gt; CPU).</pre></div><div><div class='run'>gemma3:27b <span class='mut'>· rtx5090</span> <span class='badge'>75%</span><span class='badge judge'>judge</span></div><pre>Here&#x27;s a 3-bullet point summary of the text, each under 15 words:
+• Performance varies greatly; GPUs accelerate output, while weak hardware struggles significantly.</pre></div><div><div class='run'>deepseek-r1:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>- Ollama runs large language models locally on personal devices.  
+- Includes model weights, config, runtime in one app with CLI/HTTP API.  
+- Quantizes models for lower memory use; performance varies by hardware.</pre></div><div><div class='run'>gemma3:27b <span class='mut'>· rtx5090</span> <span class='badge'>75%</span><span class='badge judge'>judge</span></div><pre>Here&#x27;s a 3-bullet point summary of the text, each under 15 words:
 
 *   Ollama runs large language models directly on your computer.
 *   It simplifies setup with packaged models &amp; easy API access.
@@ -1367,20 +1473,20 @@ depends_on:
 
 
 
-</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>- Runs LLMs locally, packaging weights, config, runtime into app with CLI and HTTP API.  
-- Uses quantization to reduce memory, enabling smaller machines to run models.  
-- Performance depends on hardware: GPU boosts speed, while single-board computers handle only small models slowly.</pre></div></div></details><details><summary>text / 02_extract_names</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>Maria Schmidt - Novoferm
+</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>- Ollama runs large language models locally, combining weights, config, and runtime into a single app with CLI and HTTP API.  
+- Quantization reduces memory use, enabling smaller machines to run models requiring more RAM/VRAM.  
+- Performance varies by hardware: GPUs boost speed, while single-board computers handle only small models slowly.</pre></div></div></details><details><summary>text / 02_extract_names</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>Maria Schmidt - Novoferm
 Tom Becker - SIG</pre></div><div><div class='run'>claude-sonnet-4-6 <span class='mut'>· api</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>Maria Schmidt - Novoferm
 Tom Becker - SIG</pre></div><div><div class='run'>deepseek-r1:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>Maria Schmidt - Novoferm  
 Tom Becker - SIG</pre></div><div><div class='run'>gemma3:27b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>Maria Schmidt - Novoferm
 Tom Becker - SIG
 NONE
 </pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>Maria Schmidt - Novoferm  
-Tom Becker - SIG</pre></div></div></details><details><summary>text / 03_rewrite_b1</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>The team moved to a new system with many small services. This system is complicated because the services are spread out in different places. However, the engineers did the move very well. They made sure the system stayed fast and did not slow down. The system now works much better and can do more work.</pre></div><div><div class='run'>claude-sonnet-4-6 <span class='mut'>· api</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>The engineering team moved the system to a new structure. This structure used many small, separate services. The work was difficult because the design was complex. However, the team completed the move without problems. After the move, the system became faster and could handle more work.</pre></div><div><div class='run'>deepseek-r1:32b <span class='mut'>· rtx5090</span> <span class='badge'>50%</span><span class='badge judge'>judge</span></div><pre>Despite the complex structure of distributed microservices, the engineering team managed to move everything smoothly. This reduced delays and improved performance a lot.</pre></div><div><div class='run'>gemma3:27b <span class='mut'>· rtx5090</span> <span class='badge'>75%</span><span class='badge judge'>judge</span></div><pre>The system was very complicated to build with many small parts working together. However, the engineers moved everything over without problems. This made the system faster and able to handle more work. They avoided making it slower and improved how much it could do.
+Tom Becker - SIG</pre></div></div></details><details><summary>text / 03_rewrite_b1</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>The team moved to a new system with many small services. This system is complicated because the services are spread out in different places. However, the engineers did the move very well. They made sure the system stayed fast and did not slow down. The system now works much better and can do more work.</pre></div><div><div class='run'>claude-sonnet-4-6 <span class='mut'>· api</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>The engineering team moved the system to a new structure. This structure used many small, separate services. The work was difficult because the design was complex. However, the team completed the move without problems. After the move, the system became faster and could handle more work.</pre></div><div><div class='run'>deepseek-r1:32b <span class='mut'>· rtx5090</span> <span class='badge'>50%</span><span class='badge judge'>judge</span></div><pre>Despite the complex structure of distributed microservices, the engineering team managed to move everything smoothly. This reduced delays in processing and improved the system&#x27;s performance significantly.</pre></div><div><div class='run'>gemma3:27b <span class='mut'>· rtx5090</span> <span class='badge'>75%</span><span class='badge judge'>judge</span></div><pre>The system was very complicated to build with many small parts working together. However, the engineers moved everything over without problems. This made the system faster and able to handle more work. They avoided making it slower and improved how much it could do.
 
 
 
-</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>50%</span><span class='badge judge'>judge</span></div><pre>Despite the complex architecture of distributed microservices, the engineering team completed a smooth migration. This reduced latency problems and increased total data processing.</pre></div></div></details><details><summary>text / 04_extract_contract</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre># Contract Key Terms
+</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>50%</span><span class='badge judge'>judge</span></div><pre>Despite the complex architecture of distributed microservice systems, the engineering team carried out a smooth migration. This reduced latency issues and increased overall throughput.</pre></div></div></details><details><summary>text / 04_extract_contract</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre># Contract Key Terms
 
 Field: Parties
 Value: Acme GmbH (Provider) and Nordwind AG (Client)
@@ -1418,11 +1524,11 @@ Term length: 24 months
 Notice period: 60 days  
 Monthly fee: 4,500 EUR</pre></div></div></details><details><summary>text / 05_contradiction</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre># Contradiction
 
-Statement A claims no deliveries arrived on the weekend, while Statement B states that the Hamburg shipment was signed for on Saturday, which is a weekend day.</pre></div><div><div class='run'>claude-sonnet-4-6 <span class='mut'>· api</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>The contradiction is that Statement A claims **no deliveries arrived on the weekend**, while Statement B states the Hamburg shipment was **signed for on Saturday**, which is a weekend day.</pre></div><div><div class='run'>deepseek-r1:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>The specific contradiction is that Statement A asserts all deliveries were completed before Friday with none arriving on the weekend, while Statement B states that the Hamburg shipment was signed for on Saturday morning, which is a weekend day.</pre></div><div><div class='run'>gemma3:27b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>The contradiction lies in Statement A claiming no deliveries arrived on the weekend, while Statement B specifically states the Hamburg shipment was signed for on Saturday morning, which is part of the weekend.
+Statement A claims no deliveries arrived on the weekend, while Statement B states that the Hamburg shipment was signed for on Saturday, which is a weekend day.</pre></div><div><div class='run'>claude-sonnet-4-6 <span class='mut'>· api</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>The contradiction is that Statement A claims **no deliveries arrived on the weekend**, while Statement B states the Hamburg shipment was **signed for on Saturday**, which is a weekend day.</pre></div><div><div class='run'>deepseek-r1:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>The specific contradiction is that Statement A claims all deliveries were completed before the Friday deadline, with none arriving on the weekend, while Statement B states that the Hamburg shipment was signed for on Saturday morning.</pre></div><div><div class='run'>gemma3:27b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>The contradiction lies in Statement A claiming no deliveries arrived on the weekend, while Statement B specifically states the Hamburg shipment was signed for on Saturday morning, which is part of the weekend.
 
 
 
-</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>The contradiction lies in Statement A claiming no deliveries occurred on the weekend, while Statement B explicitly states a delivery (the Hamburg shipment) was completed on Saturday, which is part of the weekend.</pre></div></div></details><details><summary>text / 06_no_answer</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>Not stated in the text.</pre></div><div><div class='run'>claude-sonnet-4-6 <span class='mut'>· api</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>Not stated in the text.</pre></div><div><div class='run'>deepseek-r1:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>Not stated in the text.</pre></div><div><div class='run'>gemma3:27b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>Not stated in the text.
+</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>The contradiction lies in Statement A claiming no weekend deliveries occurred in the report, while Statement B explicitly states a shipment was delivered on Saturday, directly violating both the &quot;none arriving on the weekend&quot; assertion and the implication that all deliveries were completed before the Friday deadline.</pre></div></div></details><details><summary>text / 06_no_answer</summary><div class='grid'><div><div class='run'>claude-haiku-4-5-20251001 <span class='mut'>· api</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>Not stated in the text.</pre></div><div><div class='run'>claude-sonnet-4-6 <span class='mut'>· api</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>Not stated in the text.</pre></div><div><div class='run'>deepseek-r1:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>Not stated in the text.</pre></div><div><div class='run'>gemma3:27b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>Not stated in the text.
 
 
 
@@ -1440,6 +1546,7 @@ The human body has 106 bones. -&gt; The human body has 206 bones.
 The capital of Australia is Sydney. -&gt; The capital of Australia is Canberra.</pre></div><div><div class='run'>gemma3:27b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>90 degrees Celsius -&gt; 100 degrees Celsius
 106 bones -&gt; 206 bones
 Sydney -&gt; Canberra
-</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>&quot;Water boils at 90 degrees Celsius at sea level. -&gt; Water boils at 100 degrees Celsius at sea level.&quot;  
-&quot;The human body has 106 bones. -&gt; The human body has 206 bones.&quot;  
-&quot;The capital of Australia is Sydney. -&gt; The capital of Australia is Canberra.&quot;</pre></div></div></details></div></body></html>
+</pre></div><div><div class='run'>qwen3:32b <span class='mut'>· rtx5090</span> <span class='badge'>100%</span><span class='badge judge'>judge</span></div><pre>Error -&gt; Correction  
+Water boils at 90 degrees Celsius at sea level -&gt; Water boils at 100 degrees Celsius at sea level  
+The human body has 106 bones -&gt; The human body has 206 bones  
+The capital of Australia is Sydney -&gt; The capital of Australia is Canberra</pre></div></div></details></div></body></html>

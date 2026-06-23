@@ -1,1 +1,1 @@
-The contradiction lies in Statement A claiming "none [deliveries] arrived on the weekend" while Statement B explicitly states a shipment in the same report was delivered on Saturday, a weekend day.
+The contradiction lies in Statement A claiming no weekend deliveries occurred in the report, while Statement B explicitly states a shipment was delivered on Saturday, directly violating both the "none arriving on the weekend" assertion and the implication that all deliveries were completed before the Friday deadline.

@@ -1,0 +1,6 @@
+Draw from the box labeled "Apples & Oranges". Since all labels are incorrect, this box must contain only apples or only oranges. 
+
+- **If you draw an apple**: The "Apples & Oranges" box is actually "Apples". The box labeled "Apples" (incorrect) cannot be apples, so it must be "Oranges" (since "Apples & Oranges" is already used). The remaining box labeled "Oranges" must be "Apples & Oranges".  
+- **If you draw an orange**: The "Apples & Oranges" box is actually "Oranges". The box labeled "Oranges" (incorrect) cannot be oranges, so it must be "Apples". The remaining box labeled "Apples" must be "Apples & Oranges".  
+
+This single draw allows deducing all correct labels.

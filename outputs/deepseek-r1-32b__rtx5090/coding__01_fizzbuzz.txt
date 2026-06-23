@@ -1,14 +1,12 @@
-To solve this problem, we need to write a Python function `solve(n)` that generates a list of strings for numbers from 1 to n. The rules are as follows:
-- Multiples of 3 should be replaced with "fizz".
-- Multiples of 5 should be replaced with "buzz".
-- Multiples of 7 should be replaced with "bang".
-- If a number is a multiple of more than one of these, the corresponding strings should be concatenated in the order "fizz", "buzz", and then "bang".
+To solve this problem, we need to write a Python function `solve(n)` that generates a list of strings for numbers from 1 to n. Each number in the list is transformed based on specific rules related to its divisibility by 3, 5, and 7.
 
 ### Approach
-1. **Loop through each number**: Iterate from 1 to n (inclusive).
-2. **Check divisibility**: For each number, check if it is a multiple of 3, 5, or 7 in that specific order.
-3. **Build the result string**: If a number is a multiple of any of these numbers, append the corresponding string ("fizz", "buzz", or "bang") to the result string for that number.
-4. **Handle non-multiples**: If none of the divisibility conditions are met, convert the number to a string and add it to the result list.
+The approach involves iterating through each number from 1 to n and checking its divisibility by 3, 5, and 7 in that order. For each number:
+1. If the number is divisible by 3, append "fizz" to a string.
+2. If the number is divisible by 5, append "buzz" to the same string.
+3. If the number is divisible by 7, append "bang" to the string.
+
+If none of these conditions are met, the number itself is converted to a string and added to the result list. Otherwise, the concatenated string from the checks is added.
 
 ### Solution Code
 ```python
@@ -27,9 +25,12 @@ def solve(n):
 ```
 
 ### Explanation
-- **Loop through each number**: The loop runs from 1 to n, ensuring we process each number in the range.
-- **Check divisibility**: For each number, we check if it is divisible by 3, then by 5, and finally by 7. This ensures that the strings are concatenated in the correct order.
-- **Build result string**: Depending on the divisibility checks, the corresponding strings ("fizz", "buzz", "bang") are appended to form the result for each number.
-- **Handle non-multiples**: If no conditions are met (i.e., the result string is empty), we convert the number to a string and add it to the result list.
+- **Initialization**: We start by initializing an empty list `result` to store the transformed strings.
+- **Loop through numbers**: For each number from 1 to n, we initialize an empty string `s`.
+- **Check divisibility**:
+  - If the number is divisible by 3, "fizz" is appended to `s`.
+  - If the number is divisible by 5, "buzz" is appended to `s`.
+  - If the number is divisible by 7, "bang" is appended to `s`.
+- **Build result**: After checking all conditions, if `s` is non-empty, it is added to the result list. Otherwise, the string representation of the number itself is added.
 
-This approach efficiently handles all cases, ensuring that each number is processed correctly according to the given rules.
+This approach ensures that each number is checked in the specified order and transformed correctly according to the given rules.

@@ -34,7 +34,7 @@ x = 0.05
 \]
 
 **Conclusion:**
-The ball costs **0.05 euros**.
+The ball costs **€0.05**.
 
 \[
 \boxed{0.05\,\text{euros}}

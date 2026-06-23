@@ -1,1 +1,1 @@
-Despite the complex architecture of distributed microservice systems, the engineering team moved everything smoothly. This reduced delays and greatly increased system performance.
+Despite the complex architecture of distributed microservice systems, the engineering team carried out a smooth migration. This reduced latency issues and increased overall throughput.
