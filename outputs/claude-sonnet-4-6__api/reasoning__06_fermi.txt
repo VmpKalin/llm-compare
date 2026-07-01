@@ -8,50 +8,54 @@ Berlin is Germany's capital and largest city. I'll estimate roughly **3.5 millio
 
 ## Step 2: Number of Pianos in Berlin
 
-Not every household has a piano — it's a relatively specialized instrument. Let me think about household composition and ownership rates.
+Not every household has a piano — it's a relatively expensive, space-consuming instrument. I'll think about this in layers:
 
 - Average household size in a dense European city: ~**2 people per household**
 - That gives roughly **1.75 million households**
-- Piano ownership is more common in Germany than many countries (strong musical culture), but still a minority pursuit
-- I'd estimate maybe **1 in 30 households** owns a piano (schools, churches, bars, music schools add institutional pianos on top)
-- Household pianos: 1,750,000 / 30 ≈ **~58,000 pianos**
-- Add institutional pianos (schools, conservatories, churches, hotels, studios): maybe **+20% → ~70,000 pianos total**
+- Piano ownership is more common in Germany than many countries (strong musical culture), but still a minority hobby
+- I'd estimate maybe **1 in 20 households** owns a piano → that's a 5% ownership rate
+- 1,750,000 × 0.05 = **~87,500 household pianos**
+
+But pianos also exist in institutions: schools, churches, hotels, concert halls, music schools, bars, rehearsal studios. Berlin has a particularly rich cultural scene. I'll add maybe **30% more** for institutional pianos.
+
+- 87,500 × 1.3 ≈ **~115,000 pianos total**
 
 ---
 
 ## Step 3: How Often Are Pianos Tuned?
 
-- A well-maintained piano *should* be tuned **2× per year**
-- But realistically, many household pianos are neglected — maybe tuned once every 2 years on average
-- Blending these: call it roughly **once per year** on average across all pianos
-- Institutional pianos are tuned more often, but they're a minority
-- **Total tunings per year: ~70,000**
+- A well-maintained piano should be tuned **2 times per year**
+- Many household pianos are neglected — maybe tuned once every 2 years on average
+- Institutional pianos (concert halls, music schools) are tuned far more frequently — some weekly
+- Blending these: I'll estimate an **average of 1 tuning per piano per year** across the whole stock
+
+- Total tunings per year: **115,000 × 1 = ~115,000 tunings/year**
 
 ---
 
-## Step 4: How Many Tunings Can One Tuner Do?
+## Step 4: How Much Work Can One Tuner Do?
 
-- A tuner travels to clients, so time includes transit
-- Tuning itself: ~1–1.5 hours per piano
-- With travel, scheduling, admin: realistically **4 tunings per working day**
-- Working days per year: 5 days/week × 48 weeks (allowing holidays/sick days) = **~240 days**
-- Tunings per tuner per year: 4 × 240 = **~960 tunings/year**
+- A tuning takes roughly **1.5 hours** including travel time in a city
+- A tuner works ~**5 days/week**, ~**48 weeks/year** (allowing for holidays, admin)
+- Working hours per day: ~**6 productive hours** (travel, setup, tuning)
+- Tunings per day: 6 ÷ 1.5 = **~4 tunings/day**
+- Tunings per year per tuner: 4 × 5 × 48 = **~960 tunings/year**
 
----
-
-## Step 5: Number of Tuners Needed
-
-$$\text{Tuners} = \frac{70{,}000 \text{ tunings/year}}{960 \text{ tunings/tuner/year}} \approx \mathbf{73}$$
+Call it roughly **1,000 tunings per tuner per year**.
 
 ---
 
-## Final Estimate
+## Step 5: Final Calculation
 
-**Roughly 70–80 professional piano tuners** work in Berlin.
+$$\text{Tuners} = \frac{\text{Total tunings/year}}{\text{Tunings per tuner/year}} = \frac{115{,}000}{1{,}000} \approx \mathbf{115}$$
 
 ---
+
+## Result: Roughly **100–150 piano tuners** in Berlin
 
 ### Sanity Check
-Berlin ≈ 3.5× the size of a city of 1 million. A mid-sized city of 1 million might have ~20 tuners, so 3.5× gives ~70. ✓ That feels consistent.
+- That's about 1 tuner per 30,000 people — plausible for a skilled niche trade
+- Berlin likely has *more* than average due to its arts/music culture, which my piano count already partially captures
+- The number feels right: not so few that they'd be overwhelmed, not so many that it's implausible as a livelihood
 
-The answer is plausible — it's a specialized trade, not a common profession, but Berlin's size and cultural richness support a meaningful community of them.
+**Final answer: ~120 piano tuners**

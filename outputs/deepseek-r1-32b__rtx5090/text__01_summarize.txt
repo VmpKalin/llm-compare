@@ -1,3 +1,3 @@
-- Ollama runs large language models locally on personal devices.  
-- Includes model weights, config, runtime in one app with CLI/HTTP API.  
-- Quantizes models for lower memory use; performance varies by hardware.
+- Ollama runs large language models locally on your hardware.  
+- Packages model weights, config, and runtime into one app with CLI/HTTP API.  
+- Quantizes models to reduce memory use, improving efficiency on smaller devices.

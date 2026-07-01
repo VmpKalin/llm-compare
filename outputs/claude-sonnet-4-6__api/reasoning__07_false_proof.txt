@@ -1,37 +1,37 @@
 ## The Flaw: Division by Zero
 
-The error occurs in **Step 5: "Divide both sides by (a−b)"**.
+The error occurs at the step:
+
+> **"Divide both sides by (a − b)"**
+
+---
 
 ### Why It's Invalid
 
-The proof begins by stating **a = b**, which means:
+The proof begins by setting **a = b**, which means:
 
 $$a - b = 0$$
 
-Dividing both sides by $(a-b)$ is therefore **dividing by zero**, which is undefined and not a valid algebraic operation.
+Dividing both sides by $(a - b)$ is therefore **dividing by zero**, which is undefined and not a valid algebraic operation.
+
+---
 
 ### What's Actually Happening
 
-At Step 4, the equation is legitimately true:
+Up to the factoring step, everything is legitimate:
 
 $$(a+b)(a-b) = b(a-b)$$
 
-This is just $0 = 0$, since both sides contain the factor $(a-b) = 0$. The equation holds, but it carries **no information** about the relationship between $a$ and $b$ beyond what we already assumed.
+This is a **true statement** — but it's actually just $0 = 0$, since both sides contain the factor $(a - b) = 0$.
 
-When you "cancel" $(a-b)$ from both sides, you are performing:
+When you "cancel" $(a-b)$ from both sides, you are not simplifying — you are performing:
 
-$$\frac{(a+b)\cancel{(a-b)}}{\cancel{(a-b)}} = \frac{b\cancel{(a-b)}}{\cancel{(a-b)}}$$
+$$\frac{(a+b)\cdot 0}{0} = \frac{b \cdot 0}{0}$$
 
-which is the operation $\dfrac{0}{0}$, an **indeterminate form**. This step is not permitted under any circumstances in standard arithmetic or algebra.
+which is **undefined**. Any conclusion drawn after this step is meaningless.
 
-### Summary
+---
 
-| Step | Valid? | Reason |
-|------|--------|--------|
-| a = b | ✓ | Given assumption |
-| a² = ab | ✓ | Multiply both sides by a |
-| a²−b² = ab−b² | ✓ | Subtract b² from both sides |
-| (a+b)(a−b) = b(a−b) | ✓ | Correct factoring |
-| **Divide by (a−b)** | **✗** | **(a−b) = 0; division by zero** |
+### Key Takeaway
 
-Every step after that point is built on an invalid operation, making the conclusion $2 = 1$ meaningless.
+Division by zero can be disguised — here it's hidden inside an algebraic expression $(a-b)$ that *looks* nonzero but isn't. This is a classic technique in false proofs: **smuggle in a zero, divide by it, derive nonsense**.

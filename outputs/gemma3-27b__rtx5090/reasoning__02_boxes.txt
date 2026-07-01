@@ -1,9 +1,6 @@
 Draw from the **"Apples & Oranges"** box.
 
-**Reasoning:** Since all labels are wrong, this box *cannot* contain both apples and oranges. 
-
-*   If you draw an apple, you know this box contains only apples. This means the "Oranges" box must contain both fruits (since it's mislabeled), leaving the "Apples" box to hold only oranges.
-*   If you draw an orange, you know this box contains only oranges.  This means the "Apples" box must contain both fruits, leaving the "Oranges" box to hold only apples.
+**Reasoning:** This box *cannot* contain both apples and oranges (label is wrong). If you pull an apple, you know this box contains only apples. The "Oranges" box must then contain mixed fruit, leaving the "Apples" box for oranges.  The logic reverses if you pull an orange. 
 
 
 

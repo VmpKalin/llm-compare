@@ -2,8 +2,6 @@ The error occurs in the step where we **divide both sides by (a - b)**.
 
 Here's why it's invalid:
 
-We started with the assumption that `a = b`.  This means that `a - b = 0`.  Division by zero is undefined and illegal in mathematics. Dividing both sides of an equation by a quantity that equals zero leads to a nonsensical result, as demonstrated here.
+We started with the assumption that `a = b`.  This means that `a - b = 0`. Division by zero is undefined and illegal in mathematics. Dividing by (a-b) is essentially dividing by zero, which makes the entire step invalid and leads to the false conclusion.
 
-The step `(a+b)(a-b) = b(a-b)` implies dividing by `(a-b)`, but since `a=b`, we are effectively dividing by 0.  This invalidates the entire subsequent argument and allows us to "prove" false statements like 2=1.
-
-In short, you can't divide by zero! It breaks the rules of algebra.
+Even though the algebraic manipulation *looks* correct at first glance, it's built on an operation that isn't allowed.  You can't divide by a quantity that equals zero.

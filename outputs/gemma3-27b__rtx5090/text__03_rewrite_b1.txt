@@ -1,4 +1,4 @@
-The system was very complicated to build with many small parts working together. However, the engineers moved everything over without problems. This made the system faster and able to handle more work. They avoided making it slower and improved how much it could do.
+The system was very complicated to build with many small parts working together. However, the engineers moved everything over without problems. This made the system faster and improved how much work it could do. They avoided making the response time slower and increased its capacity.
 
 
 

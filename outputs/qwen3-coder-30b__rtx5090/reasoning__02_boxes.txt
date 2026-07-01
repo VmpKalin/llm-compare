@@ -1,0 +1,9 @@
+Draw from the "Apples & Oranges" box.
+
+Reasoning: Since all labels are wrong, this box cannot contain both apples and oranges. It must contain only apples OR only oranges.
+
+- If you draw an apple from this box, then this box contains only apples
+- Since the "Apples" box is also wrong, it must contain only oranges  
+- The remaining "Oranges" box must contain both apples and oranges
+
+The same logic applies if you draw an orange (reversing the roles). This single draw uniquely determines all three box contents.

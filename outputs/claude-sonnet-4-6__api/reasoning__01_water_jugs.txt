@@ -5,6 +5,6 @@ Here is one efficient solution:
 3. Empty the 3-litre jug.
 4. Pour the 2 litres from the 5-litre jug into the 3-litre jug.
 5. Fill the 5-litre jug completely.
-6. Pour from the 5-litre jug into the 3-litre jug until it is full (only 1 litre fits, since it already has 2 litres), leaving exactly 4 litres in the 5-litre jug.
+6. Pour from the 5-litre jug into the 3-litre jug until it is full (only 1 litre fits, since it already holds 2 litres), leaving exactly 4 litres in the 5-litre jug.
 
 You now have exactly 4 litres in the 5-litre jug.

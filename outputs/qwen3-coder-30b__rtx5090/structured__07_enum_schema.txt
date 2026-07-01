@@ -1,0 +1,6 @@
+{
+  "username": "samvega",
+  "role": "editor",
+  "active": true,
+  "login_count": 12
+}

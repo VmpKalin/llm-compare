@@ -1,0 +1,3 @@
+• Ollama runs large language models locally on your hardware with simple command-line and HTTP interfaces
+• Models are quantized to reduce memory requirements, enabling smaller machines to run previously impossible models
+• Performance varies significantly based on hardware - GPU dramatically improves speed over CPU-only inference

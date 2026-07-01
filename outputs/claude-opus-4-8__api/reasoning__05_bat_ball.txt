@@ -1,0 +1,36 @@
+# Solving the Bat and Ball Problem
+
+## Setting Up the Equations
+
+Let me define variables:
+- Let **b** = cost of the ball
+- Let **B** = cost of the bat
+
+From the problem, I know:
+1. **B + b = 1.10** (total cost)
+2. **B = b + 1.00** (bat costs 1 euro more than ball)
+
+## Solving
+
+I'll substitute equation 2 into equation 1:
+
+$$(b + 1.00) + b = 1.10$$
+
+$$2b + 1.00 = 1.10$$
+
+$$2b = 0.10$$
+
+$$b = 0.05$$
+
+## Checking the Answer
+
+- Ball = **0.05 euros** (5 cents)
+- Bat = 0.05 + 1.00 = **1.05 euros**
+- Total: 0.05 + 1.05 = **1.10 euros** ✓
+- Difference: 1.05 − 0.05 = **1.00 euro** ✓
+
+## Answer
+
+**The ball costs 0.05 euros (5 cents).**
+
+> **Note:** The intuitive answer is 10 cents, but that's a trap! If the ball cost 0.10 euros, the bat would cost 1.10 euros, making the total 1.20 euros — not 1.10. The difference would also be only 1.00 euro correctly, but the total wouldn't work.

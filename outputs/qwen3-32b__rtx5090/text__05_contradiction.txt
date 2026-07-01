@@ -1,1 +1,1 @@
-The contradiction lies in Statement A claiming no deliveries arrived on the weekend, while Statement B explicitly states a shipment was signed for on Saturday (a weekend day), directly refuting this assertion.
+Statement B contradicts Statement A by asserting that the Hamburg shipment was delivered on Saturday, which directly conflicts with Statement A's claim that all deliveries were completed before the Friday deadline and none arrived on the weekend.

@@ -1,13 +1,13 @@
-To estimate the number of piano tuners in Berlin, we can follow this structured approach:
+To estimate the number of piano tuners in Berlin, we start with the city's population and work through several factors:
 
-1. **Population Estimate**: Berlin has approximately 3 million residents.
+1. **Population**: Berlin has approximately 3 million people, which translates to around 1.2 million households.
 
-2. **Piano Ownership Rate**: Assuming one piano per 100 people, there are about 30,000 pianos in Berlin (3,000,000 / 100).
+2. **Piano Ownership**: Assuming 1% of households own a piano, there are about 12,000 pianos in Berlin.
 
-3. **Tuning Frequency**: Each piano is tuned once a year on average.
+3. **Tuning Frequency**: Each piano is typically tuned twice a year, leading to 24,000 tunings annually (12,000 pianos × 2).
 
-4. **Tuner Workload**: A tuner can handle approximately 200 tunings per year (considering working days and time per tuning).
+4. **Workload per Tuner**: A tuner can perform about 800 tunings per year (assuming 4 tunings per day over 200 working days).
 
-5. **Calculation**: Dividing the total number of annual tunings by the workload per tuner gives us 30,000 / 200 = 150 piano tuners.
+5. **Number of Tuners**: Dividing the total annual tunings by the workload per tuner gives us approximately 30 piano tuners needed in Berlin.
 
-**Final Estimate**: There are approximately 150 piano tuners in Berlin.
+**Final Estimate**: There are roughly 30 piano tuners working in Berlin.

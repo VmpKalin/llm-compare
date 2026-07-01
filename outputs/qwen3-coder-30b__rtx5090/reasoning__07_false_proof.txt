@@ -1,0 +1,20 @@
+The error occurs in **Step 5** when both sides are divided by (a-b).
+
+Here's why this is invalid:
+
+Since we started with the assumption that **a = b**, this means that **a - b = 0**.
+
+In the proof, we divide both sides of the equation by (a-b), which is equivalent to dividing by zero:
+- From Step 4: (a+b)(a-b) = b(a-b)
+- From Step 5: We divide both sides by (a-b)
+
+But since a = b, we have a-b = 0, so we're essentially dividing by zero, which is **undefined** in mathematics.
+
+Division by zero leads to invalid conclusions because it violates fundamental mathematical principles. When you divide by zero, you can "prove" anything to be equal to anything else (as this proof demonstrates with 2 = 1).
+
+The step is mathematically invalid because:
+1. It involves division by zero
+2. Division by zero is undefined and produces contradictions
+3. This is why the conclusion 2 = 1 is false
+
+The rest of the algebraic manipulations are actually correct, but they're built upon this fundamental error that makes the entire proof nonsensical.

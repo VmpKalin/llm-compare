@@ -1,8 +1,7 @@
 ```python
 def second_largest(nums):
-    unique_nums = list(set(nums))
+    unique_nums = sorted(set(nums))
     if len(unique_nums) < 2:
         return None
-    unique_sorted = sorted(unique_nums)
-    return unique_sorted[-2]
+    return unique_nums[-2]
 ```

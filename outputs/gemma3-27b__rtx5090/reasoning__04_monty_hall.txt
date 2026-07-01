@@ -1,4 +1,2 @@
-Yes, you should absolutely switch! If you switch, your probability of winning is 2/3, while staying with your original choice leaves you with only a 1/3 chance of winning. Initially, your chosen door had a 1/3 chance of hiding the car; switching leverages the host's knowledge to concentrate the remaining 2/3 probability onto the unopened door, as the host *always* reveals a goat behind one of the doors you didn’t pick.
-
-
+Yes, you should absolutely switch! If you switch, your probability of winning is 2/3, while staying with your original choice leaves you with only a 1/3 chance of winning. Initially, your chosen door had a 1/3 chance of hiding the car; switching leverages the host's knowledge to concentrate the remaining 2/3 probability onto the single unopened door. 
 

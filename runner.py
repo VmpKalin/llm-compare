@@ -170,7 +170,6 @@ def run_claude(model, prompt, _host):
     payload = {
         "model": model,
         "max_tokens": 2048,
-        "temperature": 0.2,
         "messages": [{"role": "user", "content": prompt}],
     }
     t0 = time.time()

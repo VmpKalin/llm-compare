@@ -1,1 +1,1 @@
-Despite the complex architecture of distributed microservices, the engineering team successfully completed a smooth migration. This reduced latency problems and significantly increased overall throughput.
+Although the architecture of distributed microservice systems is complex, the engineering team successfully carried out the migration. This helped reduce latency issues and greatly increased the system's throughput.

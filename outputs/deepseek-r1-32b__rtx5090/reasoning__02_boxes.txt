@@ -1,9 +1,15 @@
-To solve the puzzle, draw from the box labeled "Apples & Oranges". Since all labels are incorrect, this box must contain only apples or only oranges.
+To solve the puzzle, draw a fruit from the box labeled "Apples & Oranges". Since all labels are incorrect, this box must contain only apples or only oranges.
 
-- **If you draw an apple**, the box contains only apples. The box labeled "Oranges" cannot have oranges (as it's mislabeled) and can't have apples either (since we've already identified the apples), so it must contain both apples and oranges. Finally, the box labeled "Apples" must contain only oranges.
+- If you draw an apple, the box contains only apples. The box labeled "Oranges" cannot contain oranges (as labels are wrong) and cannot contain apples (since we've identified the apples box), so it must contain both apples and oranges. Consequently, the box labeled "Apples" must contain only oranges.
 
-- **If you draw an orange**, the box contains only oranges. The box labeled "Apples" cannot have apples or oranges (as it's mislabeled) and thus must contain both. Consequently, the box labeled "Oranges" must contain only apples.
+- If you draw an orange, the box contains only oranges. The box labeled "Apples" cannot contain apples or both (as labels are wrong), so it must contain both fruits. Therefore, the box labeled "Oranges" must contain only apples.
 
-By drawing from the mixed label box first, you can logically deduce the contents of all three boxes with just one fruit drawn.
+Thus, drawing from the "Apples & Oranges" box allows you to deduce all three boxes' contents with certainty.
 
 **Answer:** Draw from the "Apples & Oranges" box. If you draw an apple, it contains only apples; then the "Oranges" box has both, and the "Apples" box has oranges. If you draw an orange, it contains only oranges; then the "Apples" box has both, and the "Oranges" box has apples.
+
+**Final Answer:** Draw from the "Apples & Oranges" box. The contents can be deduced as follows: if you draw an apple, the boxes are Apples & Oranges (apples), Oranges (both), and Apples (oranges). If you draw an orange, they are Apples & Oranges (oranges), Apples (both), and Oranges (apples).
+
+**Concise Answer:** Draw from the "Apples & Oranges" box. The contents can be deduced based on the drawn fruit.
+
+\boxed{\text{Draw from the "Apples & Oranges" box}}

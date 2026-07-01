@@ -1,0 +1,1 @@
+The system had many small connected services. This made the design very complex. But the engineering team moved everything to the new system without problems. Because of this, the system did not get slower. It also became much faster and could handle more work.

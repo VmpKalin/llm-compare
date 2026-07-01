@@ -1,14 +1,16 @@
 ```python
 def generate(n):
     result = []
-    def backtrack(current, open_count, close_count):
+    
+    def backtrack(current, open, close):
         if len(current) == 2 * n:
             result.append(current)
             return
-        if open_count < n:
-            backtrack(current + '(', open_count + 1, close_count)
-        if close_count < open_count:
-            backtrack(current + ')', open_count, close_count + 1)
-    backtrack('', 0, 0)
+        if open < n:
+            backtrack(current + '(', open + 1, close)
+        if close < open:
+            backtrack(current + ')', open, close + 1)
+    
+    backtrack("", 0, 0)
     return result
 ```

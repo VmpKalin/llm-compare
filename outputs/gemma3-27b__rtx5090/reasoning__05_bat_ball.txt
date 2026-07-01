@@ -1,4 +1,4 @@
-Here's how to solve this classic riddle:
+Here's how to solve this problem:
 
 **Let:**
 
@@ -16,8 +16,4 @@ x + (x + 1.00) = 1.10
 2. Subtract 1.00 from both sides: 2x = 0.10
 3. Divide both sides by 2: x = 0.05
 
-**Answer:** The ball costs 0.05 euros (or 5 cents).
-
-**Reasoning:**
-
-The key is to recognize that the difference in price between the bat and ball is a fixed amount (€1.00). By setting up an algebraic equation, we can account for this difference and solve for the cost of the ball.
+**Answer:** The ball costs 0.05 euros (or 5 cents). 

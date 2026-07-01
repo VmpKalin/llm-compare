@@ -1,1 +1,0 @@
-The team moved to a new system with many small services. This system is complicated because the services are spread out in different places. However, the engineers did the move very well. They made sure the system stayed fast and did not slow down. The system now works much better and can do more work.

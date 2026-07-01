@@ -1,15 +1,10 @@
-To measure exactly 4 litres using a 3-litre jug and a 5-litre jug, follow these steps:
+To measure exactly 4 liters using a 3-liter jug and a 5-liter jug, follow these steps:
 
-1. **Fill the 5-litre jug completely** with water.
+1. Fill the 5-liter jug completely with water.
+2. Pour water from the 5-liter jug into the 3-liter jug until the 3-liter jug is full. This leaves 2 liters in the 5-liter jug.
+3. Empty the 3-liter jug.
+4. Transfer the remaining 2 liters from the 5-liter jug into the now-empty 3-liter jug.
+5. Refill the 5-liter jug completely with water again.
+6. Pour water from the 5-liter jug into the 3-liter jug until it's full. Since the 3-liter jug already contains 2 liters, only 1 liter will be transferred, leaving exactly 4 liters in the 5-liter jug.
 
-2. **Pour water from the 5-litre jug into the 3-litre jug** until the 3-litre jug is full. This leaves exactly 2 litres in the 5-litre jug (since 5 - 3 = 2).
-
-3. **Empty the 3-litre jug** back into the unlimited water source or discard its contents.
-
-4. **Transfer the remaining 2 litres from the 5-litre jug** into the now-empty 3-litre jug. The 3-litre jug now contains 2 litres, and the 5-litre jug is empty.
-
-5. **Fill the 5-litre jug completely** again with water.
-
-6. **Pour water from the 5-litre jug into the 3-litre jug** until the 3-litre jug is full. Since the 3-litre jug already contains 2 litres, it can only take an additional 1 litre to reach its capacity. This leaves exactly 4 litres in the 5-litre jug (since 5 - 1 = 4).
-
-At this point, the 5-litre jug contains exactly 4 litres of water.
+Now, the 5-liter jug contains exactly 4 liters of water.

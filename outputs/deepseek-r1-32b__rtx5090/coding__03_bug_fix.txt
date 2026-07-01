@@ -2,23 +2,27 @@ To solve this problem, we need to determine the second largest unique value in a
 
 ### Approach
 The approach involves the following steps:
-1. **Remove Duplicates**: Convert the input list into a set to eliminate any duplicate values.
-2. **Check for Sufficient Unique Values**: If the resulting set has fewer than two elements, return `None` since we cannot determine a second largest value in such cases.
-3. **Sort and Find Second Largest**: Sort the unique values in ascending order and then return the second last element from this sorted list, which will be the second largest unique value.
+1. **Remove Duplicates**: Convert the list into a set to remove duplicates, ensuring each number appears only once.
+2. **Sort the Unique Values**: Convert the set back into a sorted list to arrange the numbers in ascending order.
+3. **Check for Sufficient Elements**: If there are fewer than two unique values, return `None` since we cannot determine a second largest value.
+4. **Return the Second Largest Unique Value**: If there are at least two unique values, return the second last element from the sorted list of unique values.
+
+This approach ensures that we correctly handle duplicates and efficiently find the second largest unique value.
 
 ### Solution Code
 ```python
 def second_largest(nums):
-    unique = list(set(nums))
-    if len(unique) < 2:
+    unique_nums = sorted(set(nums))
+    if len(unique_nums) < 2:
         return None
-    unique_sorted = sorted(unique)
-    return unique_sorted[-2]
+    else:
+        return unique_nums[-2]
 ```
 
 ### Explanation
-1. **Removing Duplicates**: By converting the input list to a set, we ensure that all duplicate values are removed, leaving only unique elements.
-2. **Checking for Sufficient Unique Values**: If there are fewer than two unique values, it is impossible to determine a second largest value, so we return `None`.
-3. **Sorting and Finding Second Largest**: After sorting the unique values in ascending order, the second last element (at index `-2`) will be the second largest unique value in the original list.
+1. **Removing Duplicates**: By converting the list to a set, we eliminate any duplicate values, ensuring each number is considered only once.
+2. **Sorting Unique Values**: Sorting the set of unique numbers allows us to easily access the largest and second largest values by their positions in the sorted list.
+3. **Checking Element Count**: If there are fewer than two unique elements, it's impossible to have a second largest value, so we return `None`.
+4. **Returning the Result**: The second last element of the sorted unique list is the second largest unique value, which we return as the result.
 
-This approach efficiently handles duplicates and ensures that we correctly identify the second largest unique value when it exists.
+This method efficiently handles all edge cases and ensures correctness by leveraging set operations and sorting.

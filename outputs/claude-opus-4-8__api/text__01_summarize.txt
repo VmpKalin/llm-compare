@@ -1,0 +1,3 @@
+- Ollama runs large language models locally, bundling weights, config, and runtime together.
+- It offers a command-line interface and HTTP API with quantized models.
+- Performance depends on hardware; GPUs boost speed, small devices run slowly.

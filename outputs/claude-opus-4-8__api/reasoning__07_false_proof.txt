@@ -1,0 +1,36 @@
+# The Error
+
+The proof goes wrong at the step:
+
+**Divide both sides by (a-b):     a + b = b**
+
+## Why It's Invalid
+
+The problem is that we're **dividing by zero**.
+
+Recall the very first line: **a = b**.
+
+This means:
+$$a - b = 0$$
+
+So when the proof "divides both sides by (a−b)," it is actually dividing by **zero**, which is an undefined operation in mathematics.
+
+## The Deeper Reason
+
+Division by zero is forbidden because it breaks the logic of equations. Consider:
+
+- The equation $(a+b)(a-b) = b(a-b)$ is perfectly **true** — both sides equal zero when $a = b$.
+- But you cannot "cancel" the $(a-b)$ factor, because canceling assumes you're dividing by a nonzero quantity.
+
+In fact, $0 \times (\text{anything}) = 0 \times (\text{anything else})$ is true for *any* two values. So the equation:
+$$(a+b) \cdot 0 = b \cdot 0$$
+tells us **nothing** about whether $a+b$ equals $b$. The equality is guaranteed by the zeros, not by the other factors.
+
+## Verification
+
+Every step **up to and including the factoring** is valid:
+- $a^2 = ab$ ✓
+- $a^2 - b^2 = ab - b^2$ ✓
+- $(a+b)(a-b) = b(a-b)$ ✓ (both sides are 0)
+
+The illegal division is what produces the false conclusion $2 = 1$.

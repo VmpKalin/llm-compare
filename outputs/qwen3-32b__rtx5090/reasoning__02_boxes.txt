@@ -1,18 +1,12 @@
-To deduce the contents of all three boxes, **draw a fruit from the box labeled "Apples & Oranges"**. Here's the reasoning:
+You should draw from the box labeled "Apples & Oranges".  
 
-1. **All labels are incorrect**. Thus:
-   - The "Apples" box cannot contain only apples.
-   - The "Oranges" box cannot contain only oranges.
-   - The "Apples & Oranges" box cannot contain both.
+**Reasoning**:  
+Since all labels are incorrect, the "Apples & Oranges" box must contain only apples or only oranges.  
+- If you draw an **apple**, the box must be **apples**. Then:  
+  - The "Apples" box (incorrectly labeled) cannot be apples, so it must be **oranges** (since "Oranges" is also mislabeled and cannot be oranges).  
+  - The remaining "Oranges" box must be the **mix**.  
+- If you draw an **orange**, the box must be **oranges**. Then:  
+  - The "Oranges" box (incorrectly labeled) cannot be oranges, so it must be **apples**.  
+  - The remaining "Apples" box must be the **mix**.  
 
-2. The **"Apples & Oranges" box must contain only one type of fruit** (apples or oranges), since it cannot contain both.
-
-3. **Draw one fruit from this box**:
-   - If you draw an **apple**, the box must contain **only apples**.
-     - The "Oranges" box (incorrectly labeled) cannot be oranges, so it must be the **mix** (since the "Apples" box cannot be apples or mix).
-     - The "Apples" box (incorrectly labeled) cannot be apples or mix, so it must be **oranges**.
-   - If you draw an **orange**, the box must contain **only oranges**.
-     - The "Apples" box (incorrectly labeled) cannot be apples or mix, so it must be **oranges**.
-     - The "Oranges" box (incorrectly labeled) cannot be oranges or mix, so it must be **apples**.
-
-Thus, **drawing from the "Apples & Oranges" box** allows you to deduce the correct contents of all three boxes.
+This single draw definitively identifies all boxes.

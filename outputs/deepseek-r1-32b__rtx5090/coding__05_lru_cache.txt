@@ -1,20 +1,20 @@
-To solve this problem, we need to implement an LRUCache class in Python with a fixed capacity. The methods `get` and `put` must both run in O(1) average time complexity. We will use the `OrderedDict` from the `collections` module to efficiently manage the least recently used items.
+To solve this problem, we need to implement an LRUCache class in Python that supports fixed capacity and provides O(1) average time complexity for both get and put operations. The Least Recently Used (LRU) cache eviction policy will be used when the cache exceeds its capacity.
 
 ### Approach
-The approach leverages the properties of `OrderedDict`, which maintains insertion order by default. When an item is accessed or added, it can be moved to the end using the `move_to_end` method, marking it as the most recently used. The beginning of the ordered dictionary will always contain the least recently used items.
+The approach leverages Python's `collections.OrderedDict`, which maintains the insertion order of elements. This allows us to efficiently track the least recently used items by moving accessed or updated items to the end of the dictionary, making the beginning of the dictionary represent the least recently used items.
 
-1. **Constructor**: Initializes the cache with a given capacity and sets up an empty `OrderedDict`.
-2. **Get Method**: Checks if the key exists in the cache. If it does, the key is moved to the end (marking it as most recently used), and its value is returned. If not, returns -1.
-3. **Put Method**: Updates or adds a key-value pair. If the key already exists, its value is updated, and the key is moved to the end. If the cache exceeds its capacity, the least recently used item (at the beginning) is removed before adding the new item.
+1. **Initialization**: The constructor initializes an `OrderedDict` and sets the capacity.
+2. **Get Operation**: When retrieving a value using `get(key)`, if the key exists, it is moved to the end of the dictionary (marking it as most recently used), and its value is returned. If the key does not exist, -1 is returned.
+3. **Put Operation**: When inserting or updating a value using `put(key, value)`, if the key already exists, its value is updated and moved to the end. If the key does not exist, it is added to the dictionary. If adding this new key exceeds the capacity, the least recently used item (at the beginning of the dictionary) is removed.
 
 ### Solution Code
 ```python
-from collections import OrderedDict
+import collections
 
 class LRUCache:
     def __init__(self, capacity):
         self.capacity = capacity
-        self.cache = OrderedDict()
+        self.cache = collections.OrderedDict()
 
     def get(self, key):
         if key in self.cache:
@@ -34,8 +34,8 @@ class LRUCache:
 ```
 
 ### Explanation
-- **Initialization**: The constructor initializes the cache with a specified capacity and an empty `OrderedDict`.
-- **Get Operation**: When retrieving a key, it checks for existence. If found, it moves the key to the end of the dictionary (marking it as recently used) and returns its value. If not found, it returns -1.
-- **Put Operation**: When adding or updating a key-value pair, if the key exists, it updates the value and moves the key to the end. If the cache is full, the least recently used item (first in the dictionary) is removed before adding the new item.
+- **Initialization**: The `__init__` method initializes the cache with a given capacity and an empty `OrderedDict`.
+- **Get Method**: The `get` method checks if the key exists in the cache. If it does, the key is moved to the end of the dictionary (marking it as recently used), and its value is returned. If not found, -1 is returned.
+- **Put Method**: The `put` method updates or adds a key-value pair. If the key already exists, its value is updated, and the key is moved to the end. If the key does not exist, it is added. If adding this new key exceeds the capacity, the least recently used item (at the beginning) is removed using `popitem(last=False)`.
 
-This approach ensures that both `get` and `put` operations are efficient, operating in O(1) average time complexity due to the properties of `OrderedDict`.
+This approach ensures that both get and put operations are efficient with O(1) average time complexity, making the LRUCache class suitable for scenarios requiring frequent cache operations with a fixed size constraint.

@@ -7,7 +7,7 @@ def generate(n):
         n: The number of pairs of parentheses.
 
     Returns:
-        A list of strings representing the combinations of well-formed parentheses.
+        A list of strings representing the valid parenthesis combinations.
     """
     result = []
 

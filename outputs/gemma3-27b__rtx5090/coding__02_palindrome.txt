@@ -1,10 +1,12 @@
 ```python
+import re
+
 def is_palindrome(s):
     """
     Returns True if the string is a palindrome, ignoring case, spaces, and punctuation.
     Empty string returns True.
     Examples: "A man, a plan, a canal: Panama" -> True; "race a car" -> False.
     """
-    processed_string = ''.join(char.lower() for char in s if char.isalnum())
+    processed_string = re.sub(r'[^a-zA-Z0-9]', '', s).lower()
     return processed_string == processed_string[::-1]
 ```

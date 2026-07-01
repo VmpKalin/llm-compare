@@ -1,33 +1,32 @@
-To solve this problem, we need to merge overlapping or touching intervals from a given list of intervals. The goal is to return a list of non-overlapping intervals sorted by their start times.
+To solve this problem, we need to merge overlapping intervals from a given list of intervals. Each interval is represented as a pair `[start, end]`. The goal is to return a list of non-overlapping intervals sorted by their start times.
 
 ### Approach
-1. **Sort Intervals**: First, we sort the intervals based on their start times. This helps in easily identifying and merging overlapping intervals as they will be adjacent after sorting.
+1. **Sort Intervals**: First, we sort the intervals based on their start times. This helps in easily identifying overlapping or adjacent intervals.
 2. **Initialize Merged List**: We initialize a list with the first interval from the sorted list.
-3. **Iterate Through Intervals**: For each subsequent interval, we compare it with the last interval in our merged list:
-   - If the current interval starts before or at the end of the last merged interval, they overlap or touch, so we merge them by updating the end time to be the maximum of both intervals' end times.
-   - If the current interval does not overlap with the last merged interval, we add it as a new entry in our merged list.
-
-This approach ensures that all overlapping and touching intervals are efficiently merged into non-overlapping intervals.
+3. **Iterate and Merge**: For each subsequent interval, we check if it overlaps or touches the last interval in our merged list. If it does, we merge them by updating the end of the last interval to be the maximum end of both intervals. If it doesn't overlap, we simply add the current interval to our merged list.
 
 ### Solution Code
 ```python
 def merge(intervals):
     if not intervals:
         return []
-    sorted_intervals = sorted(intervals, key=lambda x: x[0])
-    merged = [sorted_intervals[0]]
-    for current in sorted_intervals[1:]:
-        last = merged[-1]
-        if current[0] <= last[1]:
-            last[1] = max(last[1], current[1])
+    # Sort intervals based on start time
+    intervals.sort(key=lambda x: x[0])
+    merged = [intervals[0]]
+    for i in range(1, len(intervals)):
+        current_start, current_end = intervals[i]
+        last_merged_start, last_merged_end = merged[-1]
+        if current_start <= last_merged_end:
+            # Merge the intervals
+            new_end = max(last_merged_end, current_end)
+            merged[-1][1] = new_end
         else:
-            merged.append(current)
+            merged.append([current_start, current_end])
     return merged
 ```
 
 ### Explanation
-- **Sorting**: The intervals are sorted by their start times to ensure that any overlapping or touching intervals are adjacent.
-- **Merging Process**: We iterate through each interval, starting from the second one. For each interval, we check if it overlaps with the last interval in our result list. If it does, we merge them; otherwise, we add the current interval as a new entry.
-- **Efficiency**: This approach efficiently handles merging by only making a single pass through the sorted intervals after sorting, resulting in an overall time complexity of O(n log n) due to the sorting step.
+- **Sorting**: By sorting the intervals based on their start times, we ensure that any overlapping or adjacent intervals are processed in sequence.
+- **Merging Process**: We maintain a list of merged intervals. For each interval, if it overlaps with the last merged interval, we extend the end of the last interval to include the current interval. If there is no overlap, we add the current interval as a new entry in the merged list.
 
-This solution ensures that all overlapping or touching intervals are merged into non-overlapping intervals and returned in the correct order.
+This approach efficiently merges all overlapping intervals in linear time after sorting, resulting in an overall time complexity of O(n log n) due to the initial sort step. The space complexity is O(n) for storing the merged intervals.

@@ -1,0 +1,24 @@
+# Solution
+
+**Draw from the box labeled "Apples & Oranges."**
+
+## Reasoning
+
+Since every label is wrong, the box labeled "Apples & Oranges" cannot contain both — it must be **pure apples** or **pure oranges**. So one fruit reveals its true contents.
+
+**Case: you draw an Apple** → This box is "Apples."
+- The box labeled "Apples" is wrong, so it's not apples. It can't be "Apples & Oranges" (that's now the box we just identified as pure apples... wait, let me finish cleanly).
+- The box labeled "Apples" can't be apples (wrong label) and can't be apples-only, so it must be **Oranges** or **Mixed**. Since the true "Apples" box is found, the box labeled "Apples" is **Oranges & Apples (Mixed)**? 
+
+Let me state it precisely:
+
+**If you draw an Apple** (so "Apples & Oranges" box = **Apples**):
+- Box labeled "Oranges" is wrong → can't be oranges → it must be **Apples & Oranges (Mixed)**.
+- Box labeled "Apples" is wrong → can't be apples → and mixed is taken → it must be **Oranges**.
+
+**If you draw an Orange** (so "Apples & Oranges" box = **Oranges**):
+- Box labeled "Apples" is wrong → can't be apples → it must be **Apples & Oranges (Mixed)**.
+- Box labeled "Oranges" is wrong → can't be oranges → and mixed is taken → it must be **Apples**.
+
+## Key Insight
+The mislabeled "mixed" box is the only one guaranteed to be pure, so a single draw fully determines it. The other two boxes are then forced by elimination.

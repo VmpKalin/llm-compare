@@ -1,0 +1,23 @@
+# Tank Filling Problem
+
+## Setting Up the Rates
+
+**Pipe A** fills in 6 hours → rate = 1/6 tank per hour
+**Pipe B** fills in 4 hours → rate = 1/4 tank per hour
+**Pipe C** empties in 12 hours → rate = −1/12 tank per hour
+
+## Combined Rate
+
+$$\text{Rate} = \frac{1}{6} + \frac{1}{4} - \frac{1}{12}$$
+
+Using a common denominator of 12:
+
+$$\text{Rate} = \frac{2}{12} + \frac{3}{12} - \frac{1}{12} = \frac{4}{12} = \frac{1}{3} \text{ tank per hour}$$
+
+## Time to Fill
+
+$$\text{Time} = \frac{1 \text{ tank}}{\frac{1}{3} \text{ tank/hour}} = 3 \text{ hours}$$
+
+## Final Answer
+
+$$\boxed{\dfrac{3}{1} = 3 \text{ hours} = 3 \text{ hours } 0 \text{ minutes}}$$

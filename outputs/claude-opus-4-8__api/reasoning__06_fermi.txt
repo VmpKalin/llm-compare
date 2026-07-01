@@ -1,0 +1,50 @@
+# Estimating Piano Tuners in Berlin
+
+Let me work through this step by step using a Fermi estimation approach.
+
+## Step 1: Population of Berlin
+Berlin is Germany's largest city. I'll estimate its population at roughly **3.5 million people**.
+
+## Step 2: Number of Pianos
+I need to estimate how many pianos exist in Berlin.
+
+- **Households:** Assume ~2 people per household → about **1.75 million households**.
+- **Pianos in homes:** Germany has a fairly strong musical culture, but pianos are still a minority item. I'll estimate about **1 in 30 households** owns a piano → ~58,000 home pianos.
+- **Institutional pianos:** Schools, churches, music academies, concert halls, bars, etc. Let me add roughly **20%** more to account for these → ~12,000 institutional pianos.
+
+**Total pianos ≈ 70,000**
+
+## Step 3: Tuning Frequency
+- Pianos are ideally tuned about once or twice per year.
+- But many home pianos get tuned less often (neglected), while institutional/professional pianos get tuned more.
+- I'll use an average of **1 tuning per piano per year**.
+
+**Total tunings per year ≈ 70,000**
+
+## Step 4: Tuner Workload
+How many tunings can one full-time tuner perform per year?
+
+- A tuning takes about **1.5–2 hours**, plus travel time between clients.
+- Realistically a tuner might do **~3 tunings per working day**.
+- Working ~**220 days per year** (accounting for weekends, holidays, sick days, admin).
+
+**Tunings per tuner per year ≈ 3 × 220 = 660**, round to **~650**.
+
+## Step 5: Final Calculation
+
+$$
+\text{Tuners} = \frac{70,000 \text{ tunings/year}}{650 \text{ tunings/tuner/year}} \approx 108
+$$
+
+## Final Estimate
+
+**Roughly 100 piano tuners in Berlin** (order of magnitude: ~50–150).
+
+---
+
+### Key uncertainties
+- **Piano ownership rate** is the biggest wildcard — if it's 1 in 20 rather than 1 in 30, the number jumps by 50%.
+- **Tuning frequency** could easily be lower in practice (many pianos go untuned for years), pulling the estimate down.
+- Some tuners work part-time or combine tuning with repair/sales work, which would increase the headcount but reduce full-time-equivalents.
+
+Given these offsetting factors, **~100 tuners** feels like a reasonable central estimate.

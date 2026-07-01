@@ -3,20 +3,20 @@ To solve this problem, we need to determine if a given string is a palindrome wh
 ### Approach
 1. **Preprocess the Input String**: 
    - Convert all characters to lowercase to ensure case insensitivity.
-   - Remove all non-alphanumeric characters (such as punctuation and spaces) from the string. This can be efficiently done using list comprehensions and the `isalnum()` method, which checks if a character is alphanumeric.
+   - Remove all non-alphanumeric characters (such as spaces, punctuation) from the string. This can be efficiently done using list comprehensions and the `isalnum()` method which checks if a character is alphanumeric.
 
 2. **Check for Palindrome**:
-   - After preprocessing, check if the cleaned string reads the same forwards and backwards. This can be achieved by comparing the cleaned string with its reverse.
+   - After preprocessing, check if the resulting string reads the same forwards and backwards. This can be easily achieved by comparing the processed string with its reverse.
 
 ### Solution Code
 ```python
 def is_palindrome(s):
-    cleaned = ''.join([c.lower() for c in s if c.isalnum()])
-    return cleaned == cleaned[::-1]
+    processed = ''.join([c.lower() for c in s if c.isalnum()])
+    return processed == processed[::-1]
 ```
 
 ### Explanation
-- **Preprocessing**: The code uses a list comprehension to iterate over each character in the input string `s`. For each character, it checks if the character is alphanumeric using `isalnum()`. If it is, the character is converted to lowercase and included in the new list. This list is then joined into a single string called `cleaned`.
-- **Palindrome Check**: The cleaned string is compared with its reverse (using slicing `[::-1]`). If they are equal, the function returns `True`, indicating that the input string is a palindrome; otherwise, it returns `False`.
+- **Preprocessing**: The input string `s` is converted into a new string `processed` where each character is checked using `isalnum()`. Only alphanumeric characters are included, and they are converted to lowercase.
+- **Palindrome Check**: The processed string is then compared with its reverse. If they are equal, the function returns `True`, indicating that the input string is a palindrome; otherwise, it returns `False`.
 
-This approach efficiently handles all edge cases, including empty strings and strings composed entirely of non-alphanumeric characters, ensuring correct results for all valid inputs.
+This approach efficiently handles all edge cases, including empty strings and strings with only non-alphanumeric characters, ensuring correct results for all scenarios.

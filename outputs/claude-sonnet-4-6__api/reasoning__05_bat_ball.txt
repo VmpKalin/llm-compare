@@ -34,4 +34,4 @@ The bat therefore costs €1.05, and indeed:
 
 ---
 
-> **Why this is tricky:** The intuitive answer is €0.10, but that's wrong — if the ball cost €0.10, the bat would cost €1.10, totaling €1.20, not €1.10. The correct answer is **€0.05**.
+> 💡 The intuitive (but wrong) answer is 10 cents. If the ball cost €0.10, the bat would cost €1.10, totalling €1.20 — not €1.10. The correct answer, **5 cents**, is a classic example of how our intuitive thinking can lead us astray.

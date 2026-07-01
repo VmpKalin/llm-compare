@@ -1,36 +1,34 @@
-To solve this problem, we need to write a Python function `solve(n)` that generates a list of strings for numbers from 1 to n. Each number in the list is transformed based on specific rules related to its divisibility by 3, 5, and 7.
+To solve this problem, we need to write a Python function `solve(n)` that generates a list of strings for numbers from 1 to n based on specific rules. The rules are as follows: multiples of 3 become "fizz", multiples of 5 become "buzz", and multiples of 7 become "bang". If a number is a multiple of more than one of these, the corresponding words are concatenated in the order of fizz, buzz, bang. For example, 105 becomes "fizzbuzzbang".
 
 ### Approach
-The approach involves iterating through each number from 1 to n and checking its divisibility by 3, 5, and 7 in that order. For each number:
-1. If the number is divisible by 3, append "fizz" to a string.
-2. If the number is divisible by 5, append "buzz" to the same string.
-3. If the number is divisible by 7, append "bang" to the string.
+The approach to solve this problem involves iterating through each number from 1 to n and checking its divisibility by 3, 5, and 7 in that specific order. For each number:
+1. Initialize an empty string.
+2. Check if the number is divisible by 3; if true, append "fizz" to the string.
+3. Check if the number is divisible by 5; if true, append "buzz" to the string.
+4. Check if the number is divisible by 7; if true, append "bang" to the string.
+5. If the resulting string is non-empty after these checks, it means the number was a multiple of at least one of the divisors (3, 5, or 7), so we add this string to our result list. Otherwise, we convert the number to a string and add it to the result list.
 
-If none of these conditions are met, the number itself is converted to a string and added to the result list. Otherwise, the concatenated string from the checks is added.
+This approach ensures that each number is processed in constant time, making the overall complexity linear with respect to n.
 
 ### Solution Code
 ```python
 def solve(n):
     result = []
     for i in range(1, n + 1):
-        s = ''
+        s = ""
         if i % 3 == 0:
-            s += 'fizz'
+            s += "fizz"
         if i % 5 == 0:
-            s += 'buzz'
+            s += "buzz"
         if i % 7 == 0:
-            s += 'bang'
+            s += "bang"
         result.append(s if s else str(i))
     return result
 ```
 
 ### Explanation
-- **Initialization**: We start by initializing an empty list `result` to store the transformed strings.
-- **Loop through numbers**: For each number from 1 to n, we initialize an empty string `s`.
-- **Check divisibility**:
-  - If the number is divisible by 3, "fizz" is appended to `s`.
-  - If the number is divisible by 5, "buzz" is appended to `s`.
-  - If the number is divisible by 7, "bang" is appended to `s`.
-- **Build result**: After checking all conditions, if `s` is non-empty, it is added to the result list. Otherwise, the string representation of the number itself is added.
-
-This approach ensures that each number is checked in the specified order and transformed correctly according to the given rules.
+- The function `solve(n)` initializes an empty list `result` to store the output strings.
+- It iterates through each number from 1 to n using a for loop.
+- For each number, it checks divisibility by 3, 5, and 7 in sequence. Depending on the result of these checks, it constructs a string with "fizz", "buzz", and/or "bang".
+- If the constructed string is non-empty (indicating that at least one divisor was matched), this string is added to `result`. Otherwise, the number itself is converted to a string and added to `result`.
+- Finally, the function returns the list `result` containing the appropriate strings for each number from 1 to n.

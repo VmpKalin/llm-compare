@@ -1,0 +1,31 @@
+Let me work through this step-by-step using logical estimation.
+
+**Step 1: Berlin's population**
+Berlin has roughly 3.7 million people (I'm estimating slightly above the actual ~3.7 million to be safe).
+
+**Step 2: Pianos per person**
+- Not every household has a piano
+- Let's say about 1 in 100 households has a piano
+- That's 37,000 pianos in Berlin
+
+**Step 3: Tuning frequency**
+- Most pianos get tuned twice a year (spring and fall)
+- Some might tune more frequently if they're used heavily
+- Let's estimate an average of 2.5 tunings per piano per year
+
+**Step 4: Total tuning work needed**
+37,000 pianos × 2.5 tunings = 92,500 piano tunings per year
+
+**Step 5: Tuner workload**
+- A piano tuner works about 40 hours per week
+- Let's say 50 weeks of work per year (2 weeks vacation)
+- That's 2,000 hours per tuner per year
+- Each tuning takes about 2 hours (including travel time)
+- So each tuner can do about 1,000 tunings per year
+
+**Step 6: Number of tuners needed**
+92,500 total tunings ÷ 1,000 tunings per tuner = 92.5 tuners
+
+**Final estimate: About 90 piano tuners in Berlin**
+
+This seems reasonable - not too many, but enough to service the city's piano population with some room for part-time workers or seasonal variation.

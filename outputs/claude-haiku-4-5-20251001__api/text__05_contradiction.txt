@@ -1,3 +1,0 @@
-# Contradiction
-
-Statement A claims no deliveries arrived on the weekend, while Statement B states that the Hamburg shipment was signed for on Saturday, which is a weekend day.

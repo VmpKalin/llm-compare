@@ -1,7 +1,0 @@
-```python
-def second_largest(nums):
-    unique_nums = sorted(set(nums))
-    if len(unique_nums) < 2:
-        return None
-    return unique_nums[-2]
-```

@@ -1,0 +1,8 @@
+# Yes, you should switch.
+
+- **Probability of winning if you switch: 2/3**
+- **Probability of winning if you stay: 1/3**
+
+## Why
+
+When you first picked door 1, you had a 1/3 chance of being right, meaning there's a 2/3 chance the car is behind one of the other two doors. The host—who knows where the car is—deliberately opens a door with a goat, which concentrates that entire 2/3 probability onto the single remaining unopened door (door 2). Since the host's action gives you new information (he never opens the car door), switching lets you capitalize on the more likely scenario.
